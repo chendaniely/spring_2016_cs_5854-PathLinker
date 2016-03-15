@@ -25,7 +25,7 @@ While predicting pathways, we've previously only considered the confidence that 
 ## how are you going about it
 
 We use a preprocessing step of the interactome originally used in Pathlinker, altering edge weights based of if that interaction is passed as known or not.  Edges which are considered known have their edge weight (probability of interaction) increased, while edges which are unknown have their edge weight decreased.  As per the original Pathlinker, these weights are then negative log transformed, then a k-shortest-paths algorithm is then run on this resulting interactome utilizing a super-source and super-target.
-We intend to use multiple weighting schemes to see which has the best performance on the wnt pathway.  It should be noted that the precision recall curve calculation must be altered from the original Pathlinker's formulation.  Recall of information we already passed the algorithm is not informative, thus we should only use the portion of the known wnt pathway we witheld from Pathlinker 2.0 as the gold standard.
+We intend to use multiple weighting schemes to see which has the best performance on the wnt pathway.  It should be noted that the precision recall curve calculation must be altered from the original Pathlinker's formulation.  Recall of interactions we already passed the algorithm is not informative, thus we should only use the portion of the known wnt pathway we witheld from Pathlinker 2.0 as the gold standard.
 
 # data
 
