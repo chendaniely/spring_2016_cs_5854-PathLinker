@@ -1,0 +1,15 @@
+- we only get good precision-recall curves when we:
+  - sample negatives
+  - ignore the edges
+
+What we should try next:
+  - do not ignore adjacents and do not subsample
+  - aggregate all pathways
+  - re-read supplementary to get CV method
+
+Note: negativs in CV folds are known.
+
+New algorithims:
+  - semi-supervised learning
+  - EQED 2009 Ideker: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2290938/
+  - HIV dependency factors, plos, murali: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002164
