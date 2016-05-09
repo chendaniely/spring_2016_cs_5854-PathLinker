@@ -1,3 +1,5 @@
+import re
+
 import pandas as pd
 
 
@@ -43,3 +45,27 @@ def convert_edgelist_to_node(edge_list, new_col_name='n2n',
         '_to_' + \
         edge_list[e2_col].astype(str)
     return(edge_list[new_col_name])
+
+
+def setup():
+    pathways = ["BDNF",
+                "EGFR1",
+                "IL1",
+                "IL2",
+                "IL3",
+                "IL6",
+                "IL-7",
+                "KitReceptor",
+                "Leptin",
+                "Prolactin",
+                "RANKL",
+                "TCR",
+                "TGF_beta_Receptor",
+                "TNFalpha",
+                "Wnt"]
+    interactome = pd.read_csv(
+        '../data/pathlinker-signaling-children-reg-weighted.txt',
+        delimiter='\t')
+    return pathways, interactome
+
+EDGE_NODE_PATTERN = re.compile('.*_to_.*')

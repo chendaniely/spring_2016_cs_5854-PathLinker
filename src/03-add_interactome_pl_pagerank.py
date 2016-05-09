@@ -1,5 +1,7 @@
 import pandas as pd
 
+from tqdm import tqdm
+
 import helper
 
 
@@ -30,10 +32,11 @@ def setup():
 
 pathways, interactome = setup()
 
-for pathway in pathways:
-    pathway_df = pd.read_csv('../data/pathways/{}-edges.txt'.
-                             format(pathway),
-                             delimiter='\t')
+for pathway in tqdm(pathways):
+    pathway_dist_en = pd.read_csv('../output/features_{}_02.txt'.
+                                  format(pathway),
+                                  delimiter='\t')
+
     pagerank_df = pd.read_csv('../data/pagerank/{}-q_0.50-edge-fluxes.txt'.
                               format(pathway),
                               delimiter='\t')
@@ -41,36 +44,34 @@ for pathway in pathways:
                                format(pathway),
                                delimiter='\t')
 
-    pathway_df_e2n = helper.convert_edges_to_node(
-        pathway_df, weight_col_name='pathway_value')
     pagerank_df_e2n = helper.convert_edges_to_node(
         pagerank_df, 'edge_flux', 'pagerank_value')
     cyclinker_df_e2n = helper.convert_edges_to_node(
         cyclinker_df, 'KSP index', 'cyclinker_value')
 
-    pathway_en = helper.keep_edge_nodes(
-        pathway_df_e2n, ['head', 'pathway_value'])
     pagerank_en = helper.keep_edge_nodes(
         pagerank_df_e2n, ['head', 'pagerank_value'])
     cyclinker_en = helper.keep_edge_nodes(
         cyclinker_df_e2n, ['head', 'cyclinker_value'])
 
-    pathway_ranks = pd.merge(
-        pathway_en, pagerank_en, on='head', how='left')
-    pathway_ranks = pd.merge(
-        pathway_ranks, cyclinker_en, on='head', how='left')
+    pathway_dist_ranks = pd.merge(
+        pathway_dist_en, pagerank_en,
+        left_on='name', right_on='head', how='left')
 
-    pathway_ranks.ix[pd.isnull(pathway_ranks['pagerank_value']),
-                     'pagerank_value'] = pathway_ranks['pagerank_value'].\
-        min()
+    pathway_dist_ranks = pd.merge(
+        pathway_dist_ranks, cyclinker_en,
+        left_on='name', right_on='head', how='left')
 
-    pathway_ranks.ix[pd.isnull(pathway_ranks['cyclinker_value']),
-                     'cyclinker_value'] = pathway_ranks['cyclinker_value'].\
-        max() + 1
+    pathway_dist_ranks.ix[
+        pd.isnull(pathway_dist_ranks['pagerank_value']),
+        'pagerank_value'] = pathway_dist_ranks['pagerank_value'].min()
 
-    pathway_ranks.columns = ['name', 'pathway_value',
-                             'pagerank_value', 'cyclinker_value']
+    pathway_dist_ranks.ix[
+        pd.isnull(pathway_dist_ranks['cyclinker_value']),
+        'cyclinker_value'] = pathway_dist_ranks['cyclinker_value'].max() * 10
+
+    pathway_dist_ranks.drop(['head_x', 'head_y'], axis=1, inplace=True)
 
     filename = '../output/features_{}_03.txt'.format(pathway)
-    pathway_ranks.to_csv(filename, index=False, sep='\t')
+    pathway_dist_ranks.to_csv(filename, index=False, sep='\t')
     print('{} created'.format(filename))
