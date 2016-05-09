@@ -70,9 +70,8 @@ def main():
     nx.set_node_attributes(g, 'degree', degree_attributes)
     # nx.set_node_attributes(g, 'katz', katz_attributes)
 
-    # nearest_2_attributes = {}  # c
-    # nearest_4_attributes = {}  # c
-    # nearest_6_attributes = {}  # c
+    # nearest_1_attributes = {}  # c
+    # nearest_3_attributes = {}  # c
     nearest_5_attributes = {}
     max_degree_head_tail_attributes = {}  # c
     min_degree_head_tail_attributes = {}  # c
@@ -83,14 +82,11 @@ def main():
     for node in tqdm.tqdm(g.nodes_iter()):
         match = edge_node_pattern.match(node)
         if match:
-            # n2 = cna.calculate_nearest_k_nodes(g, node, 2)
+            # n1 = cna.calculate_nearest_k_nodes(g, node, 2)
             # nearest_2_attributes[node] = n2
 
-            # n4 = cna.calculate_nearest_k_nodes(g, node, 4)
+            # n3 = cna.calculate_nearest_k_nodes(g, node, 4)
             # nearest_4_attributes[node] = n4
-
-            # n6 = cna.calculate_nearest_k_nodes(g, node, 6)
-            # nearest_6_attributes[node] = n6
 
             n5 = cna.calculate_nearest_k_nodes(g, node, 5)
             nearest_5_attributes[node] = n5
@@ -105,9 +101,9 @@ def main():
             avg_degree_head_tail_attributes[node] = avg_d_ht
 
     print('setting node attributes')
-    # nx.set_node_attributes(g, 'nearest_2',  nearest_2_attributes)
-    # nx.set_node_attributes(g, 'nearest_4',  nearest_2_attributes)
-    # nx.set_node_attributes(g, 'nearest_6',  nearest_2_attributes)
+    # nx.set_node_attributes(g, 'nearest_1',  nearest_1_attributes)
+    # nx.set_node_attributes(g, 'nearest_3',  nearest_3_attributes)
+    nx.set_node_attributes(g, 'nearest_5',  nearest_5_attributes)
     nx.set_node_attributes(g, 'max_degree_head_tail',
                            max_degree_head_tail_attributes)
     nx.set_node_attributes(g, 'min_degree_head_tail',
@@ -116,10 +112,13 @@ def main():
                            avg_degree_head_tail_attributes)
     node_filename = '../output/features_{}_01.txt'.format(pathway_name)
     with open(node_filename, 'w') as f:
-        col_names = ['name',  # 'betweenness',
+        col_names = ['name',
+                     # 'betweenness',
                      'degree',
                      # 'katz',
-                     'nearest_2', 'nearest_4', 'nearest_6',
+                     # 'nearest_2',
+                     # 'nearest_4',
+                     'nearest_5',
                      'max_degree_head_tail', 'min_degree_head_tail',
                      'avg_degree_head_tail']
         fstring = ['%s'] * len(col_names)
@@ -134,10 +133,13 @@ def main():
             if match:
                 na = g.node[node]
                 f.write(fstring % tuple([
-                    node,  # na['betweenness'],
+                    node,
+                    # na['betweenness'],
                     na['degree'],
                     # na['katz'],
-                    na['nearest_2'], na['nearest_4'], na['nearest_6'],
+                    # na['nearest_1'],
+                    # na['nearest_3'],
+                    na['nearest_5'],
                     na['max_degree_head_tail'], na['min_degree_head_tail'],
                     na['avg_degree_head_tail']
                 ]))
