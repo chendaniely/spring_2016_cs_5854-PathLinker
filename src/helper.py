@@ -1,6 +1,7 @@
 import re
 
 import pandas as pd
+import numpy as np
 
 
 def convert_edges_to_node(data, weight_col='weight',
@@ -67,5 +68,21 @@ def setup():
         '../data/pathlinker-signaling-children-reg-weighted.txt',
         delimiter='\t')
     return pathways, interactome
+
+
+def create_additional_features(dataframe, startcol=1, endcol=-1):
+    df = dataframe.iloc[:, startcol:endcol]
+
+    sq = np.power(df, 2)
+    sq.columns = 'sq_' + sq.columns
+
+    cb = np.power(df, 3)
+    cb.columns = 'cb_' + cb.columns
+
+    lg = np.log(df)
+    lg.columns = 'lg_' + lg.columns
+
+    return pd.concat([dataframe, sq, cb, lg], axis=1)
+
 
 EDGE_NODE_PATTERN = re.compile('.*_to_.*')
