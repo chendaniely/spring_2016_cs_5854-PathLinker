@@ -1,0 +1,3925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1" xmlns:html="http://www.w3.org/1999/xhtml">
+<model name="Pathway: BCR">
+<listOfCompartments>
+<compartment name="Cell" id="compartment_100"/>
+<compartment name="Cytoplasm" id="compartment_1"/>
+<compartment name="Endiplasmic reticulum" id="compartment_2"/>
+<compartment name="Endosome" id="compartment_3"/>
+<compartment name="Extracellular" id="compartment_4"/>
+<compartment name="Golgi apparatus" id="compartment_5"/>
+<compartment name="Lysosome" id="compartment_6"/>
+<compartment name="Mitochondrion" id="compartment_7"/>
+<compartment name="Nucleus" id="compartment_8"/>
+<compartment name="Plasma membrane" id="compartment_9"/>
+</listOfCompartments>
+<listOfSpecies>
+<species name="GAB2" id="PB_1" compartment="compartment_100"/>
+<species name="MAPK1" id="PB_2" compartment="compartment_100"/>
+<species name="GAB2_MAPK1" id="PB_3" compartment="compartment_100"/>
+<species name="MAPK3" id="PB_4" compartment="compartment_100"/>
+<species name="GAB2_MAPK3" id="PB_5" compartment="compartment_100"/>
+<species name="MAPK4" id="PB_6" compartment="compartment_100"/>
+<species name="GAB2_MAPK4" id="PB_7" compartment="compartment_100"/>
+<species name="GAB1" id="PB_8" compartment="compartment_100"/>
+<species name="GAB1_MAPK1" id="PB_9" compartment="compartment_100"/>
+<species name="GAB1_MAPK3" id="PB_10" compartment="compartment_100"/>
+<species name="GAB1_MAPK4" id="PB_11" compartment="compartment_100"/>
+<species name="APS" id="PB_12" compartment="compartment_100"/>
+<species name="SHC1" id="PB_13" compartment="compartment_100"/>
+<species name="APS_SHC1" id="PB_14" compartment="compartment_100"/>
+<species name="GRB2" id="PB_15" compartment="compartment_100"/>
+<species name="APS_GRB2" id="PB_16" compartment="compartment_100"/>
+<species name="CBL" id="PB_17" compartment="compartment_100"/>
+<species name="APS_CBL" id="PB_18" compartment="compartment_100"/>
+<species name="CD22" id="PB_19" compartment="compartment_100"/>
+<species name="INPP5D,GRB2,SHC1" id="PB_20" compartment="compartment_100"/>
+<species name="CD22_INPP5D,GRB2,SHC1" id="PB_21" compartment="compartment_100"/>
+<species name="INPP5D" id="PB_22" compartment="compartment_100"/>
+<species name="CD22_INPP5D" id="PB_23" compartment="compartment_100"/>
+<species name="CD22_SHC1" id="PB_24" compartment="compartment_100"/>
+<species name="INPP5D_GRB2" id="PB_25" compartment="compartment_100"/>
+<species name="GRB2,SHC1" id="PB_26" compartment="compartment_100"/>
+<species name="INPP5D_GRB2,SHC1" id="PB_27" compartment="compartment_100"/>
+<species name="BTK" id="PB_28" compartment="compartment_100"/>
+<species name="PIP5K1A" id="PB_29" compartment="compartment_100"/>
+<species name="BTK_PIP5K1A" id="PB_30" compartment="compartment_100"/>
+<species name="PIP5K1B" id="PB_31" compartment="compartment_100"/>
+<species name="BTK_PIP5K1B" id="PB_32" compartment="compartment_100"/>
+<species name="PIP5K1C" id="PB_33" compartment="compartment_100"/>
+<species name="BTK_PIP5K1C" id="PB_34" compartment="compartment_100"/>
+<species name="PIP5K2A" id="PB_35" compartment="compartment_100"/>
+<species name="BTK_PIP5K2A" id="PB_36" compartment="compartment_100"/>
+<species name="PIP5K2B" id="PB_37" compartment="compartment_100"/>
+<species name="BTK_PIP5K2B" id="PB_38" compartment="compartment_100"/>
+<species name="PIP5K2C" id="PB_39" compartment="compartment_100"/>
+<species name="BTK_PIP5K2C" id="PB_40" compartment="compartment_100"/>
+<species name="SOS1" id="PB_41" compartment="compartment_100"/>
+<species name="GRB2_SOS1" id="PB_42" compartment="compartment_100"/>
+<species name="RAPGEF1" id="PB_43" compartment="compartment_100"/>
+<species name="GRB2_RAPGEF1" id="PB_44" compartment="compartment_100"/>
+<species name="SHC1_GRB2" id="PB_45" compartment="compartment_100"/>
+<species name="SHC1,GRB2" id="PB_46" compartment="compartment_100"/>
+<species name="SHC1,GRB2_SOS1" id="PB_47" compartment="compartment_100"/>
+<species name="BLNK" id="PB_48" compartment="compartment_100"/>
+<species name="MAP4K1" id="PB_49" compartment="compartment_100"/>
+<species name="BLNK_MAP4K1" id="PB_50" compartment="compartment_100"/>
+<species name="LAT2" id="PB_51" compartment="compartment_100"/>
+<species name="LAT2_GRB2" id="PB_52" compartment="compartment_100"/>
+<species name="LAT2_SOS1" id="PB_53" compartment="compartment_100"/>
+<species name="TEC" id="PB_54" compartment="compartment_100"/>
+<species name="PTPN18" id="PB_55" compartment="compartment_100"/>
+<species name="TEC_PTPN18" id="PB_56" compartment="compartment_100"/>
+<species name="SH3BP2" id="PB_57" compartment="compartment_100"/>
+<species name="PLCG1" id="PB_58" compartment="compartment_100"/>
+<species name="SH3BP2_PLCG1" id="PB_59" compartment="compartment_100"/>
+<species name="SYK" id="PB_60" compartment="compartment_100"/>
+<species name="SH3BP2_SYK" id="PB_61" compartment="compartment_100"/>
+<species name="CD19" id="PB_62" compartment="compartment_100"/>
+<species name="CD19_BTK" id="PB_63" compartment="compartment_100"/>
+<species name="CRKL" id="PB_64" compartment="compartment_100"/>
+<species name="CRKL_RAPGEF1" id="PB_65" compartment="compartment_100"/>
+<species name="CRKL_SOS1" id="PB_66" compartment="compartment_100"/>
+<species name="SOS2" id="PB_67" compartment="compartment_100"/>
+<species name="CRKL_SOS2" id="PB_68" compartment="compartment_100"/>
+<species name="GTF2I" id="PB_69" compartment="compartment_100"/>
+<species name="BTK_GTF2I" id="PB_70" compartment="compartment_100"/>
+<species name="CBL_BTK" id="PB_71" compartment="compartment_100"/>
+<species name="SLA2" id="PB_72" compartment="compartment_100"/>
+<species name="CBL_SLA2" id="PB_73" compartment="compartment_100"/>
+<species name="ATP2B4" id="PB_74" compartment="compartment_100"/>
+<species name="CD22_ATP2B4" id="PB_75" compartment="compartment_100"/>
+<species name="SHC1_SOS1" id="PB_76" compartment="compartment_100"/>
+<species name="CD72" id="PB_77" compartment="compartment_100"/>
+<species name="GRB2_CD72" id="PB_78" compartment="compartment_100"/>
+<species name="PIK3R1,PIK3R2" id="PB_79" compartment="compartment_100"/>
+<species name="INPP5D_PIK3R1,PIK3R2" id="PB_80" compartment="compartment_100"/>
+<species name="PTPN6" id="PB_81" compartment="compartment_100"/>
+<species name="PTPN6_CD22" id="PB_82" compartment="compartment_100"/>
+<species name="BLNK_PLCG1" id="PB_83" compartment="compartment_100"/>
+<species name="BLNK_GRB2" id="PB_84" compartment="compartment_100"/>
+<species name="GRB2,SOS1" id="PB_85" compartment="compartment_100"/>
+<species name="BLNK_GRB2,SOS1" id="PB_86" compartment="compartment_100"/>
+<species name="NEDD9" id="PB_87" compartment="compartment_100"/>
+<species name="CRKL_NEDD9" id="PB_88" compartment="compartment_100"/>
+<species name="VAV2" id="PB_89" compartment="compartment_100"/>
+<species name="SH3BP2_VAV2" id="PB_90" compartment="compartment_100"/>
+<species name="VAV2_CBL" id="PB_91" compartment="compartment_100"/>
+<species name="VAV2_SYK" id="PB_92" compartment="compartment_100"/>
+<species name="CHST15" id="PB_93" compartment="compartment_100"/>
+<species name="HCK" id="PB_94" compartment="compartment_100"/>
+<species name="CHST15_HCK" id="PB_95" compartment="compartment_100"/>
+<species name="GRB2_CD22" id="PB_96" compartment="compartment_100"/>
+<species name="BCAR1" id="PB_97" compartment="compartment_100"/>
+<species name="CRK" id="PB_98" compartment="compartment_100"/>
+<species name="BCAR1_CRK" id="PB_99" compartment="compartment_100"/>
+<species name="BCAR1_CRKL" id="PB_100" compartment="compartment_100"/>
+<species name="CBL_CRK" id="PB_101" compartment="compartment_100"/>
+<species name="CBL_CRKL" id="PB_102" compartment="compartment_100"/>
+<species name="CD22_SYK" id="PB_103" compartment="compartment_100"/>
+<species name="CD22_PLCG1" id="PB_104" compartment="compartment_100"/>
+<species name="PRKD1" id="PB_105" compartment="compartment_100"/>
+<species name="PRKD1_SYK" id="PB_106" compartment="compartment_100"/>
+<species name="PRKD1_PLCG1" id="PB_107" compartment="compartment_100"/>
+<species name="PLCG2" id="PB_108" compartment="compartment_100"/>
+<species name="PRKD1_PLCG2" id="PB_109" compartment="compartment_100"/>
+<species name="LYN" id="PB_110" compartment="compartment_100"/>
+<species name="LYN_CD19" id="PB_111" compartment="compartment_100"/>
+<species name="VAV1" id="PB_112" compartment="compartment_100"/>
+<species name="CD19_VAV1" id="PB_113" compartment="compartment_100"/>
+<species name="LCP2" id="PB_114" compartment="compartment_100"/>
+<species name="LCP2_VAV1" id="PB_115" compartment="compartment_100"/>
+<species name="CBL_SYK" id="PB_116" compartment="compartment_100"/>
+<species name="CD79B" id="PB_117" compartment="compartment_100"/>
+<species name="ZAP70" id="PB_118" compartment="compartment_100"/>
+<species name="CD79B_ZAP70" id="PB_119" compartment="compartment_100"/>
+<species name="LCP2_PLCG1" id="PB_120" compartment="compartment_100"/>
+<species name="CBL_GRB2" id="PB_121" compartment="compartment_100"/>
+<species name="CBL_PIK3R1,PIK3R2" id="PB_122" compartment="compartment_100"/>
+<species name="CBL_SHC1" id="PB_123" compartment="compartment_100"/>
+<species name="FYN" id="PB_124" compartment="compartment_100"/>
+<species name="CBL_FYN" id="PB_125" compartment="compartment_100"/>
+<species name="BLK" id="PB_126" compartment="compartment_100"/>
+<species name="CBL_BLK" id="PB_127" compartment="compartment_100"/>
+<species name="CBL_LYN" id="PB_128" compartment="compartment_100"/>
+<species name="LCK" id="PB_129" compartment="compartment_100"/>
+<species name="CBL_LCK" id="PB_130" compartment="compartment_100"/>
+<species name="GAB1_PIK3R1,PIK3R2" id="PB_131" compartment="compartment_100"/>
+<species name="PTPN11" id="PB_132" compartment="compartment_100"/>
+<species name="GAB1_PTPN11" id="PB_133" compartment="compartment_100"/>
+<species name="GAB1_SHC1" id="PB_134" compartment="compartment_100"/>
+<species name="GRB2_PTPN11" id="PB_135" compartment="compartment_100"/>
+<species name="FCGR2B" id="PB_136" compartment="compartment_100"/>
+<species name="FCGR2B_MAPK1" id="PB_137" compartment="compartment_100"/>
+<species name="FCGR2B_MAPK3" id="PB_138" compartment="compartment_100"/>
+<species name="CMTM3" id="PB_139" compartment="compartment_100"/>
+<species name="CMTM3_BLNK" id="PB_140" compartment="compartment_100"/>
+<species name="CMTM3_BTK" id="PB_141" compartment="compartment_100"/>
+<species name="CR2" id="PB_142" compartment="compartment_100"/>
+<species name="CD19_CR2" id="PB_143" compartment="compartment_100"/>
+<species name="BLNK_PLCG2" id="PB_144" compartment="compartment_100"/>
+<species name="LAT2_CBL" id="PB_145" compartment="compartment_100"/>
+<species name="LAT2_GAB1" id="PB_146" compartment="compartment_100"/>
+<species name="CD81" id="PB_147" compartment="compartment_100"/>
+<species name="CD19_CD81" id="PB_148" compartment="compartment_100"/>
+<species name="CD79A" id="PB_149" compartment="compartment_100"/>
+<species name="CD79A_CD79B" id="PB_150" compartment="compartment_100"/>
+<species name="BCL2L11" id="PB_151" compartment="compartment_100"/>
+<species name="BCL2" id="PB_152" compartment="compartment_100"/>
+<species name="BCL2L11_BCL2" id="PB_153" compartment="compartment_100"/>
+<species name="SYK_CD79A" id="PB_154" compartment="compartment_100"/>
+<species name="DOK1" id="PB_155" compartment="compartment_100"/>
+<species name="TEC_DOK1" id="PB_156" compartment="compartment_100"/>
+<species name="SYK_VAV1" id="PB_157" compartment="compartment_100"/>
+<species name="DAPP1" id="PB_158" compartment="compartment_100"/>
+<species name="MAP4K1_DAPP1" id="PB_159" compartment="compartment_100"/>
+<species name="LCK_CD79A" id="PB_160" compartment="compartment_100"/>
+<species name="CD5" id="PB_161" compartment="compartment_100"/>
+<species name="CD5_PTPN6" id="PB_162" compartment="compartment_100"/>
+<species name="CD19_GRB2" id="PB_163" compartment="compartment_100"/>
+<species name="CD19_SOS1" id="PB_164" compartment="compartment_100"/>
+<species name="CD19_PLCG2" id="PB_165" compartment="compartment_100"/>
+<species name="PIK3AP1" id="PB_166" compartment="compartment_100"/>
+<species name="PIK3AP1_PIK3R1,PIK3R2" id="PB_167" compartment="compartment_100"/>
+<species name="PTPN6_BLNK" id="PB_168" compartment="compartment_100"/>
+<species name="BLNK_BTK" id="PB_169" compartment="compartment_100"/>
+<species name="FYN_BCAR1" id="PB_170" compartment="compartment_100"/>
+<species name="PTK2" id="PB_171" compartment="compartment_100"/>
+<species name="LYN_PTK2" id="PB_172" compartment="compartment_100"/>
+<species name="HCK_BCAR1" id="PB_173" compartment="compartment_100"/>
+<species name="PTPN6_CD72" id="PB_174" compartment="compartment_100"/>
+<species name="SOS2_GRB2,SHC1" id="PB_175" compartment="compartment_100"/>
+<species name="INPP5D_SHC1" id="PB_176" compartment="compartment_100"/>
+<species name="DAPP1_PLCG1" id="PB_177" compartment="compartment_100"/>
+<species name="DAPP1_PLCG2" id="PB_178" compartment="compartment_100"/>
+<species name="PTK2B" id="PB_179" compartment="compartment_100"/>
+<species name="BCAR1_PTK2B" id="PB_180" compartment="compartment_100"/>
+<species name="BCAR1_LYN" id="PB_181" compartment="compartment_100"/>
+<species name="BANK1" id="PB_182" compartment="compartment_100"/>
+<species name="ITPR2" id="PB_183" compartment="compartment_100"/>
+<species name="BANK1_ITPR2" id="PB_184" compartment="compartment_100"/>
+<species name="RAPGEF1_CRK" id="PB_185" compartment="compartment_100"/>
+<species name="BRDG1" id="PB_186" compartment="compartment_100"/>
+<species name="TEC_BRDG1" id="PB_187" compartment="compartment_100"/>
+<species name="CD79A,CD79B" id="PB_188" compartment="compartment_100"/>
+<species name="CD79A,CD79B_BLK" id="PB_189" compartment="compartment_100"/>
+<species name="CD79A_FYN" id="PB_190" compartment="compartment_100"/>
+<species name="CD79A_LYN" id="PB_191" compartment="compartment_100"/>
+<species name="CD79B_SYK" id="PB_192" compartment="compartment_100"/>
+<species name="CD19_PIK3R1,PIK3R2" id="PB_193" compartment="compartment_100"/>
+<species name="DOK3" id="PB_194" compartment="compartment_100"/>
+<species name="INPP5D_DOK3" id="PB_195" compartment="compartment_100"/>
+<species name="IGHM" id="PB_196" compartment="compartment_100"/>
+<species name="IGHM_CD22" id="PB_197" compartment="compartment_100"/>
+<species name="CD5_CD79A,CD79B" id="PB_198" compartment="compartment_100"/>
+<species name="PTPN6_CD79A" id="PB_199" compartment="compartment_100"/>
+<species name="PTPN6_CD79B" id="PB_200" compartment="compartment_100"/>
+<species name="PTK2_CD79B" id="PB_201" compartment="compartment_100"/>
+<species name="PTK2_IGHM" id="PB_202" compartment="compartment_100"/>
+<species name="NCK1" id="PB_203" compartment="compartment_100"/>
+<species name="BLNK_NCK1" id="PB_204" compartment="compartment_100"/>
+<species name="GRB2_VAV1" id="PB_205" compartment="compartment_100"/>
+<species name="VAV1_CRK" id="PB_206" compartment="compartment_100"/>
+<species name="BLNK_VAV1" id="PB_207" compartment="compartment_100"/>
+<species name="SH3BP2_VAV1" id="PB_208" compartment="compartment_100"/>
+<species name="CMTM3_MAPK1" id="PB_209" compartment="compartment_100"/>
+<species name="NEDD9_PTK2B" id="PB_210" compartment="compartment_100"/>
+<species name="LYN_NEDD9" id="PB_211" compartment="compartment_100"/>
+<species name="CD79A_BLNK" id="PB_212" compartment="compartment_100"/>
+<species name="LIME1" id="PB_213" compartment="compartment_100"/>
+<species name="LIME1_GRB2" id="PB_214" compartment="compartment_100"/>
+<species name="LIME1_PLCG2" id="PB_215" compartment="compartment_100"/>
+<species name="PTPRC" id="PB_216" compartment="compartment_100"/>
+<species name="LYN_PTPRC" id="PB_217" compartment="compartment_100"/>
+<species name="RASA1" id="PB_218" compartment="compartment_100"/>
+<species name="LYN_RASA1" id="PB_219" compartment="compartment_100"/>
+<species name="LYN_PLCG2" id="PB_220" compartment="compartment_100"/>
+<species name="NCK1_LCP2" id="PB_221" compartment="compartment_100"/>
+<species name="LCP2_CD22" id="PB_222" compartment="compartment_100"/>
+<species name="HNRPK" id="PB_223" compartment="compartment_100"/>
+<species name="HNRPK_VAV1" id="PB_224" compartment="compartment_100"/>
+<species name="CARD11" id="PB_225" compartment="compartment_100"/>
+<species name="BCL10,MAP3K7" id="PB_226" compartment="compartment_100"/>
+<species name="CARD11_BCL10,MAP3K7" id="PB_227" compartment="compartment_100"/>
+<species name="MAP3K7" id="PB_228" compartment="compartment_100"/>
+<species name="CARD11_MAP3K7" id="PB_229" compartment="compartment_100"/>
+<species name="IKBKG" id="PB_230" compartment="compartment_100"/>
+<species name="IKBKG_CARD11" id="PB_231" compartment="compartment_100"/>
+<species name="DOK1_RASA1" id="PB_232" compartment="compartment_100"/>
+<species name="CSK" id="PB_233" compartment="compartment_100"/>
+<species name="CSK_DOK1" id="PB_234" compartment="compartment_100"/>
+<species name="CCNE1" id="PB_235" compartment="compartment_100"/>
+<species name="CDK2" id="PB_236" compartment="compartment_100"/>
+<species name="CCNE1_CDK2" id="PB_237" compartment="compartment_100"/>
+<species name="CCNA2" id="PB_238" compartment="compartment_100"/>
+<species name="CDK2_CCNA2" id="PB_239" compartment="compartment_100"/>
+<species name="CDK4" id="PB_240" compartment="compartment_100"/>
+<species name="CCND2" id="PB_241" compartment="compartment_100"/>
+<species name="CDK4_CCND2" id="PB_242" compartment="compartment_100"/>
+<species name="CCND3" id="PB_243" compartment="compartment_100"/>
+<species name="CDK4_CCND3" id="PB_244" compartment="compartment_100"/>
+<species name="CDK6" id="PB_245" compartment="compartment_100"/>
+<species name="CDK6_CCND2" id="PB_246" compartment="compartment_100"/>
+<species name="PRKCB1" id="PB_247" compartment="compartment_100"/>
+<species name="PRKCB1_CARD11" id="PB_248" compartment="compartment_100"/>
+<species name="CDK6_CCND3" id="PB_249" compartment="compartment_100"/>
+<species name="LIME1_PIK3R1,PIK3R2" id="PB_250" compartment="compartment_100"/>
+<species name="RAP2A" id="PB_251" compartment="compartment_100"/>
+<species name="PIK3R1" id="PB_252" compartment="compartment_100"/>
+<species name="RAP2A_PIK3R1" id="PB_253" compartment="compartment_100"/>
+<species name="DBNL" id="PB_254" compartment="compartment_100"/>
+<species name="DNM2" id="PB_255" compartment="compartment_100"/>
+<species name="DBNL_DNM2" id="PB_256" compartment="compartment_100"/>
+<species name="IFITM1,CR2,CD19" id="PB_257" compartment="compartment_100"/>
+<species name="CD81_IFITM1,CR2,CD19" id="PB_258" compartment="compartment_100"/>
+<species name="CD72_CD72" id="PB_259" compartment="compartment_100"/>
+<species name="BCL10" id="PB_260" compartment="compartment_100"/>
+<species name="CARD11,MALT1" id="PB_261" compartment="compartment_100"/>
+<species name="BCL10_CARD11,MALT1" id="PB_262" compartment="compartment_100"/>
+<species name="RRAS2" id="PB_263" compartment="compartment_100"/>
+<species name="PIK3CD" id="PB_264" compartment="compartment_100"/>
+<species name="RRAS2_PIK3CD" id="PB_265" compartment="compartment_100"/>
+<species name="FOS" id="PB_266" compartment="compartment_100"/>
+<species name="JUNB" id="PB_267" compartment="compartment_100"/>
+<species name="FOS_JUNB" id="PB_268" compartment="compartment_100"/>
+<species name="FOSB" id="PB_269" compartment="compartment_100"/>
+<species name="FOSB_JUNB" id="PB_270" compartment="compartment_100"/>
+<species name="TCL1A" id="PB_271" compartment="compartment_100"/>
+<species name="ZAP70,AKT1" id="PB_272" compartment="compartment_100"/>
+<species name="TCL1A_ZAP70,AKT1" id="PB_273" compartment="compartment_100"/>
+<species name="CD79A,CD79B,CD19,BTLA" id="PB_274" compartment="compartment_100"/>
+<species name="IGHM_CD79A,CD79B,CD19,BTLA" id="PB_275" compartment="compartment_100"/>
+<species name="PIK3R1,PIK3R2,PTPN11" id="PB_276" compartment="compartment_100"/>
+<species name="GAB2_PIK3R1,PIK3R2,PTPN11" id="PB_277" compartment="compartment_100"/>
+<species name="VAV1,VAV2" id="PB_278" compartment="compartment_100"/>
+<species name="LAT2_VAV1,VAV2" id="PB_279" compartment="compartment_100"/>
+<species name="CD79A_SHC1" id="PB_280" compartment="compartment_100"/>
+<species name="Phosphorylated PLCG2" id="PB_281" compartment="compartment_100"/>
+<species name="Dephosphorylated BLNK" id="PB_282" compartment="compartment_100"/>
+<species name="Phosphorylated BTK" id="PB_283" compartment="compartment_100"/>
+<species name="Phosphorylated MAP4K1" id="PB_284" compartment="compartment_100"/>
+<species name="RASGRP3" id="PB_285" compartment="compartment_100"/>
+<species name="PRKCQ" id="PB_286" compartment="compartment_100"/>
+<species name="Phosphorylated RASGRP3" id="PB_287" compartment="compartment_100"/>
+<species name="Phosphorylated SHC1" id="PB_288" compartment="compartment_100"/>
+<species name="AKT1" id="PB_289" compartment="compartment_100"/>
+<species name="PDPK1" id="PB_290" compartment="compartment_100"/>
+<species name="Phosphorylated AKT1" id="PB_291" compartment="compartment_100"/>
+<species name="Phosphorylated PLCG1" id="PB_292" compartment="compartment_100"/>
+<species name="Phosphorylated PRKD1" id="PB_293" compartment="compartment_100"/>
+<species name="Phosphorylated SYK" id="PB_294" compartment="compartment_100"/>
+<species name="ITPR1" id="PB_295" compartment="compartment_100"/>
+<species name="Phosphorylated ITPR1" id="PB_296" compartment="compartment_100"/>
+<species name="FOXO1" id="PB_297" compartment="compartment_100"/>
+<species name="Phosphorylated FOXO1" id="PB_298" compartment="compartment_100"/>
+<species name="GSK3A" id="PB_299" compartment="compartment_100"/>
+<species name="Phosphorylated GSK3A" id="PB_300" compartment="compartment_100"/>
+<species name="CREB1" id="PB_301" compartment="compartment_100"/>
+<species name="RPS6KA1" id="PB_302" compartment="compartment_100"/>
+<species name="Phosphorylated CREB1" id="PB_303" compartment="compartment_100"/>
+<species name="Phosphorylated CD22" id="PB_304" compartment="compartment_100"/>
+<species name="STAP1" id="PB_305" compartment="compartment_100"/>
+<species name="Phosphorylated STAP1" id="PB_306" compartment="compartment_100"/>
+<species name="ITK" id="PB_307" compartment="compartment_100"/>
+<species name="Phosphorylated BLNK" id="PB_308" compartment="compartment_100"/>
+<species name="Phosphorylated DOK1" id="PB_309" compartment="compartment_100"/>
+<species name="Phosphorylated SH3BP2" id="PB_310" compartment="compartment_100"/>
+<species name="BRAF" id="PB_311" compartment="compartment_100"/>
+<species name="Phosphorylated BRAF" id="PB_312" compartment="compartment_100"/>
+<species name="RB1" id="PB_313" compartment="compartment_100"/>
+<species name="Phosphorylated RB1" id="PB_314" compartment="compartment_100"/>
+<species name="Phosphorylated CD79B" id="PB_315" compartment="compartment_100"/>
+<species name="Phosphorylated CD79A" id="PB_316" compartment="compartment_100"/>
+<species name="NFATC2" id="PB_317" compartment="compartment_100"/>
+<species name="PPP3CA" id="PB_318" compartment="compartment_100"/>
+<species name="Dephosphorylated NFATC2" id="PB_319" compartment="compartment_100"/>
+<species name="NFATC3" id="PB_320" compartment="compartment_100"/>
+<species name="Dephosphorylated NFATC3" id="PB_321" compartment="compartment_100"/>
+<species name="Phosphorylated PIK3AP1" id="PB_322" compartment="compartment_100"/>
+<species name="GSK3B" id="PB_323" compartment="compartment_100"/>
+<species name="Phosphorylated GSK3B" id="PB_324" compartment="compartment_100"/>
+<species name="CHUK" id="PB_325" compartment="compartment_100"/>
+<species name="PRKCB" id="PB_326" compartment="compartment_100"/>
+<species name="Phosphorylated CHUK" id="PB_327" compartment="compartment_100"/>
+<species name="IKBKB" id="PB_328" compartment="compartment_100"/>
+<species name="Phosphorylated IKBKB" id="PB_329" compartment="compartment_100"/>
+<species name="ATF2" id="PB_330" compartment="compartment_100"/>
+<species name="MAPK14" id="PB_331" compartment="compartment_100"/>
+<species name="Phosphorylated ATF2" id="PB_332" compartment="compartment_100"/>
+<species name="JUN" id="PB_333" compartment="compartment_100"/>
+<species name="MAPK8" id="PB_334" compartment="compartment_100"/>
+<species name="Phosphorylated JUN" id="PB_335" compartment="compartment_100"/>
+<species name="ELK1" id="PB_336" compartment="compartment_100"/>
+<species name="Phosphorylated ELK1" id="PB_337" compartment="compartment_100"/>
+<species name="Dephosphorylated CD72" id="PB_338" compartment="compartment_100"/>
+<species name="BCL6" id="PB_339" compartment="compartment_100"/>
+<species name="Phosphorylated BCL6" id="PB_340" compartment="compartment_100"/>
+<species name="NFKBIA" id="PB_341" compartment="compartment_100"/>
+<species name="Phosphorylated NFKBIA" id="PB_342" compartment="compartment_100"/>
+<species name="RPS6" id="PB_343" compartment="compartment_100"/>
+<species name="RPS6KB1" id="PB_344" compartment="compartment_100"/>
+<species name="Phosphorylated RPS6" id="PB_345" compartment="compartment_100"/>
+<species name="Phosphorylated GTF2I" id="PB_346" compartment="compartment_100"/>
+<species name="Phosphorylated RASA1" id="PB_347" compartment="compartment_100"/>
+<species name="Phosphorylated MAPK3" id="PB_348" compartment="compartment_100"/>
+<species name="Phosphorylated RPS6KA1" id="PB_349" compartment="compartment_100"/>
+<species name="Phosphorylated NEDD9" id="PB_350" compartment="compartment_100"/>
+<species name="Phosphorylated BCAR1" id="PB_351" compartment="compartment_100"/>
+<species name="CASP9" id="PB_352" compartment="compartment_100"/>
+<species name="Proteolytically cleaved LYN" id="PB_353" compartment="compartment_100"/>
+<species name="CASP7" id="PB_354" compartment="compartment_100"/>
+<species name="HCLS1" id="PB_355" compartment="compartment_100"/>
+<species name="Phosphorylated HCLS1" id="PB_356" compartment="compartment_100"/>
+<species name="Phosphorylated TEC" id="PB_357" compartment="compartment_100"/>
+<species name="CBLB" id="PB_358" compartment="compartment_100"/>
+<species name="Ubiquitinated SYK" id="PB_359" compartment="compartment_100"/>
+<species name="Phosphorylated PTPN18" id="PB_360" compartment="compartment_100"/>
+<species name="Dephosphorylated TEC" id="PB_361" compartment="compartment_100"/>
+<species name="MAPKAPK2" id="PB_362" compartment="compartment_100"/>
+<species name="Phosphorylated BANK1" id="PB_363" compartment="compartment_100"/>
+<species name="Phosphorylated CBL" id="PB_364" compartment="compartment_100"/>
+<species name="Phosphorylated PTK2" id="PB_365" compartment="compartment_100"/>
+<species name="Phosphorylated LYN" id="PB_366" compartment="compartment_100"/>
+<species name="Phosphorylated BRDG1" id="PB_367" compartment="compartment_100"/>
+<species name="Dephosphorylated CD79A" id="PB_368" compartment="compartment_100"/>
+<species name="Dephosphorylated CD79B" id="PB_369" compartment="compartment_100"/>
+<species name="Phosphorylated LIME1" id="PB_370" compartment="compartment_100"/>
+<species name="Phosphorylated CARD11" id="PB_371" compartment="compartment_100"/>
+<species name="Phosphorylated LCP2" id="PB_372" compartment="compartment_100"/>
+<species name="Ubiquitinated LYN" id="PB_373" compartment="compartment_100"/>
+<species name="Phosphorylated CD19" id="PB_374" compartment="compartment_100"/>
+<species name="Phosphorylated ZAP70" id="PB_375" compartment="compartment_100"/>
+<species name="Phosphorylated DAPP1" id="PB_376" compartment="compartment_100"/>
+<species name="Phosphorylated LAT2" id="PB_377" compartment="compartment_100"/>
+<species name="Phosphorylated HNRPK" id="PB_378" compartment="compartment_100"/>
+<species name="Phosphorylated CBLB" id="PB_379" compartment="compartment_100"/>
+<species name="Phosphorylated GAB1" id="PB_380" compartment="compartment_100"/>
+<species name="MAP2K1" id="PB_381" compartment="compartment_100"/>
+<species name="Phosphorylated MAP2K1" id="PB_382" compartment="compartment_100"/>
+<species name="Phosphorylated PIK3R1" id="PB_383" compartment="compartment_100"/>
+<species name="MAP2K2" id="PB_384" compartment="compartment_100"/>
+<species name="Phosphorylated MAP2K2" id="PB_385" compartment="compartment_100"/>
+<species name="RAF1" id="PB_386" compartment="compartment_100"/>
+<species name="Phosphorylated RAF1" id="PB_387" compartment="compartment_100"/>
+<species name="PIK3CG" id="PB_388" compartment="compartment_100"/>
+<species name="Phosphorylated PIK3CG" id="PB_389" compartment="compartment_100"/>
+<species name="STAT1" id="PB_390" compartment="compartment_100"/>
+<species name="Phosphorylated STAT1" id="PB_391" compartment="compartment_100"/>
+<species name="Phosphorylated VAV1" id="PB_392" compartment="compartment_100"/>
+<species name="PRKCD" id="PB_393" compartment="compartment_100"/>
+<species name="Phosphorylated PRKCD" id="PB_394" compartment="compartment_100"/>
+<species name="Phosphorylated MAPK1" id="PB_395" compartment="compartment_100"/>
+<species name="STAT3" id="PB_396" compartment="compartment_100"/>
+<species name="Phosphorylated STAT3" id="PB_397" compartment="compartment_100"/>
+<species name="Phosphorylated PTPN11" id="PB_398" compartment="compartment_100"/>
+<species name="CDK7" id="PB_399" compartment="compartment_100"/>
+<species name="Phosphorylated CDK2" id="PB_400" compartment="compartment_100"/>
+<species name="HDAC7A" id="PB_401" compartment="compartment_100"/>
+<species name="Phosphorylated HDAC7A" id="PB_402" compartment="compartment_100"/>
+<species name="HDAC5" id="PB_403" compartment="compartment_100"/>
+<species name="Phosphorylated HDAC5" id="PB_404" compartment="compartment_100"/>
+<species name="PDPK2" id="PB_405" compartment="compartment_100"/>
+<species name="Lck" id="PB_406" compartment="compartment_100"/>
+<species name="Phosphorylated Lck" id="PB_407" compartment="compartment_100"/>
+<species name="Phosphorylated CD72" id="PB_408" compartment="compartment_100"/>
+<species name="Phosphorylated PTK2B" id="PB_409" compartment="compartment_100"/>
+<species name="Phosphorylated MAPK8" id="PB_410" compartment="compartment_100"/>
+<species name="MAPK9" id="PB_411" compartment="compartment_100"/>
+<species name="Phosphorylated MAPK9" id="PB_412" compartment="compartment_100"/>
+<species name="Phosphorylated MAPK14" id="PB_413" compartment="compartment_100"/>
+<species name="RELA" id="PB_414" compartment="compartment_100"/>
+<species name="Phosphorylated RELA" id="PB_415" compartment="compartment_100"/>
+<species name="EIF4EBP1" id="PB_416" compartment="compartment_100"/>
+<species name="Phosphorylated EIF4EBP1" id="PB_417" compartment="compartment_100"/>
+<species name="FOXO3" id="PB_418" compartment="compartment_100"/>
+<species name="Phosphorylated FOXO3" id="PB_419" compartment="compartment_100"/>
+<species name="VASP" id="PB_420" compartment="compartment_100"/>
+<species name="Phosphorylated VASP" id="PB_421" compartment="compartment_100"/>
+<species name="CASP3" id="PB_422" compartment="compartment_100"/>
+<species name="Proteolytically cleaved CASP3" id="PB_423" compartment="compartment_100"/>
+<species name="WAS" id="PB_424" compartment="compartment_100"/>
+<species name="Phosphorylated WAS" id="PB_425" compartment="compartment_100"/>
+<species name="Phosphorylated GAB2" id="PB_426" compartment="compartment_100"/>
+<species name="Phosphorylated DBNL" id="PB_427" compartment="compartment_100"/>
+<species name="PIK3R2" id="PB_428" compartment="compartment_100"/>
+<species name="Phosphorylated PIK3R2" id="PB_429" compartment="compartment_100"/>
+<species name="Phosphorylated BLK" id="PB_430" compartment="compartment_100"/>
+<species name="Phosphorylated FYN" id="PB_431" compartment="compartment_100"/>
+<species name="F_BAX" compartment="compartment_1" id="PB_432"/>
+<species name="T_BAX" compartment="compartment_7" id="PB_433"/>
+<species name="F_RAPGEF1,CRK" compartment="compartment_1" id="PB_434"/>
+<species name="T_RAPGEF1,CRK" compartment="compartment_9" id="PB_435"/>
+<species name="F_BTK" compartment="compartment_1" id="PB_436"/>
+<species name="T_BTK" compartment="compartment_9" id="PB_437"/>
+<species name="F_BLNK" compartment="compartment_1" id="PB_438"/>
+<species name="T_BLNK" compartment="compartment_9" id="PB_439"/>
+<species name="F_PRKCE" compartment="compartment_1" id="PB_440"/>
+<species name="T_PRKCE" compartment="compartment_9" id="PB_441"/>
+<species name="F_RASGRP3" compartment="compartment_1" id="PB_442"/>
+<species name="T_RASGRP3" compartment="compartment_9" id="PB_443"/>
+<species name="F_GAB1" compartment="compartment_1" id="PB_444"/>
+<species name="T_GAB1" compartment="compartment_9" id="PB_445"/>
+<species name="F_DAPP1" compartment="compartment_1" id="PB_446"/>
+<species name="T_DAPP1" compartment="compartment_9" id="PB_447"/>
+<species name="F_PRKCD" compartment="compartment_1" id="PB_448"/>
+<species name="T_PRKCD" compartment="compartment_9" id="PB_449"/>
+<species name="F_PTPN6" compartment="compartment_1" id="PB_450"/>
+<species name="T_PTPN6" compartment="compartment_9" id="PB_451"/>
+<species name="F_AKT1" compartment="compartment_1" id="PB_452"/>
+<species name="T_AKT1" compartment="compartment_9" id="PB_453"/>
+<species name="F_PLEKHA1" compartment="compartment_1" id="PB_454"/>
+<species name="T_PLEKHA1" compartment="compartment_9" id="PB_455"/>
+<species name="F_PLEKHA2" compartment="compartment_1" id="PB_456"/>
+<species name="T_PLEKHA2" compartment="compartment_9" id="PB_457"/>
+<species name="F_HCLS1" compartment="compartment_1" id="PB_458"/>
+<species name="T_HCLS1" compartment="compartment_9" id="PB_459"/>
+<species name="F_RELA" compartment="compartment_1" id="PB_460"/>
+<species name="T_RELA" compartment="compartment_8" id="PB_461"/>
+<species name="F_REL" compartment="compartment_1" id="PB_462"/>
+<species name="T_REL" compartment="compartment_8" id="PB_463"/>
+<species name="F_GRB2" compartment="compartment_1" id="PB_464"/>
+<species name="T_GRB2" compartment="compartment_9" id="PB_465"/>
+<species name="F_PLCG2" compartment="compartment_1" id="PB_466"/>
+<species name="T_PLCG2" compartment="compartment_9" id="PB_467"/>
+<species name="F_NFATC2" compartment="compartment_1" id="PB_468"/>
+<species name="T_NFATC2" compartment="compartment_8" id="PB_469"/>
+<species name="F_NFATC3" compartment="compartment_1" id="PB_470"/>
+<species name="T_NFATC3" compartment="compartment_8" id="PB_471"/>
+<species name="F_CTNNB1" compartment="compartment_1" id="PB_472"/>
+<species name="T_CTNNB1" compartment="compartment_8" id="PB_473"/>
+<species name="F_PIP5K1B" compartment="compartment_1" id="PB_474"/>
+<species name="T_PIP5K1B" compartment="compartment_9" id="PB_475"/>
+<species name="F_PIP5K2B" compartment="compartment_1" id="PB_476"/>
+<species name="T_PIP5K2B" compartment="compartment_9" id="PB_477"/>
+<species name="F_HCLS1" compartment="compartment_1" id="PB_478"/>
+<species name="T_HCLS1" compartment="compartment_8" id="PB_479"/>
+<species name="F_GTF2I" compartment="compartment_1" id="PB_480"/>
+<species name="T_GTF2I" compartment="compartment_8" id="PB_481"/>
+<species name="F_INPP5D" compartment="compartment_1" id="PB_482"/>
+<species name="T_INPP5D" compartment="compartment_9" id="PB_483"/>
+<species name="F_SHC1" compartment="compartment_1" id="PB_484"/>
+<species name="T_SHC1" compartment="compartment_9" id="PB_485"/>
+<species name="F_CHUK" compartment="compartment_1" id="PB_486"/>
+<species name="T_CHUK" compartment="compartment_9" id="PB_487"/>
+<species name="F_IKBKB" compartment="compartment_1" id="PB_488"/>
+<species name="T_IKBKB" compartment="compartment_9" id="PB_489"/>
+<species name="F_PRKCB1" compartment="compartment_1" id="PB_490"/>
+<species name="T_PRKCB1" compartment="compartment_9" id="PB_491"/>
+<species name="F_LYN" compartment="compartment_1" id="PB_492"/>
+<species name="T_LYN" compartment="compartment_9" id="PB_493"/>
+<species name="F_CD79A" compartment="compartment_9" id="PB_494"/>
+<species name="T_CD79A" compartment="compartment_1" id="PB_495"/>
+<species name="F_SYK" compartment="compartment_1" id="PB_496"/>
+<species name="T_SYK" compartment="compartment_9" id="PB_497"/>
+<species name="F_CYCS" compartment="compartment_7" id="PB_498"/>
+<species name="T_CYCS" compartment="compartment_1" id="PB_499"/>
+<species name="F_HDAC5" compartment="compartment_8" id="PB_500"/>
+<species name="T_HDAC5" compartment="compartment_1" id="PB_501"/>
+<species name="F_HDAC7A" compartment="compartment_8" id="PB_502"/>
+<species name="T_HDAC7A" compartment="compartment_1" id="PB_503"/>
+<species name="F_CCL3" compartment="compartment_1" id="PB_504"/>
+<species name="T_CCL3" compartment="compartment_4" id="PB_505"/>
+<species name="F_CCL4" compartment="compartment_1" id="PB_506"/>
+<species name="T_CCL4" compartment="compartment_4" id="PB_507"/>
+<species name="F_ZAP70" compartment="compartment_1" id="PB_508"/>
+<species name="T_ZAP70" compartment="compartment_9" id="PB_509"/>
+<species name="F_TCL1A" compartment="compartment_1" id="PB_510"/>
+<species name="T_TCL1A" compartment="compartment_9" id="PB_511"/>
+<species name="F_DBNL" compartment="compartment_1" id="PB_512"/>
+<species name="T_DBNL" compartment="compartment_9" id="PB_513"/>
+<species name="F_DNM2" compartment="compartment_1" id="PB_514"/>
+<species name="T_DNM2" compartment="compartment_9" id="PB_515"/>
+<species name="F_NFKBIA" compartment="compartment_1" id="PB_516"/>
+<species name="T_NFKBIA" compartment="compartment_9" id="PB_517"/>
+<species name="F_NFKB1" compartment="compartment_1" id="PB_518"/>
+<species name="T_NFKB1" compartment="compartment_8" id="PB_519"/>
+</listOfSpecies>
+<listOfReactions>
+<reaction name="Interaction of GAB2 with MAPK1" id="REAC_1">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_3"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GAB2 with MAPK3" id="REAC_2">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_4"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_5"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GAB2 with MAPK4" id="REAC_3">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_6"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_7"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GAB1 with MAPK1" id="REAC_4">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_9"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GAB1 with MAPK3" id="REAC_5">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+<speciesReference species="PB_4"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_10"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GAB1 with MAPK4" id="REAC_6">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+<speciesReference species="PB_6"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_11"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of APS with SHC1" id="REAC_7">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+<speciesReference species="PB_13"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_14"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of APS with GRB2" id="REAC_8">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+<speciesReference species="PB_15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_16"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of APS with CBL" id="REAC_9">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+<speciesReference species="PB_17"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_18"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD22 with INPP5D_GRB2_SHC1 complex" id="REAC_10">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_20"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_21"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD22 with INPP5D" id="REAC_11">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_22"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_23"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD22 with SHC1" id="REAC_12">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_13"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_24"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of INPP5D with GRB2" id="REAC_13">
+<listOfReactants>
+<speciesReference species="PB_22"/>
+<speciesReference species="PB_15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_25"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of INPP5D with GRB2_SHC1 complex" id="REAC_14">
+<listOfReactants>
+<speciesReference species="PB_22"/>
+<speciesReference species="PB_26"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_27"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BTK with PIP5K1A" id="REAC_15">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+<speciesReference species="PB_29"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_30"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BTK with PIP5K1B" id="REAC_16">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+<speciesReference species="PB_31"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_32"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BTK with PIP5K1C" id="REAC_17">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+<speciesReference species="PB_33"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_34"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BTK with PIP5K2A" id="REAC_18">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+<speciesReference species="PB_35"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_36"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BTK with PIP5K2B" id="REAC_19">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+<speciesReference species="PB_37"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_38"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BTK with PIP5K2C" id="REAC_20">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+<speciesReference species="PB_39"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_40"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GRB2 with SOS1" id="REAC_21">
+<listOfReactants>
+<speciesReference species="PB_15"/>
+<speciesReference species="PB_41"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_42"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GRB2 with RAPGEF1" id="REAC_22">
+<listOfReactants>
+<speciesReference species="PB_15"/>
+<speciesReference species="PB_43"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_44"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SHC1 with GRB2" id="REAC_23">
+<listOfReactants>
+<speciesReference species="PB_13"/>
+<speciesReference species="PB_15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_45"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SHC1_GRB2 complex with SOS1" id="REAC_24">
+<listOfReactants>
+<speciesReference species="PB_46"/>
+<speciesReference species="PB_41"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_47"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BLNK with MAP4K1" id="REAC_25">
+<listOfReactants>
+<speciesReference species="PB_48"/>
+<speciesReference species="PB_49"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_50"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LAT2 with GRB2" id="REAC_26">
+<listOfReactants>
+<speciesReference species="PB_51"/>
+<speciesReference species="PB_15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_52"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LAT2 with SOS1" id="REAC_27">
+<listOfReactants>
+<speciesReference species="PB_51"/>
+<speciesReference species="PB_41"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_53"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TEC with PTPN18" id="REAC_28">
+<listOfReactants>
+<speciesReference species="PB_54"/>
+<speciesReference species="PB_55"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_56"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SH3BP2 with PLCG1" id="REAC_29">
+<listOfReactants>
+<speciesReference species="PB_57"/>
+<speciesReference species="PB_58"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_59"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SH3BP2 with SYK" id="REAC_30">
+<listOfReactants>
+<speciesReference species="PB_57"/>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_61"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD19 with BTK" id="REAC_31">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+<speciesReference species="PB_28"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_63"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CRKL with RAPGEF1" id="REAC_32">
+<listOfReactants>
+<speciesReference species="PB_64"/>
+<speciesReference species="PB_43"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_65"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CRKL with SOS1" id="REAC_33">
+<listOfReactants>
+<speciesReference species="PB_64"/>
+<speciesReference species="PB_41"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_66"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CRKL with SOS2" id="REAC_34">
+<listOfReactants>
+<speciesReference species="PB_64"/>
+<speciesReference species="PB_67"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_68"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BTK with PIP5K1A" id="REAC_35">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+<speciesReference species="PB_29"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_30"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BTK with PIP5K2A" id="REAC_36">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+<speciesReference species="PB_35"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_36"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BTK with GTF2I" id="REAC_37">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+<speciesReference species="PB_69"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_70"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CBL with BTK" id="REAC_38">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_28"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_71"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CBL with SLA2" id="REAC_39">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_72"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_73"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD22 with ATP2B4" id="REAC_40">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_74"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_75"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SHC1 with SOS1" id="REAC_41">
+<listOfReactants>
+<speciesReference species="PB_13"/>
+<speciesReference species="PB_41"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_76"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GRB2 with CD72" id="REAC_42">
+<listOfReactants>
+<speciesReference species="PB_15"/>
+<speciesReference species="PB_77"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_78"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of INPP5D with PIK3R1_PIK3R2 complex" id="REAC_43">
+<listOfReactants>
+<speciesReference species="PB_22"/>
+<speciesReference species="PB_79"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_80"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTPN6 with CD22" id="REAC_44">
+<listOfReactants>
+<speciesReference species="PB_81"/>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_82"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BLNK with PLCG1" id="REAC_45">
+<listOfReactants>
+<speciesReference species="PB_48"/>
+<speciesReference species="PB_58"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_83"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BLNK with GRB2" id="REAC_46">
+<listOfReactants>
+<speciesReference species="PB_48"/>
+<speciesReference species="PB_15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_84"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BLNK with GRB2_SOS1 complex" id="REAC_47">
+<listOfReactants>
+<speciesReference species="PB_48"/>
+<speciesReference species="PB_85"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_86"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CRKL with NEDD9" id="REAC_48">
+<listOfReactants>
+<speciesReference species="PB_64"/>
+<speciesReference species="PB_87"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_88"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SH3BP2 with VAV2" id="REAC_49">
+<listOfReactants>
+<speciesReference species="PB_57"/>
+<speciesReference species="PB_89"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_90"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of VAV2 with CBL" id="REAC_50">
+<listOfReactants>
+<speciesReference species="PB_89"/>
+<speciesReference species="PB_17"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_91"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of VAV2 with SYK" id="REAC_51">
+<listOfReactants>
+<speciesReference species="PB_89"/>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_92"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CHST15 with HCK" id="REAC_52">
+<listOfReactants>
+<speciesReference species="PB_93"/>
+<speciesReference species="PB_94"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_95"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GRB2 with CD22" id="REAC_53">
+<listOfReactants>
+<speciesReference species="PB_15"/>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_96"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BCAR1 with CRK" id="REAC_54">
+<listOfReactants>
+<speciesReference species="PB_97"/>
+<speciesReference species="PB_98"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_99"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BCAR1 with CRKL" id="REAC_55">
+<listOfReactants>
+<speciesReference species="PB_97"/>
+<speciesReference species="PB_64"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_100"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CBL with CRK" id="REAC_56">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_98"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_101"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CBL with CRKL" id="REAC_57">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_64"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_102"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD22 with SYK" id="REAC_58">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_103"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD22 with PLCG1" id="REAC_59">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_58"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_104"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PRKD1 with SYK" id="REAC_60">
+<listOfReactants>
+<speciesReference species="PB_105"/>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_106"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PRKD1 with PLCG1" id="REAC_61">
+<listOfReactants>
+<speciesReference species="PB_105"/>
+<speciesReference species="PB_58"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_107"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PRKD1 with PLCG2" id="REAC_62">
+<listOfReactants>
+<speciesReference species="PB_105"/>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_109"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LYN with CD19" id="REAC_63">
+<listOfReactants>
+<speciesReference species="PB_110"/>
+<speciesReference species="PB_62"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_111"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD19 with VAV1" id="REAC_64">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+<speciesReference species="PB_112"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_113"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LCP2 with VAV1" id="REAC_65">
+<listOfReactants>
+<speciesReference species="PB_114"/>
+<speciesReference species="PB_112"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_115"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CBL with SYK" id="REAC_66">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_116"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD79B with ZAP70" id="REAC_67">
+<listOfReactants>
+<speciesReference species="PB_117"/>
+<speciesReference species="PB_118"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_119"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LCP2 with PLCG1" id="REAC_68">
+<listOfReactants>
+<speciesReference species="PB_114"/>
+<speciesReference species="PB_58"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_120"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CBL with GRB2" id="REAC_69">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_121"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CBL with PIK3R1_PIK3R2 complex" id="REAC_70">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_79"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_122"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CBL with SHC1" id="REAC_71">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_13"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_123"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CBL with FYN" id="REAC_72">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_124"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_125"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CBL with BLK" id="REAC_73">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_126"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_127"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CBL with LYN" id="REAC_74">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_110"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_128"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CBL with LCK" id="REAC_75">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_129"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_130"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GAB1 with PIK3R1_PIK3R2 complex" id="REAC_76">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+<speciesReference species="PB_79"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_131"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GAB1 with PTPN11" id="REAC_77">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+<speciesReference species="PB_132"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_133"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GAB1 with SHC1" id="REAC_78">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+<speciesReference species="PB_13"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_134"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GRB2 with PTPN11" id="REAC_79">
+<listOfReactants>
+<speciesReference species="PB_15"/>
+<speciesReference species="PB_132"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_135"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of FCGR2B with MAPK1" id="REAC_80">
+<listOfReactants>
+<speciesReference species="PB_136"/>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_137"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of FCGR2B with MAPK3" id="REAC_81">
+<listOfReactants>
+<speciesReference species="PB_136"/>
+<speciesReference species="PB_4"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_138"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CMTM3 with BLNK" id="REAC_82">
+<listOfReactants>
+<speciesReference species="PB_139"/>
+<speciesReference species="PB_48"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_140"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CMTM3 with BTK" id="REAC_83">
+<listOfReactants>
+<speciesReference species="PB_139"/>
+<speciesReference species="PB_28"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_141"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD19 with CR2" id="REAC_84">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+<speciesReference species="PB_142"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_143"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BLNK with PLCG2" id="REAC_85">
+<listOfReactants>
+<speciesReference species="PB_48"/>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_144"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LAT2 with CBL" id="REAC_86">
+<listOfReactants>
+<speciesReference species="PB_51"/>
+<speciesReference species="PB_17"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_145"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LAT2 with GAB1" id="REAC_87">
+<listOfReactants>
+<speciesReference species="PB_51"/>
+<speciesReference species="PB_8"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_146"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD19 with CD81" id="REAC_88">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+<speciesReference species="PB_147"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_148"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD79A with CD79B" id="REAC_89">
+<listOfReactants>
+<speciesReference species="PB_149"/>
+<speciesReference species="PB_117"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_150"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BCL2L11 with BCL2" id="REAC_90">
+<listOfReactants>
+<speciesReference species="PB_151"/>
+<speciesReference species="PB_152"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_153"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SYK with CD79A" id="REAC_91">
+<listOfReactants>
+<speciesReference species="PB_60"/>
+<speciesReference species="PB_149"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_154"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TEC with DOK1" id="REAC_92">
+<listOfReactants>
+<speciesReference species="PB_54"/>
+<speciesReference species="PB_155"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_156"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SYK with VAV1" id="REAC_93">
+<listOfReactants>
+<speciesReference species="PB_60"/>
+<speciesReference species="PB_112"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_157"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of MAP4K1 with DAPP1" id="REAC_94">
+<listOfReactants>
+<speciesReference species="PB_49"/>
+<speciesReference species="PB_158"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_159"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LCK with CD79A" id="REAC_95">
+<listOfReactants>
+<speciesReference species="PB_129"/>
+<speciesReference species="PB_149"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_160"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD5 with PTPN6" id="REAC_96">
+<listOfReactants>
+<speciesReference species="PB_161"/>
+<speciesReference species="PB_81"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_162"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD19 with GRB2" id="REAC_97">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+<speciesReference species="PB_15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_163"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD19 with SOS1" id="REAC_98">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+<speciesReference species="PB_41"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_164"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD19 with PLCG2" id="REAC_99">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_165"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PIK3AP1 with PIK3R1_PIK3R2 complex" id="REAC_100">
+<listOfReactants>
+<speciesReference species="PB_166"/>
+<speciesReference species="PB_79"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_167"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTPN6 with BLNK" id="REAC_101">
+<listOfReactants>
+<speciesReference species="PB_81"/>
+<speciesReference species="PB_48"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_168"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BLNK with BTK" id="REAC_102">
+<listOfReactants>
+<speciesReference species="PB_48"/>
+<speciesReference species="PB_28"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_169"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of FYN with BCAR1" id="REAC_103">
+<listOfReactants>
+<speciesReference species="PB_124"/>
+<speciesReference species="PB_97"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_170"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LYN with PTK2" id="REAC_104">
+<listOfReactants>
+<speciesReference species="PB_110"/>
+<speciesReference species="PB_171"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_172"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HCK with BCAR1" id="REAC_105">
+<listOfReactants>
+<speciesReference species="PB_94"/>
+<speciesReference species="PB_97"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_173"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTPN6 with CD72" id="REAC_106">
+<listOfReactants>
+<speciesReference species="PB_81"/>
+<speciesReference species="PB_77"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_174"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SOS2 with GRB2_SHC1 complex" id="REAC_107">
+<listOfReactants>
+<speciesReference species="PB_67"/>
+<speciesReference species="PB_26"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_175"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of INPP5D with SHC1" id="REAC_108">
+<listOfReactants>
+<speciesReference species="PB_22"/>
+<speciesReference species="PB_13"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_176"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of DAPP1 with PLCG1" id="REAC_109">
+<listOfReactants>
+<speciesReference species="PB_158"/>
+<speciesReference species="PB_58"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_177"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of DAPP1 with PLCG2" id="REAC_110">
+<listOfReactants>
+<speciesReference species="PB_158"/>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_178"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BCAR1 with PTK2B" id="REAC_111">
+<listOfReactants>
+<speciesReference species="PB_97"/>
+<speciesReference species="PB_179"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_180"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BCAR1 with LYN" id="REAC_112">
+<listOfReactants>
+<speciesReference species="PB_97"/>
+<speciesReference species="PB_110"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_181"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BANK1 with ITPR2" id="REAC_113">
+<listOfReactants>
+<speciesReference species="PB_182"/>
+<speciesReference species="PB_183"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_184"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of RAPGEF1 with CRK" id="REAC_114">
+<listOfReactants>
+<speciesReference species="PB_43"/>
+<speciesReference species="PB_98"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_185"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TEC with BRDG1" id="REAC_115">
+<listOfReactants>
+<speciesReference species="PB_54"/>
+<speciesReference species="PB_186"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_187"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD79A_CD79B complex with BLK" id="REAC_116">
+<listOfReactants>
+<speciesReference species="PB_188"/>
+<speciesReference species="PB_126"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_189"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD79A with FYN" id="REAC_117">
+<listOfReactants>
+<speciesReference species="PB_149"/>
+<speciesReference species="PB_124"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_190"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD79A with LYN" id="REAC_118">
+<listOfReactants>
+<speciesReference species="PB_149"/>
+<speciesReference species="PB_110"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_191"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD79B with SYK" id="REAC_119">
+<listOfReactants>
+<speciesReference species="PB_117"/>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_192"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD19 with PIK3R1_PIK3R2 complex" id="REAC_120">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+<speciesReference species="PB_79"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_193"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of INPP5D with DOK3" id="REAC_121">
+<listOfReactants>
+<speciesReference species="PB_22"/>
+<speciesReference species="PB_194"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_195"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of IGHM with CD22" id="REAC_122">
+<listOfReactants>
+<speciesReference species="PB_196"/>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_197"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD5 with CD79A_CD79B complex" id="REAC_123">
+<listOfReactants>
+<speciesReference species="PB_161"/>
+<speciesReference species="PB_188"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_198"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTPN6 with CD79A" id="REAC_124">
+<listOfReactants>
+<speciesReference species="PB_81"/>
+<speciesReference species="PB_149"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_199"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTPN6 with CD79B" id="REAC_125">
+<listOfReactants>
+<speciesReference species="PB_81"/>
+<speciesReference species="PB_117"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_200"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTK2 with CD79B" id="REAC_126">
+<listOfReactants>
+<speciesReference species="PB_171"/>
+<speciesReference species="PB_117"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_201"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTK2 with IGHM" id="REAC_127">
+<listOfReactants>
+<speciesReference species="PB_171"/>
+<speciesReference species="PB_196"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_202"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BLNK with NCK1" id="REAC_128">
+<listOfReactants>
+<speciesReference species="PB_48"/>
+<speciesReference species="PB_203"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_204"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GRB2 with VAV1" id="REAC_129">
+<listOfReactants>
+<speciesReference species="PB_15"/>
+<speciesReference species="PB_112"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_205"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of VAV1 with CRK" id="REAC_130">
+<listOfReactants>
+<speciesReference species="PB_112"/>
+<speciesReference species="PB_98"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_206"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BLNK with VAV1" id="REAC_131">
+<listOfReactants>
+<speciesReference species="PB_48"/>
+<speciesReference species="PB_112"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_207"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SH3BP2 with VAV1" id="REAC_132">
+<listOfReactants>
+<speciesReference species="PB_57"/>
+<speciesReference species="PB_112"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_208"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CMTM3 with MAPK1" id="REAC_133">
+<listOfReactants>
+<speciesReference species="PB_139"/>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_209"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NEDD9 with PTK2B" id="REAC_134">
+<listOfReactants>
+<speciesReference species="PB_87"/>
+<speciesReference species="PB_179"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_210"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LYN with NEDD9" id="REAC_135">
+<listOfReactants>
+<speciesReference species="PB_110"/>
+<speciesReference species="PB_87"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_211"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD79A with BLNK" id="REAC_136">
+<listOfReactants>
+<speciesReference species="PB_149"/>
+<speciesReference species="PB_48"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_212"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LIME1 with GRB2" id="REAC_137">
+<listOfReactants>
+<speciesReference species="PB_213"/>
+<speciesReference species="PB_15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_214"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LIME1 with PLCG2" id="REAC_138">
+<listOfReactants>
+<speciesReference species="PB_213"/>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_215"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LYN with PTPRC" id="REAC_139">
+<listOfReactants>
+<speciesReference species="PB_110"/>
+<speciesReference species="PB_216"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_217"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LYN with RASA1" id="REAC_140">
+<listOfReactants>
+<speciesReference species="PB_110"/>
+<speciesReference species="PB_218"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_219"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LYN with PLCG2" id="REAC_141">
+<listOfReactants>
+<speciesReference species="PB_110"/>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_220"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NCK1 with LCP2" id="REAC_142">
+<listOfReactants>
+<speciesReference species="PB_203"/>
+<speciesReference species="PB_114"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_221"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LCP2 with CD22" id="REAC_143">
+<listOfReactants>
+<speciesReference species="PB_114"/>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_222"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HNRPK with VAV1" id="REAC_144">
+<listOfReactants>
+<speciesReference species="PB_223"/>
+<speciesReference species="PB_112"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_224"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CARD11 with BCL10_MAP3K7 complex" id="REAC_145">
+<listOfReactants>
+<speciesReference species="PB_225"/>
+<speciesReference species="PB_226"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_227"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CARD11 with MAP3K7" id="REAC_146">
+<listOfReactants>
+<speciesReference species="PB_225"/>
+<speciesReference species="PB_228"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_229"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of IKBKG with CARD11" id="REAC_147">
+<listOfReactants>
+<speciesReference species="PB_230"/>
+<speciesReference species="PB_225"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_231"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of DOK1 with RASA1" id="REAC_148">
+<listOfReactants>
+<speciesReference species="PB_155"/>
+<speciesReference species="PB_218"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_232"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CSK with DOK1" id="REAC_149">
+<listOfReactants>
+<speciesReference species="PB_233"/>
+<speciesReference species="PB_155"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_234"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CCNE1 with CDK2" id="REAC_150">
+<listOfReactants>
+<speciesReference species="PB_235"/>
+<speciesReference species="PB_236"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_237"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CDK2 with CCNA2" id="REAC_151">
+<listOfReactants>
+<speciesReference species="PB_236"/>
+<speciesReference species="PB_238"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_239"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CDK4 with CCND2" id="REAC_152">
+<listOfReactants>
+<speciesReference species="PB_240"/>
+<speciesReference species="PB_241"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_242"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CDK4 with CCND3" id="REAC_153">
+<listOfReactants>
+<speciesReference species="PB_240"/>
+<speciesReference species="PB_243"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_244"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CDK6 with CCND2" id="REAC_154">
+<listOfReactants>
+<speciesReference species="PB_245"/>
+<speciesReference species="PB_241"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_246"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PRKCB1 with CARD11" id="REAC_155">
+<listOfReactants>
+<speciesReference species="PB_247"/>
+<speciesReference species="PB_225"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_248"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CDK6 with CCND3" id="REAC_156">
+<listOfReactants>
+<speciesReference species="PB_245"/>
+<speciesReference species="PB_243"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_249"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LIME1 with PIK3R1_PIK3R2 complex" id="REAC_157">
+<listOfReactants>
+<speciesReference species="PB_213"/>
+<speciesReference species="PB_79"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_250"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of RAP2A with PIK3R1" id="REAC_158">
+<listOfReactants>
+<speciesReference species="PB_251"/>
+<speciesReference species="PB_252"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_253"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of DBNL with DNM2" id="REAC_159">
+<listOfReactants>
+<speciesReference species="PB_254"/>
+<speciesReference species="PB_255"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_256"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD81 with IFITM1_CR2_CD19 complex" id="REAC_160">
+<listOfReactants>
+<speciesReference species="PB_147"/>
+<speciesReference species="PB_257"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_258"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD72 with CD72" id="REAC_161">
+<listOfReactants>
+<speciesReference species="PB_77"/>
+<speciesReference species="PB_77"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_259"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BCL10 with CARD11_MALT1 complex" id="REAC_162">
+<listOfReactants>
+<speciesReference species="PB_260"/>
+<speciesReference species="PB_261"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_262"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of RRAS2 with PIK3CD" id="REAC_163">
+<listOfReactants>
+<speciesReference species="PB_263"/>
+<speciesReference species="PB_264"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_265"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of FOS with JUNB" id="REAC_164">
+<listOfReactants>
+<speciesReference species="PB_266"/>
+<speciesReference species="PB_267"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_268"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of FOSB with JUNB" id="REAC_165">
+<listOfReactants>
+<speciesReference species="PB_269"/>
+<speciesReference species="PB_267"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_270"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TCL1A with ZAP70_AKT1 complex" id="REAC_166">
+<listOfReactants>
+<speciesReference species="PB_271"/>
+<speciesReference species="PB_272"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_273"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of IGHM with CD79A_CD79B_CD19_BTLA complex" id="REAC_167">
+<listOfReactants>
+<speciesReference species="PB_196"/>
+<speciesReference species="PB_274"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_275"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GAB2 with PIK3R1_PIK3R2_PTPN11 complex" id="REAC_168">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_276"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_277"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of LAT2 with VAV1_VAV2 complex" id="REAC_169">
+<listOfReactants>
+<speciesReference species="PB_51"/>
+<speciesReference species="PB_278"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_279"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CD79A with SHC1" id="REAC_170">
+<listOfReactants>
+<speciesReference species="PB_149"/>
+<speciesReference species="PB_13"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_280"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of PLCG2 by BTK" id="REAC_171">
+<listOfReactants>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_281"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_28"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Dephosphorylation of BLNK by PTPN6" id="REAC_172">
+<listOfReactants>
+<speciesReference species="PB_48"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_282"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_81"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of BTK by LYN" id="REAC_173">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_283"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of MAP4K1" id="REAC_174">
+<listOfReactants>
+<speciesReference species="PB_49"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_284"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of RASGRP3 by PRKCQ" id="REAC_175">
+<listOfReactants>
+<speciesReference species="PB_285"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_287"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_286"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of SHC1 by SYK" id="REAC_176">
+<listOfReactants>
+<speciesReference species="PB_13"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_288"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of AKT1 by PDPK1" id="REAC_177">
+<listOfReactants>
+<speciesReference species="PB_289"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_291"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_290"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PLCG1 by PRKD1" id="REAC_178">
+<listOfReactants>
+<speciesReference species="PB_58"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_292"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_105"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PRKD1 by PRKD1" id="REAC_179">
+<listOfReactants>
+<speciesReference species="PB_105"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_293"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_105"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of SYK by PRKD1" id="REAC_180">
+<listOfReactants>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_294"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_105"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of ITPR1 by LYN" id="REAC_181">
+<listOfReactants>
+<speciesReference species="PB_295"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_296"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of FOXO1 by AKT1" id="REAC_182">
+<listOfReactants>
+<speciesReference species="PB_297"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_298"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_289"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of GSK3A by AKT1" id="REAC_183">
+<listOfReactants>
+<speciesReference species="PB_299"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_300"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_289"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CREB1 by RPS6KA1" id="REAC_184">
+<listOfReactants>
+<speciesReference species="PB_301"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_303"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_302"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CD22 by LYN" id="REAC_185">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_304"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of STAP1 by TEC" id="REAC_186">
+<listOfReactants>
+<speciesReference species="PB_305"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_306"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_54"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PLCG1 by BTK" id="REAC_187">
+<listOfReactants>
+<speciesReference species="PB_58"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_292"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_28"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PLCG2 by ITK" id="REAC_188">
+<listOfReactants>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_281"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_307"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of BLNK by SYK" id="REAC_189">
+<listOfReactants>
+<speciesReference species="PB_48"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_308"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of DOK1 by TEC" id="REAC_190">
+<listOfReactants>
+<speciesReference species="PB_155"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_309"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_54"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PLCG1 by ITK" id="REAC_191">
+<listOfReactants>
+<speciesReference species="PB_58"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_292"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_307"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PLCG2 by TEC" id="REAC_192">
+<listOfReactants>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_281"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_54"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of SH3BP2" id="REAC_193">
+<listOfReactants>
+<speciesReference species="PB_57"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_310"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of BRAF by MAPK1" id="REAC_194">
+<listOfReactants>
+<speciesReference species="PB_311"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_312"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_2"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of RB1 by CDK2" id="REAC_195">
+<listOfReactants>
+<speciesReference species="PB_313"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_314"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_236"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of RB1 by CDK4" id="REAC_196">
+<listOfReactants>
+<speciesReference species="PB_313"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_314"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_240"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of RB1 by CDK6" id="REAC_197">
+<listOfReactants>
+<speciesReference species="PB_313"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_314"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_245"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CD79B by LYN" id="REAC_198">
+<listOfReactants>
+<speciesReference species="PB_117"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_315"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CD79B by SYK" id="REAC_199">
+<listOfReactants>
+<speciesReference species="PB_117"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_315"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CD79A by SYK" id="REAC_200">
+<listOfReactants>
+<speciesReference species="PB_149"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_316"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Dephosphorylation of NFATC2 by PPP3CA" id="REAC_201">
+<listOfReactants>
+<speciesReference species="PB_317"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_319"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_318"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Dephosphorylation of NFATC3 by PPP3CA" id="REAC_202">
+<listOfReactants>
+<speciesReference species="PB_320"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_321"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_318"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PIK3AP1 by BTK" id="REAC_203">
+<listOfReactants>
+<speciesReference species="PB_166"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_322"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_28"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PIK3AP1 by SYK" id="REAC_204">
+<listOfReactants>
+<speciesReference species="PB_166"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_322"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of GSK3B by AKT1" id="REAC_205">
+<listOfReactants>
+<speciesReference species="PB_323"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_324"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_289"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CHUK by PRKCB" id="REAC_206">
+<listOfReactants>
+<speciesReference species="PB_325"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_327"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_326"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of IKBKB by PRKCB" id="REAC_207">
+<listOfReactants>
+<speciesReference species="PB_328"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_329"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_326"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of ATF2 by MAPK14" id="REAC_208">
+<listOfReactants>
+<speciesReference species="PB_330"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_332"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_331"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of JUN by MAPK8" id="REAC_209">
+<listOfReactants>
+<speciesReference species="PB_333"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_335"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_334"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of ELK1 by MAPK1" id="REAC_210">
+<listOfReactants>
+<speciesReference species="PB_336"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_337"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_2"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Dephosphorylation of CD72 by PTPN6" id="REAC_211">
+<listOfReactants>
+<speciesReference species="PB_77"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_338"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_81"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of BCL6 by MAPK1" id="REAC_212">
+<listOfReactants>
+<speciesReference species="PB_339"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_340"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_2"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of NFKBIA by IKBKB" id="REAC_213">
+<listOfReactants>
+<speciesReference species="PB_341"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_342"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_328"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of NFKBIA by CHUK" id="REAC_214">
+<listOfReactants>
+<speciesReference species="PB_341"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_342"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_325"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of RPS6 by RPS6KB1" id="REAC_215">
+<listOfReactants>
+<speciesReference species="PB_343"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_345"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_344"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of SYK by LYN" id="REAC_216">
+<listOfReactants>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_294"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of SYK by FYN" id="REAC_217">
+<listOfReactants>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_294"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_124"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of SYK by LCK" id="REAC_218">
+<listOfReactants>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_294"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_129"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CD79A by LCK" id="REAC_219">
+<listOfReactants>
+<speciesReference species="PB_149"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_316"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_129"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CD79B by LCK" id="REAC_220">
+<listOfReactants>
+<speciesReference species="PB_117"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_315"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_129"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of GTF2I by BTK" id="REAC_221">
+<listOfReactants>
+<speciesReference species="PB_69"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_346"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_28"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of RASA1 by SYK" id="REAC_222">
+<listOfReactants>
+<speciesReference species="PB_218"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_347"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of MAPK3 by SYK" id="REAC_223">
+<listOfReactants>
+<speciesReference species="PB_4"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_348"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of RPS6KA1 by SYK" id="REAC_224">
+<listOfReactants>
+<speciesReference species="PB_302"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_349"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of NEDD9" id="REAC_225">
+<listOfReactants>
+<speciesReference species="PB_87"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_350"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of BCAR1 by LYN" id="REAC_226">
+<listOfReactants>
+<speciesReference species="PB_97"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_351"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="protein cleavage of LYN by CASP9" id="REAC_227">
+<listOfReactants>
+<speciesReference species="PB_110"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_353"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_352"/>
+</listOfModifiers>
+</reaction>
+<reaction name="protein cleavage of LYN by CASP7" id="REAC_228">
+<listOfReactants>
+<speciesReference species="PB_110"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_353"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_354"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PLCG1 by TEC" id="REAC_229">
+<listOfReactants>
+<speciesReference species="PB_58"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_292"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_54"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of HCLS1 by LYN" id="REAC_230">
+<listOfReactants>
+<speciesReference species="PB_355"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_356"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of TEC by LYN" id="REAC_231">
+<listOfReactants>
+<speciesReference species="PB_54"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_357"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PLCG2 by SYK" id="REAC_232">
+<listOfReactants>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_281"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Ubiquitination of SYK by CBLB" id="REAC_233">
+<listOfReactants>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_359"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_358"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PTPN18 by TEC" id="REAC_234">
+<listOfReactants>
+<speciesReference species="PB_55"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_360"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_54"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Dephosphorylation of TEC by PTPN18" id="REAC_235">
+<listOfReactants>
+<speciesReference species="PB_54"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_361"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_55"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CREB1 by MAPKAPK2" id="REAC_236">
+<listOfReactants>
+<speciesReference species="PB_301"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_303"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_362"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of BANK1 by LYN" id="REAC_237">
+<listOfReactants>
+<speciesReference species="PB_182"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_363"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CBL by SYK" id="REAC_238">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_364"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PLCG1 by SYK" id="REAC_239">
+<listOfReactants>
+<speciesReference species="PB_58"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_292"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of HCLS1 by SYK" id="REAC_240">
+<listOfReactants>
+<speciesReference species="PB_355"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_356"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CD79A by LYN" id="REAC_241">
+<listOfReactants>
+<speciesReference species="PB_149"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_316"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of BTK by BTK" id="REAC_242">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_283"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_28"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PTK2 by PTK2" id="REAC_243">
+<listOfReactants>
+<speciesReference species="PB_171"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_365"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_171"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of LYN by LYN" id="REAC_244">
+<listOfReactants>
+<speciesReference species="PB_110"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_366"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of SYK by SYK" id="REAC_245">
+<listOfReactants>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_294"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of TEC by TEC" id="REAC_246">
+<listOfReactants>
+<speciesReference species="PB_54"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_357"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_54"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of ATF2 by MAPK8" id="REAC_247">
+<listOfReactants>
+<speciesReference species="PB_330"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_332"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_334"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of BTK by PRKCB" id="REAC_248">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_283"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_326"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of RASGRP3 by PRKCB" id="REAC_249">
+<listOfReactants>
+<speciesReference species="PB_285"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_287"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_326"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of BRDG1 by PTK2B" id="REAC_250">
+<listOfReactants>
+<speciesReference species="PB_186"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_367"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_179"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Dephosphorylation of CD79A by PTPN6" id="REAC_251">
+<listOfReactants>
+<speciesReference species="PB_149"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_368"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_81"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Dephosphorylation of CD79B by PTPN6" id="REAC_252">
+<listOfReactants>
+<speciesReference species="PB_117"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_369"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_81"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of LIME1 by LYN" id="REAC_253">
+<listOfReactants>
+<speciesReference species="PB_213"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_370"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CARD11 by PRKCB" id="REAC_254">
+<listOfReactants>
+<speciesReference species="PB_225"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_371"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_326"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CARD11 by PRKCQ" id="REAC_255">
+<listOfReactants>
+<speciesReference species="PB_225"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_371"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_286"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of LCP2 by PTPN6" id="REAC_256">
+<listOfReactants>
+<speciesReference species="PB_114"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_372"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_81"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Ubiquitination of LYN by CBL" id="REAC_257">
+<listOfReactants>
+<speciesReference species="PB_110"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_373"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_17"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CD19 by LYN" id="REAC_258">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_374"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of IKBKB by MAP3K7" id="REAC_259">
+<listOfReactants>
+<speciesReference species="PB_328"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_329"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_228"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of ZAP70" id="REAC_260">
+<listOfReactants>
+<speciesReference species="PB_118"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_375"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of DAPP1" id="REAC_261">
+<listOfReactants>
+<speciesReference species="PB_158"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_376"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of LAT2" id="REAC_262">
+<listOfReactants>
+<speciesReference species="PB_51"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_377"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of HNRPK" id="REAC_263">
+<listOfReactants>
+<speciesReference species="PB_223"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_378"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of CBLB" id="REAC_264">
+<listOfReactants>
+<speciesReference species="PB_358"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_379"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of GAB1" id="REAC_265">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_380"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAP2K1" id="REAC_266">
+<listOfReactants>
+<speciesReference species="PB_381"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_382"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of PIK3R1" id="REAC_267">
+<listOfReactants>
+<speciesReference species="PB_252"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_383"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of AKT1" id="REAC_268">
+<listOfReactants>
+<speciesReference species="PB_289"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_291"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAP2K2" id="REAC_269">
+<listOfReactants>
+<speciesReference species="PB_384"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_385"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of RAF1" id="REAC_270">
+<listOfReactants>
+<speciesReference species="PB_386"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_387"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of PIK3CG" id="REAC_271">
+<listOfReactants>
+<speciesReference species="PB_388"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_389"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of STAT1" id="REAC_272">
+<listOfReactants>
+<speciesReference species="PB_390"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_391"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of VAV1" id="REAC_273">
+<listOfReactants>
+<speciesReference species="PB_112"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_392"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of PRKCD" id="REAC_274">
+<listOfReactants>
+<speciesReference species="PB_393"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_394"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAPK1" id="REAC_275">
+<listOfReactants>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_395"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of STAT3" id="REAC_276">
+<listOfReactants>
+<speciesReference species="PB_396"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_397"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of PTPN11" id="REAC_277">
+<listOfReactants>
+<speciesReference species="PB_132"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_398"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of CDK2 by CDK7" id="REAC_278">
+<listOfReactants>
+<speciesReference species="PB_236"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_400"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_399"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of HDAC7A" id="REAC_279">
+<listOfReactants>
+<speciesReference species="PB_401"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_402"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of HDAC5" id="REAC_280">
+<listOfReactants>
+<speciesReference species="PB_403"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_404"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of AKT1 by PDPK2" id="REAC_281">
+<listOfReactants>
+<speciesReference species="PB_289"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_291"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_405"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of Lck" id="REAC_282">
+<listOfReactants>
+<speciesReference species="PB_406"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_407"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of CD72 by LYN" id="REAC_283">
+<listOfReactants>
+<speciesReference species="PB_77"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_408"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CD72 by SYK" id="REAC_284">
+<listOfReactants>
+<speciesReference species="PB_77"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_408"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of MAPK3" id="REAC_285">
+<listOfReactants>
+<speciesReference species="PB_4"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_348"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAPK1" id="REAC_286">
+<listOfReactants>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_395"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of SYK" id="REAC_287">
+<listOfReactants>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_294"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of AKT1" id="REAC_288">
+<listOfReactants>
+<speciesReference species="PB_289"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_291"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of PTK2B" id="REAC_289">
+<listOfReactants>
+<speciesReference species="PB_179"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_409"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAPK8" id="REAC_290">
+<listOfReactants>
+<speciesReference species="PB_334"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_410"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAPK9" id="REAC_291">
+<listOfReactants>
+<speciesReference species="PB_411"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_412"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAPK14" id="REAC_292">
+<listOfReactants>
+<speciesReference species="PB_331"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_413"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of RPS6" id="REAC_293">
+<listOfReactants>
+<speciesReference species="PB_343"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_345"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of PLCG2" id="REAC_294">
+<listOfReactants>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_281"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of CHUK" id="REAC_295">
+<listOfReactants>
+<speciesReference species="PB_325"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_327"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of IKBKB" id="REAC_296">
+<listOfReactants>
+<speciesReference species="PB_328"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_329"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of NFKBIA" id="REAC_297">
+<listOfReactants>
+<speciesReference species="PB_341"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_342"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of RELA" id="REAC_298">
+<listOfReactants>
+<speciesReference species="PB_414"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_415"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of LYN" id="REAC_299">
+<listOfReactants>
+<speciesReference species="PB_110"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_366"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of CBL" id="REAC_300">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_364"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of EIF4EBP1" id="REAC_301">
+<listOfReactants>
+<speciesReference species="PB_416"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_417"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of FOXO1" id="REAC_302">
+<listOfReactants>
+<speciesReference species="PB_297"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_298"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of FOXO3" id="REAC_303">
+<listOfReactants>
+<speciesReference species="PB_418"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_419"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of VASP" id="REAC_304">
+<listOfReactants>
+<speciesReference species="PB_420"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_421"/>
+</listOfProducts>
+</reaction>
+<reaction name="protein cleavage of CASP3" id="REAC_305">
+<listOfReactants>
+<speciesReference species="PB_422"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_423"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of CD19" id="REAC_306">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_374"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of CD79A" id="REAC_307">
+<listOfReactants>
+<speciesReference species="PB_149"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_316"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of CD79B" id="REAC_308">
+<listOfReactants>
+<speciesReference species="PB_117"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_315"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of BLNK" id="REAC_309">
+<listOfReactants>
+<speciesReference species="PB_48"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_308"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of BTK" id="REAC_310">
+<listOfReactants>
+<speciesReference species="PB_28"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_283"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of WAS" id="REAC_311">
+<listOfReactants>
+<speciesReference species="PB_424"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_425"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of GAB2 by LYN" id="REAC_312">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_426"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_110"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of GAB2 by SYK" id="REAC_313">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_426"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of GAB2" id="REAC_314">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_426"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of DBNL" id="REAC_315">
+<listOfReactants>
+<speciesReference species="PB_254"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_427"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of LCP2" id="REAC_316">
+<listOfReactants>
+<speciesReference species="PB_114"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_372"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of PIK3R2" id="REAC_317">
+<listOfReactants>
+<speciesReference species="PB_428"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_429"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of PLCG2" id="REAC_318">
+<listOfReactants>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_281"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of SH3BP2 by SYK" id="REAC_319">
+<listOfReactants>
+<speciesReference species="PB_57"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_310"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_60"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of BLK" id="REAC_320">
+<listOfReactants>
+<speciesReference species="PB_126"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_430"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of FYN" id="REAC_321">
+<listOfReactants>
+<speciesReference species="PB_124"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_431"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of PTK2" id="REAC_322">
+<listOfReactants>
+<speciesReference species="PB_171"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_365"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of CBL" id="REAC_323">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_364"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of BAX from Cytoplasm to Mitochondrion" id="REAC_324">
+<listOfReactants>
+<speciesReference species="PB_432"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_433"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of RAPGEF1,CRK from Cytoplasm to Plasma membrane" id="REAC_325">
+<listOfReactants>
+<speciesReference species="PB_434"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_435"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of BTK from Cytoplasm to Plasma membrane" id="REAC_326">
+<listOfReactants>
+<speciesReference species="PB_436"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_437"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of BLNK from Cytoplasm to Plasma membrane" id="REAC_327">
+<listOfReactants>
+<speciesReference species="PB_438"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_439"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of PRKCE from Cytoplasm to Plasma membrane" id="REAC_328">
+<listOfReactants>
+<speciesReference species="PB_440"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_441"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of RASGRP3 from Cytoplasm to Plasma membrane" id="REAC_329">
+<listOfReactants>
+<speciesReference species="PB_442"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_443"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of GAB1 from Cytoplasm to Plasma membrane" id="REAC_330">
+<listOfReactants>
+<speciesReference species="PB_444"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_445"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of DAPP1 from Cytoplasm to Plasma membrane" id="REAC_331">
+<listOfReactants>
+<speciesReference species="PB_446"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_447"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of PRKCD from Cytoplasm to Plasma membrane" id="REAC_332">
+<listOfReactants>
+<speciesReference species="PB_448"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_449"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of PTPN6 from Cytoplasm to Plasma membrane" id="REAC_333">
+<listOfReactants>
+<speciesReference species="PB_450"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_451"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of AKT1 from Cytoplasm to Plasma membrane" id="REAC_334">
+<listOfReactants>
+<speciesReference species="PB_452"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_453"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of PLEKHA1 from Cytoplasm to Plasma membrane" id="REAC_335">
+<listOfReactants>
+<speciesReference species="PB_454"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_455"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of PLEKHA2 from Cytoplasm to Plasma membrane" id="REAC_336">
+<listOfReactants>
+<speciesReference species="PB_456"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_457"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of HCLS1 from Cytoplasm to Plasma membrane" id="REAC_337">
+<listOfReactants>
+<speciesReference species="PB_458"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_459"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of RELA from Cytoplasm to Nucleus" id="REAC_338">
+<listOfReactants>
+<speciesReference species="PB_460"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_461"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of REL from Cytoplasm to Nucleus" id="REAC_339">
+<listOfReactants>
+<speciesReference species="PB_462"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_463"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of GRB2 from Cytoplasm to Plasma membrane" id="REAC_340">
+<listOfReactants>
+<speciesReference species="PB_464"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_465"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of PLCG2 from Cytoplasm to Plasma membrane" id="REAC_341">
+<listOfReactants>
+<speciesReference species="PB_466"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_467"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NFATC2 from Cytoplasm to Nucleus" id="REAC_342">
+<listOfReactants>
+<speciesReference species="PB_468"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_469"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NFATC3 from Cytoplasm to Nucleus" id="REAC_343">
+<listOfReactants>
+<speciesReference species="PB_470"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_471"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of CTNNB1 from Cytoplasm to Nucleus" id="REAC_344">
+<listOfReactants>
+<speciesReference species="PB_472"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_473"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of PIP5K1B from Cytoplasm to Plasma membrane" id="REAC_345">
+<listOfReactants>
+<speciesReference species="PB_474"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_475"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of PIP5K2B from Cytoplasm to Plasma membrane" id="REAC_346">
+<listOfReactants>
+<speciesReference species="PB_476"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_477"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of HCLS1 from Cytoplasm to Nucleus" id="REAC_347">
+<listOfReactants>
+<speciesReference species="PB_478"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_459"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of GTF2I from Cytoplasm to Nucleus" id="REAC_348">
+<listOfReactants>
+<speciesReference species="PB_480"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_481"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of INPP5D from Cytoplasm to Plasma membrane" id="REAC_349">
+<listOfReactants>
+<speciesReference species="PB_482"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_483"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of SHC1 from Cytoplasm to Plasma membrane" id="REAC_350">
+<listOfReactants>
+<speciesReference species="PB_484"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_485"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of CHUK from Cytoplasm to Plasma membrane" id="REAC_351">
+<listOfReactants>
+<speciesReference species="PB_486"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_487"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of IKBKB from Cytoplasm to Plasma membrane" id="REAC_352">
+<listOfReactants>
+<speciesReference species="PB_488"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_489"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of PRKCB1 from Cytoplasm to Plasma membrane" id="REAC_353">
+<listOfReactants>
+<speciesReference species="PB_490"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_491"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of LYN from Cytoplasm to Plasma membrane" id="REAC_354">
+<listOfReactants>
+<speciesReference species="PB_492"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_493"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of CD79A from Plasma membrane to Cytoplasm" id="REAC_355">
+<listOfReactants>
+<speciesReference species="PB_494"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_495"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of SYK from Cytoplasm to Plasma membrane" id="REAC_356">
+<listOfReactants>
+<speciesReference species="PB_496"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_497"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of CYCS from Mitochondrion to Cytoplasm" id="REAC_357">
+<listOfReactants>
+<speciesReference species="PB_498"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_499"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of HDAC5 from Nucleus to Cytoplasm" id="REAC_358">
+<listOfReactants>
+<speciesReference species="PB_500"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_501"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of HDAC7A from Nucleus to Cytoplasm" id="REAC_359">
+<listOfReactants>
+<speciesReference species="PB_502"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_503"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of CCL3 from Cytoplasm to Extracellular" id="REAC_360">
+<listOfReactants>
+<speciesReference species="PB_504"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_505"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of CCL4 from Cytoplasm to Extracellular" id="REAC_361">
+<listOfReactants>
+<speciesReference species="PB_506"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_507"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of ZAP70 from Cytoplasm to Plasma membrane" id="REAC_362">
+<listOfReactants>
+<speciesReference species="PB_508"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_509"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of TCL1A from Cytoplasm to Plasma membrane" id="REAC_363">
+<listOfReactants>
+<speciesReference species="PB_510"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_511"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of DBNL from Cytoplasm to Plasma membrane" id="REAC_364">
+<listOfReactants>
+<speciesReference species="PB_512"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_513"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of DNM2 from Cytoplasm to Plasma membrane" id="REAC_365">
+<listOfReactants>
+<speciesReference species="PB_514"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_515"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NFKBIA from Cytoplasm to Plasma membrane" id="REAC_366">
+<listOfReactants>
+<speciesReference species="PB_516"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_517"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NFKB1 from Cytoplasm to Nucleus" id="REAC_367">
+<listOfReactants>
+<speciesReference species="PB_518"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_519"/>
+</listOfProducts>
+</reaction>
+</listOfReactions>
+</model>
+</sbml>

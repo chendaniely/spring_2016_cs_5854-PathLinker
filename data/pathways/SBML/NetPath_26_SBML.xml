@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1" xmlns:html="http://www.w3.org/1999/xhtml">
+<model name="Pathway: TWEAK">
+<listOfCompartments>
+<compartment name="Cell" id="compartment_100"/>
+<compartment name="Cytoplasm" id="compartment_1"/>
+<compartment name="Endiplasmic reticulum" id="compartment_2"/>
+<compartment name="Endosome" id="compartment_3"/>
+<compartment name="Extracellular" id="compartment_4"/>
+<compartment name="Golgi apparatus" id="compartment_5"/>
+<compartment name="Lysosome" id="compartment_6"/>
+<compartment name="Mitochondrion" id="compartment_7"/>
+<compartment name="Nucleus" id="compartment_8"/>
+<compartment name="Plasma membrane" id="compartment_9"/>
+</listOfCompartments>
+<listOfSpecies>
+<species name="NFKB2" id="PB_1" compartment="compartment_100"/>
+<species name="RELB" id="PB_2" compartment="compartment_100"/>
+<species name="NFKB2_RELB" id="PB_3" compartment="compartment_100"/>
+<species name="RELA" id="PB_4" compartment="compartment_100"/>
+<species name="HDAC1" id="PB_5" compartment="compartment_100"/>
+<species name="RELA_HDAC1" id="PB_6" compartment="compartment_100"/>
+<species name="RAC1" id="PB_7" compartment="compartment_100"/>
+<species name="TNFRSF12A" id="PB_8" compartment="compartment_100"/>
+<species name="RAC1_TNFRSF12A" id="PB_9" compartment="compartment_100"/>
+<species name="TRAF1" id="PB_10" compartment="compartment_100"/>
+<species name="TNFRSF12A_TRAF1" id="PB_11" compartment="compartment_100"/>
+<species name="TRAF2" id="PB_12" compartment="compartment_100"/>
+<species name="TNFRSF12A_TRAF2" id="PB_13" compartment="compartment_100"/>
+<species name="TRAF3" id="PB_14" compartment="compartment_100"/>
+<species name="TNFRSF12A_TRAF3" id="PB_15" compartment="compartment_100"/>
+<species name="TRAF5" id="PB_16" compartment="compartment_100"/>
+<species name="TNFRSF12A_TRAF5" id="PB_17" compartment="compartment_100"/>
+<species name="TNFSF12" id="PB_18" compartment="compartment_100"/>
+<species name="CD163" id="PB_19" compartment="compartment_100"/>
+<species name="TNFSF12_CD163" id="PB_20" compartment="compartment_100"/>
+<species name="TNFSF12_TNFRSF12A" id="PB_21" compartment="compartment_100"/>
+<species name="TNFSF12,TNFSF12" id="PB_22" compartment="compartment_100"/>
+<species name="TNFSF12_TNFSF12,TNFSF12" id="PB_23" compartment="compartment_100"/>
+<species name="FADD" id="PB_24" compartment="compartment_100"/>
+<species name="RIPK1,CASP8" id="PB_25" compartment="compartment_100"/>
+<species name="FADD_RIPK1,CASP8" id="PB_26" compartment="compartment_100"/>
+<species name="TRAF2,BIRC2" id="PB_27" compartment="compartment_100"/>
+<species name="TNFRSF12A_TRAF2,BIRC2" id="PB_28" compartment="compartment_100"/>
+<species name="TNFRSF25" id="PB_29" compartment="compartment_100"/>
+<species name="TNFRSF25_TNFSF12" id="PB_30" compartment="compartment_100"/>
+<species name="AKT1" id="PB_31" compartment="compartment_100"/>
+<species name="Phosphorylated AKT1" id="PB_32" compartment="compartment_100"/>
+<species name="CHUK" id="PB_33" compartment="compartment_100"/>
+<species name="Phosphorylated CHUK" id="PB_34" compartment="compartment_100"/>
+<species name="NFKBIA" id="PB_35" compartment="compartment_100"/>
+<species name="Proteolytically cleaved NFKBIA" id="PB_36" compartment="compartment_100"/>
+<species name="NFKBIB" id="PB_37" compartment="compartment_100"/>
+<species name="Proteolytically cleaved NFKBIB" id="PB_38" compartment="compartment_100"/>
+<species name="MAPK1" id="PB_39" compartment="compartment_100"/>
+<species name="Phosphorylated MAPK1" id="PB_40" compartment="compartment_100"/>
+<species name="GSK3B" id="PB_41" compartment="compartment_100"/>
+<species name="Phosphorylated GSK3B" id="PB_42" compartment="compartment_100"/>
+<species name="CTNNB1" id="PB_43" compartment="compartment_100"/>
+<species name="Dephosphorylated CTNNB1" id="PB_44" compartment="compartment_100"/>
+<species name="AKT2" id="PB_45" compartment="compartment_100"/>
+<species name="Phosphorylated AKT2" id="PB_46" compartment="compartment_100"/>
+<species name="BAD" id="PB_47" compartment="compartment_100"/>
+<species name="Phosphorylated BAD" id="PB_48" compartment="compartment_100"/>
+<species name="Proteolytically cleaved TRAF2" id="PB_49" compartment="compartment_100"/>
+<species name="BIRC2" id="PB_50" compartment="compartment_100"/>
+<species name="Proteolytically cleaved BIRC2" id="PB_51" compartment="compartment_100"/>
+<species name="MAPK14" id="PB_52" compartment="compartment_100"/>
+<species name="Phosphorylated MAPK14" id="PB_53" compartment="compartment_100"/>
+<species name="MAPK3" id="PB_54" compartment="compartment_100"/>
+<species name="Phosphorylated MAPK3" id="PB_55" compartment="compartment_100"/>
+<species name="MAP3K7" id="PB_56" compartment="compartment_100"/>
+<species name="Phosphorylated MAP3K7" id="PB_57" compartment="compartment_100"/>
+<species name="Phosphorylated NFKBIA" id="PB_58" compartment="compartment_100"/>
+<species name="Proteolytically cleaved NFKB2" id="PB_59" compartment="compartment_100"/>
+<species name="MAPK8" id="PB_60" compartment="compartment_100"/>
+<species name="Phosphorylated MAPK8" id="PB_61" compartment="compartment_100"/>
+<species name="MAPK9" id="PB_62" compartment="compartment_100"/>
+<species name="Phosphorylated MAPK9" id="PB_63" compartment="compartment_100"/>
+<species name="Phosphorylated RELA" id="PB_64" compartment="compartment_100"/>
+<species name="PARP1" id="PB_65" compartment="compartment_100"/>
+<species name="Proteolytically cleaved PARP1" id="PB_66" compartment="compartment_100"/>
+<species name="IKBKB" id="PB_67" compartment="compartment_100"/>
+<species name="Phosphorylated IKBKB" id="PB_68" compartment="compartment_100"/>
+<species name="F_RELB" compartment="compartment_1" id="PB_69"/>
+<species name="T_RELB" compartment="compartment_8" id="PB_70"/>
+<species name="F_NFKB2" compartment="compartment_1" id="PB_71"/>
+<species name="T_NFKB2" compartment="compartment_8" id="PB_72"/>
+<species name="F_GSK3B" compartment="compartment_1" id="PB_73"/>
+<species name="T_GSK3B" compartment="compartment_8" id="PB_74"/>
+<species name="F_TNFSF12" compartment="compartment_1" id="PB_75"/>
+<species name="T_TNFSF12" compartment="compartment_8" id="PB_76"/>
+<species name="F_NFKB1" compartment="compartment_1" id="PB_77"/>
+<species name="T_NFKB1" compartment="compartment_8" id="PB_78"/>
+<species name="F_RELA" compartment="compartment_1" id="PB_79"/>
+<species name="T_RELA" compartment="compartment_8" id="PB_80"/>
+<species name="F_CTNNB1" compartment="compartment_1" id="PB_81"/>
+<species name="T_CTNNB1" compartment="compartment_8" id="PB_82"/>
+</listOfSpecies>
+<listOfReactions>
+<reaction name="Interaction of NFKB2 with RELB" id="REAC_1">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_3"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of RELA with HDAC1" id="REAC_2">
+<listOfReactants>
+<speciesReference species="PB_4"/>
+<speciesReference species="PB_5"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_6"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of RAC1 with TNFRSF12A" id="REAC_3">
+<listOfReactants>
+<speciesReference species="PB_7"/>
+<speciesReference species="PB_8"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_9"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TNFRSF12A with TRAF1" id="REAC_4">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+<speciesReference species="PB_10"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_11"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TNFRSF12A with TRAF2" id="REAC_5">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+<speciesReference species="PB_12"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_13"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TNFRSF12A with TRAF3" id="REAC_6">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+<speciesReference species="PB_14"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_15"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TNFRSF12A with TRAF5" id="REAC_7">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+<speciesReference species="PB_16"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_17"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TNFSF12 with CD163" id="REAC_8">
+<listOfReactants>
+<speciesReference species="PB_18"/>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_20"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TNFSF12 with TNFRSF12A" id="REAC_9">
+<listOfReactants>
+<speciesReference species="PB_18"/>
+<speciesReference species="PB_8"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_21"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TNFSF12 with TNFSF12_TNFSF12 complex" id="REAC_10">
+<listOfReactants>
+<speciesReference species="PB_18"/>
+<speciesReference species="PB_22"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_23"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of FADD with RIPK1_CASP8 complex" id="REAC_11">
+<listOfReactants>
+<speciesReference species="PB_24"/>
+<speciesReference species="PB_25"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_26"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TNFRSF12A with TRAF2_BIRC2 complex" id="REAC_12">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+<speciesReference species="PB_27"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_28"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TNFRSF25 with TNFSF12" id="REAC_13">
+<listOfReactants>
+<speciesReference species="PB_29"/>
+<speciesReference species="PB_18"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_30"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of AKT1" id="REAC_14">
+<listOfReactants>
+<speciesReference species="PB_31"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_32"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of CHUK" id="REAC_15">
+<listOfReactants>
+<speciesReference species="PB_33"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_34"/>
+</listOfProducts>
+</reaction>
+<reaction name="Proteolytic Cleavage of NFKBIA" id="REAC_16">
+<listOfReactants>
+<speciesReference species="PB_35"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_36"/>
+</listOfProducts>
+</reaction>
+<reaction name="Proteolytic Cleavage of NFKBIB" id="REAC_17">
+<listOfReactants>
+<speciesReference species="PB_37"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_38"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAPK1" id="REAC_18">
+<listOfReactants>
+<speciesReference species="PB_39"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_40"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of GSK3B" id="REAC_19">
+<listOfReactants>
+<speciesReference species="PB_41"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_42"/>
+</listOfProducts>
+</reaction>
+<reaction name="Dephosphorylation of CTNNB1" id="REAC_20">
+<listOfReactants>
+<speciesReference species="PB_43"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_44"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of AKT2" id="REAC_21">
+<listOfReactants>
+<speciesReference species="PB_45"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_46"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of BAD" id="REAC_22">
+<listOfReactants>
+<speciesReference species="PB_47"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_48"/>
+</listOfProducts>
+</reaction>
+<reaction name="Proteolytic Cleavage of TRAF2" id="REAC_23">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_49"/>
+</listOfProducts>
+</reaction>
+<reaction name="Proteolytic Cleavage of BIRC2" id="REAC_24">
+<listOfReactants>
+<speciesReference species="PB_50"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_51"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAPK14" id="REAC_25">
+<listOfReactants>
+<speciesReference species="PB_52"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_53"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAPK3" id="REAC_26">
+<listOfReactants>
+<speciesReference species="PB_54"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_55"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAP3K7" id="REAC_27">
+<listOfReactants>
+<speciesReference species="PB_56"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_57"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of NFKBIA" id="REAC_28">
+<listOfReactants>
+<speciesReference species="PB_35"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_58"/>
+</listOfProducts>
+</reaction>
+<reaction name="protein cleavage of NFKB2" id="REAC_29">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_59"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAPK8" id="REAC_30">
+<listOfReactants>
+<speciesReference species="PB_60"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_61"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of MAPK9" id="REAC_31">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_63"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of RELA" id="REAC_32">
+<listOfReactants>
+<speciesReference species="PB_4"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_64"/>
+</listOfProducts>
+</reaction>
+<reaction name="Proteolytic Cleavage of PARP1" id="REAC_33">
+<listOfReactants>
+<speciesReference species="PB_65"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_66"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of IKBKB" id="REAC_34">
+<listOfReactants>
+<speciesReference species="PB_67"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_68"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of RELB from Cytoplasm to Nucleus" id="REAC_35">
+<listOfReactants>
+<speciesReference species="PB_69"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_70"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NFKB2 from Cytoplasm to Nucleus" id="REAC_36">
+<listOfReactants>
+<speciesReference species="PB_71"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_72"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of GSK3B from Cytoplasm to Nucleus" id="REAC_37">
+<listOfReactants>
+<speciesReference species="PB_73"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_74"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of TNFSF12 from Cytoplasm to Nucleus" id="REAC_38">
+<listOfReactants>
+<speciesReference species="PB_75"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_76"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NFKB1 from Cytoplasm to Nucleus" id="REAC_39">
+<listOfReactants>
+<speciesReference species="PB_77"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_78"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of RELA from Cytoplasm to Nucleus" id="REAC_40">
+<listOfReactants>
+<speciesReference species="PB_79"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_80"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of CTNNB1 from Cytoplasm to Nucleus" id="REAC_41">
+<listOfReactants>
+<speciesReference species="PB_81"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_82"/>
+</listOfProducts>
+</reaction>
+</listOfReactions>
+</model>
+</sbml>

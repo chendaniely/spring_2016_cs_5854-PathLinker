@@ -1,0 +1,1518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1" xmlns:html="http://www.w3.org/1999/xhtml">
+<model name="Pathway: Notch">
+<listOfCompartments>
+<compartment name="Cell" id="compartment_100"/>
+<compartment name="Cytoplasm" id="compartment_1"/>
+<compartment name="Endiplasmic reticulum" id="compartment_2"/>
+<compartment name="Endosome" id="compartment_3"/>
+<compartment name="Extracellular" id="compartment_4"/>
+<compartment name="Golgi apparatus" id="compartment_5"/>
+<compartment name="Lysosome" id="compartment_6"/>
+<compartment name="Mitochondrion" id="compartment_7"/>
+<compartment name="Nucleus" id="compartment_8"/>
+<compartment name="Plasma membrane" id="compartment_9"/>
+</listOfCompartments>
+<listOfSpecies>
+<species name="NOTCH1" id="PB_1" compartment="compartment_100"/>
+<species name="PCAF" id="PB_2" compartment="compartment_100"/>
+<species name="NOTCH1_PCAF" id="PB_3" compartment="compartment_100"/>
+<species name="BLOC1S1" id="PB_4" compartment="compartment_100"/>
+<species name="NOTCH1_BLOC1S1" id="PB_5" compartment="compartment_100"/>
+<species name="JAG1" id="PB_6" compartment="compartment_100"/>
+<species name="NOTCH1_JAG1" id="PB_7" compartment="compartment_100"/>
+<species name="JAG2" id="PB_8" compartment="compartment_100"/>
+<species name="NOTCH1_JAG2" id="PB_9" compartment="compartment_100"/>
+<species name="DLL1" id="PB_10" compartment="compartment_100"/>
+<species name="NOTCH1_DLL1" id="PB_11" compartment="compartment_100"/>
+<species name="NOTCH3" id="PB_12" compartment="compartment_100"/>
+<species name="NOTCH3_DLL1" id="PB_13" compartment="compartment_100"/>
+<species name="NOTCH3_JAG1" id="PB_14" compartment="compartment_100"/>
+<species name="NOTCH3_JAG2" id="PB_15" compartment="compartment_100"/>
+<species name="RING1" id="PB_16" compartment="compartment_100"/>
+<species name="FHL1" id="PB_17" compartment="compartment_100"/>
+<species name="RING1_FHL1" id="PB_18" compartment="compartment_100"/>
+<species name="NOTCH2" id="PB_19" compartment="compartment_100"/>
+<species name="NOTCH2_DLL1" id="PB_20" compartment="compartment_100"/>
+<species name="NOTCH2_JAG1" id="PB_21" compartment="compartment_100"/>
+<species name="NOTCH2_JAG2" id="PB_22" compartment="compartment_100"/>
+<species name="MAML2" id="PB_23" compartment="compartment_100"/>
+<species name="NOTCH1_MAML2" id="PB_24" compartment="compartment_100"/>
+<species name="MAML3" id="PB_25" compartment="compartment_100"/>
+<species name="NOTCH1_MAML3" id="PB_26" compartment="compartment_100"/>
+<species name="SMAD1" id="PB_27" compartment="compartment_100"/>
+<species name="PCAF_SMAD1" id="PB_28" compartment="compartment_100"/>
+<species name="NOTCH2_MAML2" id="PB_29" compartment="compartment_100"/>
+<species name="NOTCH2_MAML3" id="PB_30" compartment="compartment_100"/>
+<species name="NOTCH3_MAML2" id="PB_31" compartment="compartment_100"/>
+<species name="NOTCH3_MAML3" id="PB_32" compartment="compartment_100"/>
+<species name="SMAD3" id="PB_33" compartment="compartment_100"/>
+<species name="NOTCH1_SMAD3" id="PB_34" compartment="compartment_100"/>
+<species name="NOTCH4" id="PB_35" compartment="compartment_100"/>
+<species name="NOTCH4_MAML2" id="PB_36" compartment="compartment_100"/>
+<species name="NOTCH4_MAML3" id="PB_37" compartment="compartment_100"/>
+<species name="NOTCH3_PCAF" id="PB_38" compartment="compartment_100"/>
+<species name="PSEN1" id="PB_39" compartment="compartment_100"/>
+<species name="DLL1_PSEN1" id="PB_40" compartment="compartment_100"/>
+<species name="CIR" id="PB_41" compartment="compartment_100"/>
+<species name="HDAC2" id="PB_42" compartment="compartment_100"/>
+<species name="CIR_HDAC2" id="PB_43" compartment="compartment_100"/>
+<species name="SAP30" id="PB_44" compartment="compartment_100"/>
+<species name="CIR_SAP30" id="PB_45" compartment="compartment_100"/>
+<species name="YY1" id="PB_46" compartment="compartment_100"/>
+<species name="NOTCH1_YY1" id="PB_47" compartment="compartment_100"/>
+<species name="LEF1" id="PB_48" compartment="compartment_100"/>
+<species name="NOTCH1_LEF1" id="PB_49" compartment="compartment_100"/>
+<species name="APP" id="PB_50" compartment="compartment_100"/>
+<species name="NUMB" id="PB_51" compartment="compartment_100"/>
+<species name="APP_NUMB" id="PB_52" compartment="compartment_100"/>
+<species name="NUMBL" id="PB_53" compartment="compartment_100"/>
+<species name="APP_NUMBL" id="PB_54" compartment="compartment_100"/>
+<species name="MEF2C" id="PB_55" compartment="compartment_100"/>
+<species name="NOTCH1_MEF2C" id="PB_56" compartment="compartment_100"/>
+<species name="FBXW7" id="PB_57" compartment="compartment_100"/>
+<species name="NOTCH1_FBXW7" id="PB_58" compartment="compartment_100"/>
+<species name="NFKB1" id="PB_59" compartment="compartment_100"/>
+<species name="NOTCH1_NFKB1" id="PB_60" compartment="compartment_100"/>
+<species name="NOTCH1_NUMB" id="PB_61" compartment="compartment_100"/>
+<species name="DTX1" id="PB_62" compartment="compartment_100"/>
+<species name="NOTCH1_DTX1" id="PB_63" compartment="compartment_100"/>
+<species name="GSK3B" id="PB_64" compartment="compartment_100"/>
+<species name="NOTCH2_GSK3B" id="PB_65" compartment="compartment_100"/>
+<species name="NOTCH1_NUMBL" id="PB_66" compartment="compartment_100"/>
+<species name="DLL4" id="PB_67" compartment="compartment_100"/>
+<species name="DLL4_NOTCH4" id="PB_68" compartment="compartment_100"/>
+<species name="PSEN2" id="PB_69" compartment="compartment_100"/>
+<species name="PSEN2_NOTCH1" id="PB_70" compartment="compartment_100"/>
+<species name="PSEN1_NOTCH1" id="PB_71" compartment="compartment_100"/>
+<species name="PSEN1_NOTCH2" id="PB_72" compartment="compartment_100"/>
+<species name="PSEN2_NOTCH2" id="PB_73" compartment="compartment_100"/>
+<species name="PSEN1_NOTCH3" id="PB_74" compartment="compartment_100"/>
+<species name="PSEN2_NOTCH3" id="PB_75" compartment="compartment_100"/>
+<species name="PSEN1_NOTCH4" id="PB_76" compartment="compartment_100"/>
+<species name="PSEN2_NOTCH4" id="PB_77" compartment="compartment_100"/>
+<species name="HES1" id="PB_78" compartment="compartment_100"/>
+<species name="STAT3" id="PB_79" compartment="compartment_100"/>
+<species name="HES1_STAT3" id="PB_80" compartment="compartment_100"/>
+<species name="HES5" id="PB_81" compartment="compartment_100"/>
+<species name="HES5_STAT3" id="PB_82" compartment="compartment_100"/>
+<species name="JAK2" id="PB_83" compartment="compartment_100"/>
+<species name="HES1_JAK2" id="PB_84" compartment="compartment_100"/>
+<species name="HES5_JAK2" id="PB_85" compartment="compartment_100"/>
+<species name="JAK2_STAT3" id="PB_86" compartment="compartment_100"/>
+<species name="SKP2" id="PB_87" compartment="compartment_100"/>
+<species name="TCF3" id="PB_88" compartment="compartment_100"/>
+<species name="SKP2_TCF3" id="PB_89" compartment="compartment_100"/>
+<species name="LCK,PIK3R1,PIK3R2" id="PB_90" compartment="compartment_100"/>
+<species name="NOTCH1_LCK,PIK3R1,PIK3R2" id="PB_91" compartment="compartment_100"/>
+<species name="ITCH" id="PB_92" compartment="compartment_100"/>
+<species name="NUMB_ITCH" id="PB_93" compartment="compartment_100"/>
+<species name="ITCH_NOTCH1" id="PB_94" compartment="compartment_100"/>
+<species name="NOTCH4_FBXW7" id="PB_95" compartment="compartment_100"/>
+<species name="MAML1" id="PB_96" compartment="compartment_100"/>
+<species name="MAML1_NOTCH1" id="PB_97" compartment="compartment_100"/>
+<species name="MAML1_NOTCH2" id="PB_98" compartment="compartment_100"/>
+<species name="MAML1_NOTCH3" id="PB_99" compartment="compartment_100"/>
+<species name="MAML1_NOTCH4" id="PB_100" compartment="compartment_100"/>
+<species name="CNTN1" id="PB_101" compartment="compartment_100"/>
+<species name="CNTN1_NOTCH1" id="PB_102" compartment="compartment_100"/>
+<species name="CNTN1_NOTCH2" id="PB_103" compartment="compartment_100"/>
+<species name="SKP1A" id="PB_104" compartment="compartment_100"/>
+<species name="FBXW7_SKP1A" id="PB_105" compartment="compartment_100"/>
+<species name="NOV" id="PB_106" compartment="compartment_100"/>
+<species name="NOV_NOTCH1" id="PB_107" compartment="compartment_100"/>
+<species name="WDR12" id="PB_108" compartment="compartment_100"/>
+<species name="NOTCH1_WDR12" id="PB_109" compartment="compartment_100"/>
+<species name="HES6" id="PB_110" compartment="compartment_100"/>
+<species name="HES1_HES6" id="PB_111" compartment="compartment_100"/>
+<species name="MAGEA1" id="PB_112" compartment="compartment_100"/>
+<species name="HDAC1" id="PB_113" compartment="compartment_100"/>
+<species name="MAGEA1_HDAC1" id="PB_114" compartment="compartment_100"/>
+<species name="RBPJ" id="PB_115" compartment="compartment_100"/>
+<species name="RBPJ_HDAC1" id="PB_116" compartment="compartment_100"/>
+<species name="NCOR1" id="PB_117" compartment="compartment_100"/>
+<species name="RBPJ_NCOR1" id="PB_118" compartment="compartment_100"/>
+<species name="NCOR2" id="PB_119" compartment="compartment_100"/>
+<species name="RBPJ_NCOR2" id="PB_120" compartment="compartment_100"/>
+<species name="SPEN" id="PB_121" compartment="compartment_100"/>
+<species name="RBPJ_SPEN" id="PB_122" compartment="compartment_100"/>
+<species name="CIR_RBPJ" id="PB_123" compartment="compartment_100"/>
+<species name="EP300" id="PB_124" compartment="compartment_100"/>
+<species name="DTX1_EP300" id="PB_125" compartment="compartment_100"/>
+<species name="FHL1_RBPJ" id="PB_126" compartment="compartment_100"/>
+<species name="HEY2" id="PB_127" compartment="compartment_100"/>
+<species name="HEY2_NCOR1" id="PB_128" compartment="compartment_100"/>
+<species name="SIN3A" id="PB_129" compartment="compartment_100"/>
+<species name="HEY2_SIN3A" id="PB_130" compartment="compartment_100"/>
+<species name="HES1_HEY2" id="PB_131" compartment="compartment_100"/>
+<species name="PCAF,SMAD1,EP300" id="PB_132" compartment="compartment_100"/>
+<species name="NOTCH1_PCAF,SMAD1,EP300" id="PB_133" compartment="compartment_100"/>
+<species name="NOTCH1,RBPJ" id="PB_134" compartment="compartment_100"/>
+<species name="NOTCH1,RBPJ_MAML2" id="PB_135" compartment="compartment_100"/>
+<species name="NOTCH1,RBPJ_MAML3" id="PB_136" compartment="compartment_100"/>
+<species name="NOTCH1_RBPJ" id="PB_137" compartment="compartment_100"/>
+<species name="NOTCH1,RBPJ_MAML1" id="PB_138" compartment="compartment_100"/>
+<species name="NOTCH2_RBPJ" id="PB_139" compartment="compartment_100"/>
+<species name="NOTCH2,RBPJ" id="PB_140" compartment="compartment_100"/>
+<species name="NOTCH2,RBPJ_MAML2" id="PB_141" compartment="compartment_100"/>
+<species name="NOTCH2,RBPJ_MAML3" id="PB_142" compartment="compartment_100"/>
+<species name="NOTCH3_RBPJ" id="PB_143" compartment="compartment_100"/>
+<species name="NOTCH3,RBPJ" id="PB_144" compartment="compartment_100"/>
+<species name="NOTCH3,RBPJ_MAML2" id="PB_145" compartment="compartment_100"/>
+<species name="NOTCH3,RBPJ_MAML3" id="PB_146" compartment="compartment_100"/>
+<species name="NOTCH4_RBPJ" id="PB_147" compartment="compartment_100"/>
+<species name="NOTCH4,RBPJ" id="PB_148" compartment="compartment_100"/>
+<species name="NOTCH4,RBPJ_MAML2" id="PB_149" compartment="compartment_100"/>
+<species name="NOTCH4,RBPJ_MAML3" id="PB_150" compartment="compartment_100"/>
+<species name="NOTCH1_EP300" id="PB_151" compartment="compartment_100"/>
+<species name="ASCL1" id="PB_152" compartment="compartment_100"/>
+<species name="EP300_ASCL1" id="PB_153" compartment="compartment_100"/>
+<species name="SNW1" id="PB_154" compartment="compartment_100"/>
+<species name="NOTCH1_SNW1" id="PB_155" compartment="compartment_100"/>
+<species name="NOTCH3_SNW1" id="PB_156" compartment="compartment_100"/>
+<species name="RBPJ_SNW1" id="PB_157" compartment="compartment_100"/>
+<species name="SNW1_NCOR2" id="PB_158" compartment="compartment_100"/>
+<species name="AKT1" id="PB_159" compartment="compartment_100"/>
+<species name="PIK3R1" id="PB_160" compartment="compartment_100"/>
+<species name="AKT1_PIK3R1" id="PB_161" compartment="compartment_100"/>
+<species name="DLL3" id="PB_162" compartment="compartment_100"/>
+<species name="DLL3_NOTCH1" id="PB_163" compartment="compartment_100"/>
+<species name="HDAC1_NCOR2" id="PB_164" compartment="compartment_100"/>
+<species name="FURIN" id="PB_165" compartment="compartment_100"/>
+<species name="Proteolytically cleaved NOTCH1" id="PB_166" compartment="compartment_100"/>
+<species name="ADAM17" id="PB_167" compartment="compartment_100"/>
+<species name="ADAM10" id="PB_168" compartment="compartment_100"/>
+<species name="Proteolytically cleaved DLL1" id="PB_169" compartment="compartment_100"/>
+<species name="Phosphorylated NOTCH2" id="PB_170" compartment="compartment_100"/>
+<species name="MAPK3" id="PB_171" compartment="compartment_100"/>
+<species name="Phosphorylated TCF3" id="PB_172" compartment="compartment_100"/>
+<species name="MAPK1" id="PB_173" compartment="compartment_100"/>
+<species name="SKP1A,CUL1,RBX1,SKP2" id="PB_174" compartment="compartment_100"/>
+<species name="Ubiquitinated TCF3" id="PB_175" compartment="compartment_100"/>
+<species name="PSEN1,PSEN2,APH1A,APH1B,PSENEN,NCSTN" id="PB_176" compartment="compartment_100"/>
+<species name="Proteolytically cleaved NOTCH2" id="PB_177" compartment="compartment_100"/>
+<species name="Proteolytically cleaved NOTCH3" id="PB_178" compartment="compartment_100"/>
+<species name="Proteolytically cleaved NOTCH4" id="PB_179" compartment="compartment_100"/>
+<species name="Proteolytically cleaved JAG2" id="PB_180" compartment="compartment_100"/>
+<species name="NUMB,ITCH" id="PB_181" compartment="compartment_100"/>
+<species name="Ubiquitinated NOTCH1" id="PB_182" compartment="compartment_100"/>
+<species name="SKP1A,CUL1,FBXW7" id="PB_183" compartment="compartment_100"/>
+<species name="Ubiquitinated NOTCH4" id="PB_184" compartment="compartment_100"/>
+<species name="POFUT1" id="PB_185" compartment="compartment_100"/>
+<species name="Glycosylated DLL1" id="PB_186" compartment="compartment_100"/>
+<species name="Glycosylated JAG1" id="PB_187" compartment="compartment_100"/>
+<species name="MFNG" id="PB_188" compartment="compartment_100"/>
+<species name="Glycosylated NOTCH1" id="PB_189" compartment="compartment_100"/>
+<species name="Glycosylated NOTCH2" id="PB_190" compartment="compartment_100"/>
+<species name="LFNG" id="PB_191" compartment="compartment_100"/>
+<species name="Proteolytically cleaved APP" id="PB_192" compartment="compartment_100"/>
+<species name="SRC" id="PB_193" compartment="compartment_100"/>
+<species name="Phosphorylated SRC" id="PB_194" compartment="compartment_100"/>
+<species name="F_NCOR1" compartment="compartment_8" id="PB_195"/>
+<species name="T_NCOR1" compartment="compartment_1" id="PB_196"/>
+<species name="F_RELA" compartment="compartment_8" id="PB_197"/>
+<species name="T_RELA" compartment="compartment_1" id="PB_198"/>
+<species name="F_NCOR2" compartment="compartment_8" id="PB_199"/>
+<species name="T_NCOR2" compartment="compartment_1" id="PB_200"/>
+<species name="F_DLL1" compartment="compartment_9" id="PB_201"/>
+<species name="T_DLL1" compartment="compartment_8" id="PB_202"/>
+<species name="F_GSK3B,NOTCH2" compartment="compartment_1" id="PB_203"/>
+<species name="T_GSK3B,NOTCH2" compartment="compartment_8" id="PB_204"/>
+<species name="F_NOTCH3" compartment="compartment_9" id="PB_205"/>
+<species name="T_NOTCH3" compartment="compartment_8" id="PB_206"/>
+<species name="F_NOTCH4" compartment="compartment_9" id="PB_207"/>
+<species name="T_NOTCH4" compartment="compartment_8" id="PB_208"/>
+<species name="F_NOTCH1" compartment="compartment_5" id="PB_209"/>
+<species name="T_NOTCH1" compartment="compartment_9" id="PB_210"/>
+<species name="F_NOTCH1" compartment="compartment_9" id="PB_211"/>
+<species name="T_NOTCH1" compartment="compartment_8" id="PB_212"/>
+<species name="F_NOTCH2" compartment="compartment_9" id="PB_213"/>
+<species name="T_NOTCH2" compartment="compartment_8" id="PB_214"/>
+<species name="F_NOTCH2" compartment="compartment_5" id="PB_215"/>
+<species name="T_NOTCH2" compartment="compartment_9" id="PB_216"/>
+<species name="F_STAT3" compartment="compartment_1" id="PB_217"/>
+<species name="T_STAT3" compartment="compartment_8" id="PB_218"/>
+</listOfSpecies>
+<listOfReactions>
+<reaction name="Interaction of NOTCH1 with PCAF" id="REAC_1">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_3"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with BLOC1S1" id="REAC_2">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_4"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_5"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with JAG1" id="REAC_3">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_6"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_7"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with JAG2" id="REAC_4">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_8"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_9"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with DLL1" id="REAC_5">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_10"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_11"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH3 with DLL1" id="REAC_6">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+<speciesReference species="PB_10"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_13"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH3 with JAG1" id="REAC_7">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+<speciesReference species="PB_6"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_14"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH3 with JAG2" id="REAC_8">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+<speciesReference species="PB_8"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_15"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of RING1 with FHL1" id="REAC_9">
+<listOfReactants>
+<speciesReference species="PB_16"/>
+<speciesReference species="PB_17"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_18"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH2 with DLL1" id="REAC_10">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_10"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_20"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH2 with JAG1" id="REAC_11">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_6"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_21"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH2 with JAG2" id="REAC_12">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_8"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_22"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with MAML2" id="REAC_13">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_23"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_24"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with MAML3" id="REAC_14">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_25"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_26"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PCAF with SMAD1" id="REAC_15">
+<listOfReactants>
+<speciesReference species="PB_2"/>
+<speciesReference species="PB_27"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_28"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH2 with MAML2" id="REAC_16">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_23"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_29"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH2 with MAML3" id="REAC_17">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_25"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_30"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH3 with MAML2" id="REAC_18">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+<speciesReference species="PB_23"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_31"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH3 with MAML3" id="REAC_19">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+<speciesReference species="PB_25"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_32"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with SMAD3" id="REAC_20">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_33"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_34"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH4 with MAML2" id="REAC_21">
+<listOfReactants>
+<speciesReference species="PB_35"/>
+<speciesReference species="PB_23"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_36"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH4 with MAML3" id="REAC_22">
+<listOfReactants>
+<speciesReference species="PB_35"/>
+<speciesReference species="PB_25"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_37"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH3 with PCAF" id="REAC_23">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_38"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of DLL1 with PSEN1" id="REAC_24">
+<listOfReactants>
+<speciesReference species="PB_10"/>
+<speciesReference species="PB_39"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_40"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CIR with HDAC2" id="REAC_25">
+<listOfReactants>
+<speciesReference species="PB_41"/>
+<speciesReference species="PB_42"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_43"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CIR with SAP30" id="REAC_26">
+<listOfReactants>
+<speciesReference species="PB_41"/>
+<speciesReference species="PB_44"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_45"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with YY1" id="REAC_27">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_46"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_47"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with LEF1" id="REAC_28">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_48"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_49"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of APP with NUMB" id="REAC_29">
+<listOfReactants>
+<speciesReference species="PB_50"/>
+<speciesReference species="PB_51"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_52"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of APP with NUMBL" id="REAC_30">
+<listOfReactants>
+<speciesReference species="PB_50"/>
+<speciesReference species="PB_53"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_54"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with MEF2C" id="REAC_31">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_55"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_56"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with FBXW7" id="REAC_32">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_57"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_58"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with NFKB1" id="REAC_33">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_59"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_60"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with NUMB" id="REAC_34">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_51"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_61"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with DTX1" id="REAC_35">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_62"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_63"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH2 with GSK3B" id="REAC_36">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_64"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_65"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with NUMBL" id="REAC_37">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_53"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_66"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of DLL4 with NOTCH4" id="REAC_38">
+<listOfReactants>
+<speciesReference species="PB_67"/>
+<speciesReference species="PB_35"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_68"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PSEN2 with NOTCH1" id="REAC_39">
+<listOfReactants>
+<speciesReference species="PB_69"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_70"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PSEN1 with NOTCH1" id="REAC_40">
+<listOfReactants>
+<speciesReference species="PB_39"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_71"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PSEN1 with NOTCH2" id="REAC_41">
+<listOfReactants>
+<speciesReference species="PB_39"/>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_72"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PSEN2 with NOTCH2" id="REAC_42">
+<listOfReactants>
+<speciesReference species="PB_69"/>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_73"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PSEN1 with NOTCH3" id="REAC_43">
+<listOfReactants>
+<speciesReference species="PB_39"/>
+<speciesReference species="PB_12"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_74"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PSEN2 with NOTCH3" id="REAC_44">
+<listOfReactants>
+<speciesReference species="PB_69"/>
+<speciesReference species="PB_12"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_75"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PSEN1 with NOTCH4" id="REAC_45">
+<listOfReactants>
+<speciesReference species="PB_39"/>
+<speciesReference species="PB_35"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_76"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PSEN2 with NOTCH4" id="REAC_46">
+<listOfReactants>
+<speciesReference species="PB_69"/>
+<speciesReference species="PB_35"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_77"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HES1 with STAT3" id="REAC_47">
+<listOfReactants>
+<speciesReference species="PB_78"/>
+<speciesReference species="PB_79"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_80"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HES5 with STAT3" id="REAC_48">
+<listOfReactants>
+<speciesReference species="PB_81"/>
+<speciesReference species="PB_79"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_82"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HES1 with JAK2" id="REAC_49">
+<listOfReactants>
+<speciesReference species="PB_78"/>
+<speciesReference species="PB_83"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_84"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HES5 with JAK2" id="REAC_50">
+<listOfReactants>
+<speciesReference species="PB_81"/>
+<speciesReference species="PB_83"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_85"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of JAK2 with STAT3" id="REAC_51">
+<listOfReactants>
+<speciesReference species="PB_83"/>
+<speciesReference species="PB_79"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_86"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SKP2 with TCF3" id="REAC_52">
+<listOfReactants>
+<speciesReference species="PB_87"/>
+<speciesReference species="PB_88"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_89"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with LCK_PIK3R1_PIK3R2 complex" id="REAC_53">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_90"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_91"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NUMB with ITCH" id="REAC_54">
+<listOfReactants>
+<speciesReference species="PB_51"/>
+<speciesReference species="PB_92"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_93"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of ITCH with NOTCH1" id="REAC_55">
+<listOfReactants>
+<speciesReference species="PB_92"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_94"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH4 with FBXW7" id="REAC_56">
+<listOfReactants>
+<speciesReference species="PB_35"/>
+<speciesReference species="PB_57"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_95"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of MAML1 with NOTCH1" id="REAC_57">
+<listOfReactants>
+<speciesReference species="PB_96"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_97"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of MAML1 with NOTCH2" id="REAC_58">
+<listOfReactants>
+<speciesReference species="PB_96"/>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_98"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of MAML1 with NOTCH3" id="REAC_59">
+<listOfReactants>
+<speciesReference species="PB_96"/>
+<speciesReference species="PB_12"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_99"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of MAML1 with NOTCH4" id="REAC_60">
+<listOfReactants>
+<speciesReference species="PB_96"/>
+<speciesReference species="PB_35"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_100"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CNTN1 with NOTCH1" id="REAC_61">
+<listOfReactants>
+<speciesReference species="PB_101"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_102"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CNTN1 with NOTCH2" id="REAC_62">
+<listOfReactants>
+<speciesReference species="PB_101"/>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_103"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of FBXW7 with SKP1A" id="REAC_63">
+<listOfReactants>
+<speciesReference species="PB_57"/>
+<speciesReference species="PB_104"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_105"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOV with NOTCH1" id="REAC_64">
+<listOfReactants>
+<speciesReference species="PB_106"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_107"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with WDR12" id="REAC_65">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_108"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_109"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HES1 with HES6" id="REAC_66">
+<listOfReactants>
+<speciesReference species="PB_78"/>
+<speciesReference species="PB_110"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_111"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of MAGEA1 with HDAC1" id="REAC_67">
+<listOfReactants>
+<speciesReference species="PB_112"/>
+<speciesReference species="PB_113"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_114"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of RBPJ with HDAC1" id="REAC_68">
+<listOfReactants>
+<speciesReference species="PB_115"/>
+<speciesReference species="PB_113"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_116"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of RBPJ with NCOR1" id="REAC_69">
+<listOfReactants>
+<speciesReference species="PB_115"/>
+<speciesReference species="PB_117"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_118"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of RBPJ with NCOR2" id="REAC_70">
+<listOfReactants>
+<speciesReference species="PB_115"/>
+<speciesReference species="PB_119"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_120"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of RBPJ with SPEN" id="REAC_71">
+<listOfReactants>
+<speciesReference species="PB_115"/>
+<speciesReference species="PB_121"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_122"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of CIR with RBPJ" id="REAC_72">
+<listOfReactants>
+<speciesReference species="PB_41"/>
+<speciesReference species="PB_115"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_123"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of DTX1 with EP300" id="REAC_73">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+<speciesReference species="PB_124"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_125"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of FHL1 with RBPJ" id="REAC_74">
+<listOfReactants>
+<speciesReference species="PB_17"/>
+<speciesReference species="PB_115"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_126"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HEY2 with NCOR1" id="REAC_75">
+<listOfReactants>
+<speciesReference species="PB_127"/>
+<speciesReference species="PB_117"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_128"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HEY2 with SIN3A" id="REAC_76">
+<listOfReactants>
+<speciesReference species="PB_127"/>
+<speciesReference species="PB_129"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_130"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HES1 with HEY2" id="REAC_77">
+<listOfReactants>
+<speciesReference species="PB_78"/>
+<speciesReference species="PB_127"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_131"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with PCAF_SMAD1_EP300 complex" id="REAC_78">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_132"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_133"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1_RBPJ complex with MAML2" id="REAC_79">
+<listOfReactants>
+<speciesReference species="PB_134"/>
+<speciesReference species="PB_23"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_135"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1_RBPJ complex with MAML3" id="REAC_80">
+<listOfReactants>
+<speciesReference species="PB_134"/>
+<speciesReference species="PB_25"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_136"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with RBPJ" id="REAC_81">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_115"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_137"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1_RBPJ complex with MAML1" id="REAC_82">
+<listOfReactants>
+<speciesReference species="PB_134"/>
+<speciesReference species="PB_96"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_138"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH2 with RBPJ" id="REAC_83">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+<speciesReference species="PB_115"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_139"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH2_RBPJ complex with MAML2" id="REAC_84">
+<listOfReactants>
+<speciesReference species="PB_140"/>
+<speciesReference species="PB_23"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_141"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH2_RBPJ complex with MAML3" id="REAC_85">
+<listOfReactants>
+<speciesReference species="PB_140"/>
+<speciesReference species="PB_25"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_142"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH3 with RBPJ" id="REAC_86">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+<speciesReference species="PB_115"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_143"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH3_RBPJ complex with MAML2" id="REAC_87">
+<listOfReactants>
+<speciesReference species="PB_144"/>
+<speciesReference species="PB_23"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_145"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH3_RBPJ complex with MAML3" id="REAC_88">
+<listOfReactants>
+<speciesReference species="PB_144"/>
+<speciesReference species="PB_25"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_146"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH4 with RBPJ" id="REAC_89">
+<listOfReactants>
+<speciesReference species="PB_35"/>
+<speciesReference species="PB_115"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_147"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH4_RBPJ complex with MAML2" id="REAC_90">
+<listOfReactants>
+<speciesReference species="PB_148"/>
+<speciesReference species="PB_23"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_149"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH4_RBPJ complex with MAML3" id="REAC_91">
+<listOfReactants>
+<speciesReference species="PB_148"/>
+<speciesReference species="PB_25"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_150"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with EP300" id="REAC_92">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_124"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_151"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of EP300 with ASCL1" id="REAC_93">
+<listOfReactants>
+<speciesReference species="PB_124"/>
+<speciesReference species="PB_152"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_153"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH1 with SNW1" id="REAC_94">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_154"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_155"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NOTCH3 with SNW1" id="REAC_95">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+<speciesReference species="PB_154"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_156"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of RBPJ with SNW1" id="REAC_96">
+<listOfReactants>
+<speciesReference species="PB_115"/>
+<speciesReference species="PB_154"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_157"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SNW1 with NCOR2" id="REAC_97">
+<listOfReactants>
+<speciesReference species="PB_154"/>
+<speciesReference species="PB_119"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_158"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AKT1 with PIK3R1" id="REAC_98">
+<listOfReactants>
+<speciesReference species="PB_159"/>
+<speciesReference species="PB_160"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_161"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of DLL3 with NOTCH1" id="REAC_99">
+<listOfReactants>
+<speciesReference species="PB_162"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_163"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HDAC1 with NCOR2" id="REAC_100">
+<listOfReactants>
+<speciesReference species="PB_113"/>
+<speciesReference species="PB_119"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_164"/>
+</listOfProducts>
+</reaction>
+<reaction name="protein cleavage of NOTCH1 by FURIN" id="REAC_101">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_166"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_165"/>
+</listOfModifiers>
+</reaction>
+<reaction name="protein cleavage of NOTCH1 by ADAM17" id="REAC_102">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_166"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_167"/>
+</listOfModifiers>
+</reaction>
+<reaction name="protein cleavage of DLL1 by ADAM10" id="REAC_103">
+<listOfReactants>
+<speciesReference species="PB_10"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_169"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_168"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of NOTCH2 by GSK3B" id="REAC_104">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_170"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_64"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of TCF3 by MAPK3" id="REAC_105">
+<listOfReactants>
+<speciesReference species="PB_88"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_172"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_171"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of TCF3 by MAPK1" id="REAC_106">
+<listOfReactants>
+<speciesReference species="PB_88"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_172"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_173"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Ubiquitination of TCF3 by SKP1A_CUL1_RBX1_SKP2 complex" id="REAC_107">
+<listOfReactants>
+<speciesReference species="PB_88"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_175"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_174"/>
+</listOfModifiers>
+</reaction>
+<reaction name="protein cleavage of NOTCH2 by PSEN1_PSEN2_APH1A_APH1B_PSENEN_NCSTN complex" id="REAC_108">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_177"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_176"/>
+</listOfModifiers>
+</reaction>
+<reaction name="protein cleavage of NOTCH3 by PSEN1_PSEN2_APH1A_APH1B_PSENEN_NCSTN complex" id="REAC_109">
+<listOfReactants>
+<speciesReference species="PB_12"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_178"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_176"/>
+</listOfModifiers>
+</reaction>
+<reaction name="protein cleavage of NOTCH4 by PSEN1_PSEN2_APH1A_APH1B_PSENEN_NCSTN complex" id="REAC_110">
+<listOfReactants>
+<speciesReference species="PB_35"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_179"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_176"/>
+</listOfModifiers>
+</reaction>
+<reaction name="protein cleavage of DLL1 by PSEN1_PSEN2_APH1A_APH1B_PSENEN_NCSTN complex" id="REAC_111">
+<listOfReactants>
+<speciesReference species="PB_10"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_169"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_176"/>
+</listOfModifiers>
+</reaction>
+<reaction name="protein cleavage of JAG2 by PSEN1_PSEN2_APH1A_APH1B_PSENEN_NCSTN complex" id="REAC_112">
+<listOfReactants>
+<speciesReference species="PB_8"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_180"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_176"/>
+</listOfModifiers>
+</reaction>
+<reaction name="protein cleavage of NOTCH1 by PSEN1_PSEN2_APH1A_APH1B_PSENEN_NCSTN complex" id="REAC_113">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_166"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_176"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Ubiquitination of NOTCH1 by NUMB_ITCH complex" id="REAC_114">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_182"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_181"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Ubiquitination of NOTCH1 by SKP1A_CUL1_FBXW7 complex" id="REAC_115">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_182"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_183"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Ubiquitination of NOTCH4 by SKP1A_CUL1_FBXW7 complex" id="REAC_116">
+<listOfReactants>
+<speciesReference species="PB_35"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_184"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_183"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Glycosylation of DLL1 by POFUT1" id="REAC_117">
+<listOfReactants>
+<speciesReference species="PB_10"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_186"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_185"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Glycosylation of JAG1 by POFUT1" id="REAC_118">
+<listOfReactants>
+<speciesReference species="PB_6"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_187"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_185"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Glycosylation of DLL1 by MFNG" id="REAC_119">
+<listOfReactants>
+<speciesReference species="PB_10"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_186"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_188"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Glycosylation of JAG1 by MFNG" id="REAC_120">
+<listOfReactants>
+<speciesReference species="PB_6"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_187"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_188"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Glycosylation of NOTCH1 by POFUT1" id="REAC_121">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_189"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_185"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Glycosylation of NOTCH2 by MFNG" id="REAC_122">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_190"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_188"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Glycosylation of NOTCH1 by LFNG" id="REAC_123">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_189"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_191"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Glycosylation of NOTCH2 by LFNG" id="REAC_124">
+<listOfReactants>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_190"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_191"/>
+</listOfModifiers>
+</reaction>
+<reaction name="protein cleavage of APP by PSEN1_PSEN2_APH1A_APH1B_PSENEN_NCSTN complex" id="REAC_125">
+<listOfReactants>
+<speciesReference species="PB_50"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_192"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_176"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of SRC" id="REAC_126">
+<listOfReactants>
+<speciesReference species="PB_193"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_194"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NCOR1 from Nucleus to Cytoplasm" id="REAC_127">
+<listOfReactants>
+<speciesReference species="PB_195"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_196"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of RELA from Nucleus to Cytoplasm" id="REAC_128">
+<listOfReactants>
+<speciesReference species="PB_197"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_198"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NCOR2 from Nucleus to Cytoplasm" id="REAC_129">
+<listOfReactants>
+<speciesReference species="PB_199"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_200"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of DLL1 from Plasma membrane to Nucleus" id="REAC_130">
+<listOfReactants>
+<speciesReference species="PB_201"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_202"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of GSK3B,NOTCH2 from Cytoplasm to Nucleus" id="REAC_131">
+<listOfReactants>
+<speciesReference species="PB_203"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_204"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NOTCH3 from Plasma membrane to Nucleus" id="REAC_132">
+<listOfReactants>
+<speciesReference species="PB_205"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_206"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NOTCH4 from Plasma membrane to Nucleus" id="REAC_133">
+<listOfReactants>
+<speciesReference species="PB_207"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_208"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NOTCH1 from Golgi apparatus to Plasma membrane" id="REAC_134">
+<listOfReactants>
+<speciesReference species="PB_209"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_210"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NOTCH1 from Plasma membrane to Nucleus" id="REAC_135">
+<listOfReactants>
+<speciesReference species="PB_209"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_212"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NOTCH2 from Plasma membrane to Nucleus" id="REAC_136">
+<listOfReactants>
+<speciesReference species="PB_213"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_214"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of NOTCH2 from Golgi apparatus to Plasma membrane" id="REAC_137">
+<listOfReactants>
+<speciesReference species="PB_215"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_214"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of STAT3 from Cytoplasm to Nucleus" id="REAC_138">
+<listOfReactants>
+<speciesReference species="PB_217"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_218"/>
+</listOfProducts>
+</reaction>
+</listOfReactions>
+</model>
+</sbml>

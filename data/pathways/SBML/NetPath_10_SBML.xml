@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1" xmlns:html="http://www.w3.org/1999/xhtml">
+<model name="Pathway: Hedgehog">
+<listOfCompartments>
+<compartment name="Cell" id="compartment_100"/>
+<compartment name="Cytoplasm" id="compartment_1"/>
+<compartment name="Endiplasmic reticulum" id="compartment_2"/>
+<compartment name="Endosome" id="compartment_3"/>
+<compartment name="Extracellular" id="compartment_4"/>
+<compartment name="Golgi apparatus" id="compartment_5"/>
+<compartment name="Lysosome" id="compartment_6"/>
+<compartment name="Mitochondrion" id="compartment_7"/>
+<compartment name="Nucleus" id="compartment_8"/>
+<compartment name="Plasma membrane" id="compartment_9"/>
+</listOfCompartments>
+<listOfSpecies>
+<species name="PTCH1" id="PB_1" compartment="compartment_100"/>
+<species name="SHH" id="PB_2" compartment="compartment_100"/>
+<species name="PTCH1_SHH" id="PB_3" compartment="compartment_100"/>
+<species name="PTCH2" id="PB_4" compartment="compartment_100"/>
+<species name="PTCH2_SHH" id="PB_5" compartment="compartment_100"/>
+<species name="DHH" id="PB_6" compartment="compartment_100"/>
+<species name="PTCH1_DHH" id="PB_7" compartment="compartment_100"/>
+<species name="PTCH2_DHH" id="PB_8" compartment="compartment_100"/>
+<species name="SMO" id="PB_9" compartment="compartment_100"/>
+<species name="PTCH1_SMO" id="PB_10" compartment="compartment_100"/>
+<species name="PTCH2_SMO" id="PB_11" compartment="compartment_100"/>
+<species name="IHH" id="PB_12" compartment="compartment_100"/>
+<species name="PTCH1_IHH" id="PB_13" compartment="compartment_100"/>
+<species name="PTCH2_IHH" id="PB_14" compartment="compartment_100"/>
+<species name="GLI3" id="PB_15" compartment="compartment_100"/>
+<species name="SKI" id="PB_16" compartment="compartment_100"/>
+<species name="GLI3_SKI" id="PB_17" compartment="compartment_100"/>
+<species name="SUFU" id="PB_18" compartment="compartment_100"/>
+<species name="SAP18" id="PB_19" compartment="compartment_100"/>
+<species name="SUFU_SAP18" id="PB_20" compartment="compartment_100"/>
+<species name="SUFU,SAP18,SIN3A" id="PB_21" compartment="compartment_100"/>
+<species name="GLI1" id="PB_22" compartment="compartment_100"/>
+<species name="SUFU,SAP18,SIN3A_GLI1" id="PB_23" compartment="compartment_100"/>
+<species name="HHIP" id="PB_24" compartment="compartment_100"/>
+<species name="HHIP_SHH" id="PB_25" compartment="compartment_100"/>
+<species name="HHIP_IHH" id="PB_26" compartment="compartment_100"/>
+<species name="HHIP_DHH" id="PB_27" compartment="compartment_100"/>
+<species name="SUFU_GLI1" id="PB_28" compartment="compartment_100"/>
+<species name="GAS1" id="PB_29" compartment="compartment_100"/>
+<species name="SHH_GAS1" id="PB_30" compartment="compartment_100"/>
+<species name="CREBBP" id="PB_31" compartment="compartment_100"/>
+<species name="GLI3_CREBBP" id="PB_32" compartment="compartment_100"/>
+<species name="DYRK1A" id="PB_33" compartment="compartment_100"/>
+<species name="DYRK1A_GLI1" id="PB_34" compartment="compartment_100"/>
+<species name="SUFU_GLI3" id="PB_35" compartment="compartment_100"/>
+<species name="GLI2" id="PB_36" compartment="compartment_100"/>
+<species name="SUFU_GLI2" id="PB_37" compartment="compartment_100"/>
+<species name="STK36" id="PB_38" compartment="compartment_100"/>
+<species name="STK36_SUFU" id="PB_39" compartment="compartment_100"/>
+<species name="STK36_GLI1" id="PB_40" compartment="compartment_100"/>
+<species name="STK36_GLI2" id="PB_41" compartment="compartment_100"/>
+<species name="STK36_GLI3" id="PB_42" compartment="compartment_100"/>
+<species name="GLI2_SKI" id="PB_43" compartment="compartment_100"/>
+<species name="PTCH1,SHH" id="PB_44" compartment="compartment_100"/>
+<species name="PTCH1,SHH_SMO" id="PB_45" compartment="compartment_100"/>
+<species name="SUFU_SUFU" id="PB_46" compartment="compartment_100"/>
+<species name="YWHAE" id="PB_47" compartment="compartment_100"/>
+<species name="GLI1_YWHAE" id="PB_48" compartment="compartment_100"/>
+<species name="YWHAE_GLI2" id="PB_49" compartment="compartment_100"/>
+<species name="GLI3_YWHAE" id="PB_50" compartment="compartment_100"/>
+<species name="CDON" id="PB_51" compartment="compartment_100"/>
+<species name="SHH_CDON" id="PB_52" compartment="compartment_100"/>
+<species name="NR2E1" id="PB_53" compartment="compartment_100"/>
+<species name="GLI2,SMAD1" id="PB_54" compartment="compartment_100"/>
+<species name="NR2E1_GLI2,SMAD1" id="PB_55" compartment="compartment_100"/>
+<species name="ADRBK1" id="PB_56" compartment="compartment_100"/>
+<species name="PTCH1_ADRBK1" id="PB_57" compartment="compartment_100"/>
+<species name="SDC2" id="PB_58" compartment="compartment_100"/>
+<species name="SHH_SDC2" id="PB_59" compartment="compartment_100"/>
+<species name="KIF7" id="PB_60" compartment="compartment_100"/>
+<species name="KIF7_GLI2" id="PB_61" compartment="compartment_100"/>
+<species name="KIF27,KIF7" id="PB_62" compartment="compartment_100"/>
+<species name="KIF27,KIF7_GLI3" id="PB_63" compartment="compartment_100"/>
+<species name="BOC" id="PB_64" compartment="compartment_100"/>
+<species name="BOC_SHH" id="PB_65" compartment="compartment_100"/>
+<species name="CTNNB1" id="PB_66" compartment="compartment_100"/>
+<species name="GLI1_CTNNB1" id="PB_67" compartment="compartment_100"/>
+<species name="MED12,MED1,MED23,CDK8,MED6" id="PB_68" compartment="compartment_100"/>
+<species name="GLI3_MED12,MED1,MED23,CDK8,MED6" id="PB_69" compartment="compartment_100"/>
+<species name="ARRB2" id="PB_70" compartment="compartment_100"/>
+<species name="SMO_ARRB2" id="PB_71" compartment="compartment_100"/>
+<species name="HHAT" id="PB_72" compartment="compartment_100"/>
+<species name="Palmitoylated SHH" id="PB_73" compartment="compartment_100"/>
+<species name="Phosphorylated GLI1" id="PB_74" compartment="compartment_100"/>
+<species name="PRKACA" id="PB_75" compartment="compartment_100"/>
+<species name="Phosphorylated GLI3" id="PB_76" compartment="compartment_100"/>
+<species name="AKT1" id="PB_77" compartment="compartment_100"/>
+<species name="Phosphorylated AKT1" id="PB_78" compartment="compartment_100"/>
+<species name="Phosphorylated SMO" id="PB_79" compartment="compartment_100"/>
+<species name="F_CCNB1" compartment="compartment_1" id="PB_80"/>
+<species name="T_CCNB1" compartment="compartment_8" id="PB_81"/>
+<species name="F_GLI3" compartment="compartment_1" id="PB_82"/>
+<species name="T_GLI3" compartment="compartment_8" id="PB_83"/>
+<species name="F_PTCH1" compartment="compartment_9" id="PB_84"/>
+<species name="T_PTCH1" compartment="compartment_3" id="PB_85"/>
+<species name="F_SUFU" compartment="compartment_1" id="PB_86"/>
+<species name="T_SUFU" compartment="compartment_8" id="PB_87"/>
+<species name="F_GLI1" compartment="compartment_1" id="PB_88"/>
+<species name="T_GLI1" compartment="compartment_8" id="PB_89"/>
+<species name="F_GLI2" compartment="compartment_1" id="PB_90"/>
+<species name="T_GLI2" compartment="compartment_8" id="PB_91"/>
+<species name="F_RAB23" compartment="compartment_1" id="PB_92"/>
+<species name="T_RAB23" compartment="compartment_9" id="PB_93"/>
+<species name="F_SMO,PTCH1" compartment="compartment_9" id="PB_94"/>
+<species name="T_SMO,PTCH1" compartment="compartment_3" id="PB_95"/>
+<species name="F_GLI2" compartment="compartment_1" id="PB_96"/>
+<species name="T_GLI2" compartment="compartment_9" id="PB_97"/>
+<species name="F_SMO" compartment="compartment_3" id="PB_98"/>
+<species name="T_SMO" compartment="compartment_9" id="PB_99"/>
+<species name="F_ARRB2" compartment="compartment_1" id="PB_100"/>
+<species name="T_ARRB2" compartment="compartment_9" id="PB_101"/>
+</listOfSpecies>
+<listOfReactions>
+<reaction name="Interaction of PTCH1 with SHH" id="REAC_1">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_3"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTCH2 with SHH" id="REAC_2">
+<listOfReactants>
+<speciesReference species="PB_4"/>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_5"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTCH1 with DHH" id="REAC_3">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_6"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_7"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTCH2 with DHH" id="REAC_4">
+<listOfReactants>
+<speciesReference species="PB_4"/>
+<speciesReference species="PB_6"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_8"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTCH1 with SMO" id="REAC_5">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_9"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_10"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTCH2 with SMO" id="REAC_6">
+<listOfReactants>
+<speciesReference species="PB_4"/>
+<speciesReference species="PB_9"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_11"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTCH1 with IHH" id="REAC_7">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_12"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_13"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTCH2 with IHH" id="REAC_8">
+<listOfReactants>
+<speciesReference species="PB_4"/>
+<speciesReference species="PB_12"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_14"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GLI3 with SKI" id="REAC_9">
+<listOfReactants>
+<speciesReference species="PB_15"/>
+<speciesReference species="PB_16"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_17"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SUFU with SAP18" id="REAC_10">
+<listOfReactants>
+<speciesReference species="PB_18"/>
+<speciesReference species="PB_19"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_20"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SUFU_SAP18_SIN3A complex with GLI1" id="REAC_11">
+<listOfReactants>
+<speciesReference species="PB_21"/>
+<speciesReference species="PB_22"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_23"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HHIP with SHH" id="REAC_12">
+<listOfReactants>
+<speciesReference species="PB_24"/>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_25"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HHIP with IHH" id="REAC_13">
+<listOfReactants>
+<speciesReference species="PB_24"/>
+<speciesReference species="PB_12"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_26"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of HHIP with DHH" id="REAC_14">
+<listOfReactants>
+<speciesReference species="PB_24"/>
+<speciesReference species="PB_6"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_27"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SUFU with GLI1" id="REAC_15">
+<listOfReactants>
+<speciesReference species="PB_18"/>
+<speciesReference species="PB_22"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_28"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SHH with GAS1" id="REAC_16">
+<listOfReactants>
+<speciesReference species="PB_2"/>
+<speciesReference species="PB_29"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_30"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GLI3 with CREBBP" id="REAC_17">
+<listOfReactants>
+<speciesReference species="PB_15"/>
+<speciesReference species="PB_31"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_32"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of DYRK1A with GLI1" id="REAC_18">
+<listOfReactants>
+<speciesReference species="PB_33"/>
+<speciesReference species="PB_22"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_34"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SUFU with GLI3" id="REAC_19">
+<listOfReactants>
+<speciesReference species="PB_18"/>
+<speciesReference species="PB_15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_35"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SUFU with GLI2" id="REAC_20">
+<listOfReactants>
+<speciesReference species="PB_18"/>
+<speciesReference species="PB_36"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_37"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of STK36 with SUFU" id="REAC_21">
+<listOfReactants>
+<speciesReference species="PB_38"/>
+<speciesReference species="PB_18"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_39"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of STK36 with GLI1" id="REAC_22">
+<listOfReactants>
+<speciesReference species="PB_38"/>
+<speciesReference species="PB_22"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_40"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of STK36 with GLI2" id="REAC_23">
+<listOfReactants>
+<speciesReference species="PB_38"/>
+<speciesReference species="PB_36"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_41"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of STK36 with GLI3" id="REAC_24">
+<listOfReactants>
+<speciesReference species="PB_38"/>
+<speciesReference species="PB_15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_42"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GLI2 with SKI" id="REAC_25">
+<listOfReactants>
+<speciesReference species="PB_36"/>
+<speciesReference species="PB_16"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_43"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTCH1_SHH complex with SMO" id="REAC_26">
+<listOfReactants>
+<speciesReference species="PB_44"/>
+<speciesReference species="PB_9"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_45"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SUFU with SUFU" id="REAC_27">
+<listOfReactants>
+<speciesReference species="PB_18"/>
+<speciesReference species="PB_18"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_46"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GLI1 with YWHAE" id="REAC_28">
+<listOfReactants>
+<speciesReference species="PB_22"/>
+<speciesReference species="PB_47"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_48"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of YWHAE with GLI2" id="REAC_29">
+<listOfReactants>
+<speciesReference species="PB_47"/>
+<speciesReference species="PB_36"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_49"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GLI3 with YWHAE" id="REAC_30">
+<listOfReactants>
+<speciesReference species="PB_15"/>
+<speciesReference species="PB_47"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_50"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SHH with CDON" id="REAC_31">
+<listOfReactants>
+<speciesReference species="PB_2"/>
+<speciesReference species="PB_51"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_52"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NR2E1 with GLI2_SMAD1 complex" id="REAC_32">
+<listOfReactants>
+<speciesReference species="PB_53"/>
+<speciesReference species="PB_54"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_55"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTCH1 with ADRBK1" id="REAC_33">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_56"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_57"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SHH with SDC2" id="REAC_34">
+<listOfReactants>
+<speciesReference species="PB_2"/>
+<speciesReference species="PB_58"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_59"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of KIF7 with GLI2" id="REAC_35">
+<listOfReactants>
+<speciesReference species="PB_60"/>
+<speciesReference species="PB_36"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_61"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of KIF27_KIF7 complex with GLI3" id="REAC_36">
+<listOfReactants>
+<speciesReference species="PB_62"/>
+<speciesReference species="PB_15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_63"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of BOC with SHH" id="REAC_37">
+<listOfReactants>
+<speciesReference species="PB_64"/>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_65"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GLI1 with CTNNB1" id="REAC_38">
+<listOfReactants>
+<speciesReference species="PB_22"/>
+<speciesReference species="PB_66"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_67"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of GLI3 with MED12_MED1_MED23_CDK8_MED6 complex" id="REAC_39">
+<listOfReactants>
+<speciesReference species="PB_15"/>
+<speciesReference species="PB_68"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_69"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SMO with ARRB2" id="REAC_40">
+<listOfReactants>
+<speciesReference species="PB_9"/>
+<speciesReference species="PB_70"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_71"/>
+</listOfProducts>
+</reaction>
+<reaction name="n-palmitoyl-cysteine of SHH by HHAT" id="REAC_41">
+<listOfReactants>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_73"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_72"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of GLI1 by DYRK1A" id="REAC_42">
+<listOfReactants>
+<speciesReference species="PB_22"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_74"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_33"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of GLI1 by PRKACA" id="REAC_43">
+<listOfReactants>
+<speciesReference species="PB_22"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_74"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_75"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of GLI3 by PRKACA" id="REAC_44">
+<listOfReactants>
+<speciesReference species="PB_15"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_76"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_75"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of AKT1" id="REAC_45">
+<listOfReactants>
+<speciesReference species="PB_77"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_78"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of SMO by ADRBK1" id="REAC_46">
+<listOfReactants>
+<speciesReference species="PB_9"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_79"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_56"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Translocation of CCNB1 from Cytoplasm to Nucleus" id="REAC_47">
+<listOfReactants>
+<speciesReference species="PB_80"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_81"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of GLI3 from Cytoplasm to Nucleus" id="REAC_48">
+<listOfReactants>
+<speciesReference species="PB_82"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_83"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of PTCH1 from Plasma membrane to Endosome" id="REAC_49">
+<listOfReactants>
+<speciesReference species="PB_84"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_85"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of SUFU from Cytoplasm to Nucleus" id="REAC_50">
+<listOfReactants>
+<speciesReference species="PB_86"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_87"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of GLI1 from Cytoplasm to Nucleus" id="REAC_51">
+<listOfReactants>
+<speciesReference species="PB_88"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_89"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of GLI2 from Cytoplasm to Nucleus" id="REAC_52">
+<listOfReactants>
+<speciesReference species="PB_90"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_91"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of RAB23 from Cytoplasm to Plasma membrane" id="REAC_53">
+<listOfReactants>
+<speciesReference species="PB_92"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_93"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of SMO,PTCH1 from Plasma membrane to Endosome" id="REAC_54">
+<listOfReactants>
+<speciesReference species="PB_94"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_95"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of GLI2 from Cytoplasm to Plasma membrane" id="REAC_55">
+<listOfReactants>
+<speciesReference species="PB_90"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_91"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of SMO from Endosome to Plasma membrane" id="REAC_56">
+<listOfReactants>
+<speciesReference species="PB_98"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_99"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of ARRB2 from Cytoplasm to Plasma membrane" id="REAC_57">
+<listOfReactants>
+<speciesReference species="PB_100"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_101"/>
+</listOfProducts>
+</reaction>
+</listOfReactions>
+</model>
+</sbml>

@@ -1,0 +1,2131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2" level="2" version="1" xmlns:html="http://www.w3.org/1999/xhtml">
+<model name="Pathway: AndrogenReceptor">
+<listOfCompartments>
+<compartment name="Cell" id="compartment_100"/>
+<compartment name="Cytoplasm" id="compartment_1"/>
+<compartment name="Endiplasmic reticulum" id="compartment_2"/>
+<compartment name="Endosome" id="compartment_3"/>
+<compartment name="Extracellular" id="compartment_4"/>
+<compartment name="Golgi apparatus" id="compartment_5"/>
+<compartment name="Lysosome" id="compartment_6"/>
+<compartment name="Mitochondrion" id="compartment_7"/>
+<compartment name="Nucleus" id="compartment_8"/>
+<compartment name="Plasma membrane" id="compartment_9"/>
+</listOfCompartments>
+<listOfSpecies>
+<species name="AR" id="PB_1" compartment="compartment_100"/>
+<species name="CDC37" id="PB_2" compartment="compartment_100"/>
+<species name="AR_CDC37" id="PB_3" compartment="compartment_100"/>
+<species name="CDC25B" id="PB_4" compartment="compartment_100"/>
+<species name="AR_CDC25B" id="PB_5" compartment="compartment_100"/>
+<species name="FHL2" id="PB_6" compartment="compartment_100"/>
+<species name="AR_FHL2" id="PB_7" compartment="compartment_100"/>
+<species name="CAV1" id="PB_8" compartment="compartment_100"/>
+<species name="AR_CAV1" id="PB_9" compartment="compartment_100"/>
+<species name="RANBP9" id="PB_10" compartment="compartment_100"/>
+<species name="AR_RANBP9" id="PB_11" compartment="compartment_100"/>
+<species name="TMF1" id="PB_12" compartment="compartment_100"/>
+<species name="AR_TMF1" id="PB_13" compartment="compartment_100"/>
+<species name="SVIL" id="PB_14" compartment="compartment_100"/>
+<species name="AR_SVIL" id="PB_15" compartment="compartment_100"/>
+<species name="PIAS1" id="PB_16" compartment="compartment_100"/>
+<species name="AR_PIAS1" id="PB_17" compartment="compartment_100"/>
+<species name="SMAD3" id="PB_18" compartment="compartment_100"/>
+<species name="AR_SMAD3" id="PB_19" compartment="compartment_100"/>
+<species name="AES" id="PB_20" compartment="compartment_100"/>
+<species name="AR_AES" id="PB_21" compartment="compartment_100"/>
+<species name="PCAF" id="PB_22" compartment="compartment_100"/>
+<species name="PCAF_AR" id="PB_23" compartment="compartment_100"/>
+<species name="PAK6" id="PB_24" compartment="compartment_100"/>
+<species name="PAK6_AR" id="PB_25" compartment="compartment_100"/>
+<species name="SRY" id="PB_26" compartment="compartment_100"/>
+<species name="AR_SRY" id="PB_27" compartment="compartment_100"/>
+<species name="BRCA1" id="PB_28" compartment="compartment_100"/>
+<species name="AR_BRCA1" id="PB_29" compartment="compartment_100"/>
+<species name="NCOA2" id="PB_30" compartment="compartment_100"/>
+<species name="AR_NCOA2" id="PB_31" compartment="compartment_100"/>
+<species name="NR2C2" id="PB_32" compartment="compartment_100"/>
+<species name="AR_NR2C2" id="PB_33" compartment="compartment_100"/>
+<species name="CCND1" id="PB_34" compartment="compartment_100"/>
+<species name="AR_CCND1" id="PB_35" compartment="compartment_100"/>
+<species name="NCOA3" id="PB_36" compartment="compartment_100"/>
+<species name="AR_NCOA3" id="PB_37" compartment="compartment_100"/>
+<species name="RAC3" id="PB_38" compartment="compartment_100"/>
+<species name="AR_RAC3" id="PB_39" compartment="compartment_100"/>
+<species name="CCNH" id="PB_40" compartment="compartment_100"/>
+<species name="AR_CCNH" id="PB_41" compartment="compartment_100"/>
+<species name="CDK7" id="PB_42" compartment="compartment_100"/>
+<species name="AR_CDK7" id="PB_43" compartment="compartment_100"/>
+<species name="JUN" id="PB_44" compartment="compartment_100"/>
+<species name="AR_JUN" id="PB_45" compartment="compartment_100"/>
+<species name="CALR" id="PB_46" compartment="compartment_100"/>
+<species name="AR_CALR" id="PB_47" compartment="compartment_100"/>
+<species name="PIAS4" id="PB_48" compartment="compartment_100"/>
+<species name="AR_PIAS4" id="PB_49" compartment="compartment_100"/>
+<species name="STAT3" id="PB_50" compartment="compartment_100"/>
+<species name="AR_STAT3" id="PB_51" compartment="compartment_100"/>
+<species name="PIAS3" id="PB_52" compartment="compartment_100"/>
+<species name="AR_PIAS3" id="PB_53" compartment="compartment_100"/>
+<species name="PIAS3_STAT3" id="PB_54" compartment="compartment_100"/>
+<species name="CDK9" id="PB_55" compartment="compartment_100"/>
+<species name="AR_CDK9" id="PB_56" compartment="compartment_100"/>
+<species name="PNRC1" id="PB_57" compartment="compartment_100"/>
+<species name="AR_PNRC1" id="PB_58" compartment="compartment_100"/>
+<species name="PXN" id="PB_59" compartment="compartment_100"/>
+<species name="AR_PXN" id="PB_60" compartment="compartment_100"/>
+<species name="SF1" id="PB_61" compartment="compartment_100"/>
+<species name="AR_SF1" id="PB_62" compartment="compartment_100"/>
+<species name="FLNA" id="PB_63" compartment="compartment_100"/>
+<species name="AR_FLNA" id="PB_64" compartment="compartment_100"/>
+<species name="CCNE1" id="PB_65" compartment="compartment_100"/>
+<species name="AR_CCNE1" id="PB_66" compartment="compartment_100"/>
+<species name="HIPK3" id="PB_67" compartment="compartment_100"/>
+<species name="AR_HIPK3" id="PB_68" compartment="compartment_100"/>
+<species name="CTNNB1" id="PB_69" compartment="compartment_100"/>
+<species name="AR_CTNNB1" id="PB_70" compartment="compartment_100"/>
+<species name="SP1" id="PB_71" compartment="compartment_100"/>
+<species name="AR_SP1" id="PB_72" compartment="compartment_100"/>
+<species name="APPL,AKT1" id="PB_73" compartment="compartment_100"/>
+<species name="APPL,AKT1_AR" id="PB_74" compartment="compartment_100"/>
+<species name="ESR1" id="PB_75" compartment="compartment_100"/>
+<species name="AR_ESR1" id="PB_76" compartment="compartment_100"/>
+<species name="NSD1" id="PB_77" compartment="compartment_100"/>
+<species name="AR_NSD1" id="PB_78" compartment="compartment_100"/>
+<species name="PRMT1" id="PB_79" compartment="compartment_100"/>
+<species name="AR_PRMT1" id="PB_80" compartment="compartment_100"/>
+<species name="RNF4" id="PB_81" compartment="compartment_100"/>
+<species name="AR_RNF4" id="PB_82" compartment="compartment_100"/>
+<species name="PSMC3IP" id="PB_83" compartment="compartment_100"/>
+<species name="AR_PSMC3IP" id="PB_84" compartment="compartment_100"/>
+<species name="PLAGL1" id="PB_85" compartment="compartment_100"/>
+<species name="AR_PLAGL1" id="PB_86" compartment="compartment_100"/>
+<species name="MDM2" id="PB_87" compartment="compartment_100"/>
+<species name="AR_MDM2" id="PB_88" compartment="compartment_100"/>
+<species name="TGIF,SIN3A" id="PB_89" compartment="compartment_100"/>
+<species name="HDAC1" id="PB_90" compartment="compartment_100"/>
+<species name="TGIF,SIN3A_HDAC1" id="PB_91" compartment="compartment_100"/>
+<species name="BAG1" id="PB_92" compartment="compartment_100"/>
+<species name="AR_BAG1" id="PB_93" compartment="compartment_100"/>
+<species name="RAN" id="PB_94" compartment="compartment_100"/>
+<species name="AR_RAN" id="PB_95" compartment="compartment_100"/>
+<species name="PTEN" id="PB_96" compartment="compartment_100"/>
+<species name="AR_PTEN" id="PB_97" compartment="compartment_100"/>
+<species name="AR_AR" id="PB_98" compartment="compartment_100"/>
+<species name="STUB1" id="PB_99" compartment="compartment_100"/>
+<species name="AR_STUB1" id="PB_100" compartment="compartment_100"/>
+<species name="NR0B2" id="PB_101" compartment="compartment_100"/>
+<species name="AR_NR0B2" id="PB_102" compartment="compartment_100"/>
+<species name="COX5B" id="PB_103" compartment="compartment_100"/>
+<species name="AR_COX5B" id="PB_104" compartment="compartment_100"/>
+<species name="SPDEF" id="PB_105" compartment="compartment_100"/>
+<species name="AR_SPDEF" id="PB_106" compartment="compartment_100"/>
+<species name="SLC25A4" id="PB_107" compartment="compartment_100"/>
+<species name="AR_SLC25A4" id="PB_108" compartment="compartment_100"/>
+<species name="UXT" id="PB_109" compartment="compartment_100"/>
+<species name="AR_UXT" id="PB_110" compartment="compartment_100"/>
+<species name="GAPDH" id="PB_111" compartment="compartment_100"/>
+<species name="AR_GAPDH" id="PB_112" compartment="compartment_100"/>
+<species name="NR3C1" id="PB_113" compartment="compartment_100"/>
+<species name="AR_NR3C1" id="PB_114" compartment="compartment_100"/>
+<species name="RUNX1" id="PB_115" compartment="compartment_100"/>
+<species name="AR_RUNX1" id="PB_116" compartment="compartment_100"/>
+<species name="RUNX2" id="PB_117" compartment="compartment_100"/>
+<species name="AR_RUNX2" id="PB_118" compartment="compartment_100"/>
+<species name="RNF14" id="PB_119" compartment="compartment_100"/>
+<species name="AR_RNF14" id="PB_120" compartment="compartment_100"/>
+<species name="TGFB1I1" id="PB_121" compartment="compartment_100"/>
+<species name="AR_TGFB1I1" id="PB_122" compartment="compartment_100"/>
+<species name="NCOA4" id="PB_123" compartment="compartment_100"/>
+<species name="AR_NCOA4" id="PB_124" compartment="compartment_100"/>
+<species name="RCHY1" id="PB_125" compartment="compartment_100"/>
+<species name="AR_RCHY1" id="PB_126" compartment="compartment_100"/>
+<species name="CCNH,GTF2H1" id="PB_127" compartment="compartment_100"/>
+<species name="AR_CCNH,GTF2H1" id="PB_128" compartment="compartment_100"/>
+<species name="PA2G4" id="PB_129" compartment="compartment_100"/>
+<species name="AR_PA2G4" id="PB_130" compartment="compartment_100"/>
+<species name="ETV5" id="PB_131" compartment="compartment_100"/>
+<species name="AR_ETV5" id="PB_132" compartment="compartment_100"/>
+<species name="IL6ST" id="PB_133" compartment="compartment_100"/>
+<species name="AR_IL6ST" id="PB_134" compartment="compartment_100"/>
+<species name="MYST2" id="PB_135" compartment="compartment_100"/>
+<species name="AR_MYST2" id="PB_136" compartment="compartment_100"/>
+<species name="PIAS2" id="PB_137" compartment="compartment_100"/>
+<species name="AR_PIAS2" id="PB_138" compartment="compartment_100"/>
+<species name="POU2F1" id="PB_139" compartment="compartment_100"/>
+<species name="AR_POU2F1" id="PB_140" compartment="compartment_100"/>
+<species name="GTF2F2" id="PB_141" compartment="compartment_100"/>
+<species name="AR_GTF2F2" id="PB_142" compartment="compartment_100"/>
+<species name="GTF2F1" id="PB_143" compartment="compartment_100"/>
+<species name="AR_GTF2F1" id="PB_144" compartment="compartment_100"/>
+<species name="RB1" id="PB_145" compartment="compartment_100"/>
+<species name="AR_RB1" id="PB_146" compartment="compartment_100"/>
+<species name="NRIP1" id="PB_147" compartment="compartment_100"/>
+<species name="AR_NRIP1" id="PB_148" compartment="compartment_100"/>
+<species name="RAD54L2" id="PB_149" compartment="compartment_100"/>
+<species name="AR_RAD54L2" id="PB_150" compartment="compartment_100"/>
+<species name="NCOR2" id="PB_151" compartment="compartment_100"/>
+<species name="AR_NCOR2" id="PB_152" compartment="compartment_100"/>
+<species name="NCOA1" id="PB_153" compartment="compartment_100"/>
+<species name="AR_NCOA1" id="PB_154" compartment="compartment_100"/>
+<species name="UBE2I" id="PB_155" compartment="compartment_100"/>
+<species name="AR_UBE2I" id="PB_156" compartment="compartment_100"/>
+<species name="AR,RNF4" id="PB_157" compartment="compartment_100"/>
+<species name="PATZ1" id="PB_158" compartment="compartment_100"/>
+<species name="AR,RNF4_PATZ1" id="PB_159" compartment="compartment_100"/>
+<species name="PTK2" id="PB_160" compartment="compartment_100"/>
+<species name="PIK3R1,PIK3R2" id="PB_161" compartment="compartment_100"/>
+<species name="PTK2_PIK3R1,PIK3R2" id="PB_162" compartment="compartment_100"/>
+<species name="PATZ1_RNF4" id="PB_163" compartment="compartment_100"/>
+<species name="AR_PATZ1" id="PB_164" compartment="compartment_100"/>
+<species name="GNB2L1" id="PB_165" compartment="compartment_100"/>
+<species name="AR_GNB2L1" id="PB_166" compartment="compartment_100"/>
+<species name="NCOR1" id="PB_167" compartment="compartment_100"/>
+<species name="AR_NCOR1" id="PB_168" compartment="compartment_100"/>
+<species name="PARP1,TOP1,HSP90B1,HSP90AA1,HSPA5,HSPA8,XRCC6, HSPA1A" id="PB_169" compartment="compartment_100"/>
+<species name="AR_PARP1,TOP1,HSP90B1,HSP90AA1,HSPA5,HSPA8,XRCC6, HSPA1A" id="PB_170" compartment="compartment_100"/>
+<species name="XRCC5" id="PB_171" compartment="compartment_100"/>
+<species name="AR_XRCC5" id="PB_172" compartment="compartment_100"/>
+<species name="XRCC6" id="PB_173" compartment="compartment_100"/>
+<species name="AR_XRCC6" id="PB_174" compartment="compartment_100"/>
+<species name="DDX5" id="PB_175" compartment="compartment_100"/>
+<species name="DDX5_AR" id="PB_176" compartment="compartment_100"/>
+<species name="PIK3R1" id="PB_177" compartment="compartment_100"/>
+<species name="AR_PIK3R1" id="PB_178" compartment="compartment_100"/>
+<species name="SRC" id="PB_179" compartment="compartment_100"/>
+<species name="AR_SRC" id="PB_180" compartment="compartment_100"/>
+<species name="PIK3R1,SRC" id="PB_181" compartment="compartment_100"/>
+<species name="AR_PIK3R1,SRC" id="PB_182" compartment="compartment_100"/>
+<species name="PPP1CA" id="PB_183" compartment="compartment_100"/>
+<species name="AR_PPP1CA" id="PB_184" compartment="compartment_100"/>
+<species name="TH1L" id="PB_185" compartment="compartment_100"/>
+<species name="AR_TH1L" id="PB_186" compartment="compartment_100"/>
+<species name="WHSC1" id="PB_187" compartment="compartment_100"/>
+<species name="AR_WHSC1" id="PB_188" compartment="compartment_100"/>
+<species name="FHL2,PELP1" id="PB_189" compartment="compartment_100"/>
+<species name="AR_FHL2,PELP1" id="PB_190" compartment="compartment_100"/>
+<species name="AHR" id="PB_191" compartment="compartment_100"/>
+<species name="AR_AHR" id="PB_192" compartment="compartment_100"/>
+<species name="ARNT" id="PB_193" compartment="compartment_100"/>
+<species name="AR_ARNT" id="PB_194" compartment="compartment_100"/>
+<species name="MAGEA11" id="PB_195" compartment="compartment_100"/>
+<species name="AR_MAGEA11" id="PB_196" compartment="compartment_100"/>
+<species name="MAGEA11_NCOA2" id="PB_197" compartment="compartment_100"/>
+<species name="PRDX1" id="PB_198" compartment="compartment_100"/>
+<species name="AR_PRDX1" id="PB_199" compartment="compartment_100"/>
+<species name="CDC25A" id="PB_200" compartment="compartment_100"/>
+<species name="AR_CDC25A" id="PB_201" compartment="compartment_100"/>
+<species name="TRIM68" id="PB_202" compartment="compartment_100"/>
+<species name="AR_TRIM68" id="PB_203" compartment="compartment_100"/>
+<species name="CDK11B" id="PB_204" compartment="compartment_100"/>
+<species name="AR_CDK11B" id="PB_205" compartment="compartment_100"/>
+<species name="CCND3" id="PB_206" compartment="compartment_100"/>
+<species name="AR_CCND3" id="PB_207" compartment="compartment_100"/>
+<species name="CCND3,CDK11B" id="PB_208" compartment="compartment_100"/>
+<species name="AR_CCND3,CDK11B" id="PB_209" compartment="compartment_100"/>
+<species name="DBC1" id="PB_210" compartment="compartment_100"/>
+<species name="AR_DBC1" id="PB_211" compartment="compartment_100"/>
+<species name="SRC,ESR1" id="PB_212" compartment="compartment_100"/>
+<species name="AR_SRC,ESR1" id="PB_213" compartment="compartment_100"/>
+<species name="CEBPA" id="PB_214" compartment="compartment_100"/>
+<species name="AR_CEBPA" id="PB_215" compartment="compartment_100"/>
+<species name="DAXX" id="PB_216" compartment="compartment_100"/>
+<species name="AR_DAXX" id="PB_217" compartment="compartment_100"/>
+<species name="SRC,PELP1" id="PB_218" compartment="compartment_100"/>
+<species name="AR_SRC,PELP1" id="PB_219" compartment="compartment_100"/>
+<species name="NCOA1,NCOA2" id="PB_220" compartment="compartment_100"/>
+<species name="AR_NCOA1,NCOA2" id="PB_221" compartment="compartment_100"/>
+<species name="EGFR" id="PB_222" compartment="compartment_100"/>
+<species name="AR_EGFR" id="PB_223" compartment="compartment_100"/>
+<species name="KAT5" id="PB_224" compartment="compartment_100"/>
+<species name="KAT5_TRIM68" id="PB_225" compartment="compartment_100"/>
+<species name="EP300" id="PB_226" compartment="compartment_100"/>
+<species name="EP300_TRIM68" id="PB_227" compartment="compartment_100"/>
+<species name="LPXN" id="PB_228" compartment="compartment_100"/>
+<species name="AR_LPXN" id="PB_229" compartment="compartment_100"/>
+<species name="DAPK3" id="PB_230" compartment="compartment_100"/>
+<species name="AR_DAPK3" id="PB_231" compartment="compartment_100"/>
+<species name="RBAK" id="PB_232" compartment="compartment_100"/>
+<species name="AR_RBAK" id="PB_233" compartment="compartment_100"/>
+<species name="NCOA6" id="PB_234" compartment="compartment_100"/>
+<species name="NCOA6_RB1" id="PB_235" compartment="compartment_100"/>
+<species name="NR2C1" id="PB_236" compartment="compartment_100"/>
+<species name="AR_NR2C1" id="PB_237" compartment="compartment_100"/>
+<species name="GSN" id="PB_238" compartment="compartment_100"/>
+<species name="AR_GSN" id="PB_239" compartment="compartment_100"/>
+<species name="DDC" id="PB_240" compartment="compartment_100"/>
+<species name="AR_DDC" id="PB_241" compartment="compartment_100"/>
+<species name="NONO" id="PB_242" compartment="compartment_100"/>
+<species name="AR_NONO" id="PB_243" compartment="compartment_100"/>
+<species name="TCF4" id="PB_244" compartment="compartment_100"/>
+<species name="AR_TCF4" id="PB_245" compartment="compartment_100"/>
+<species name="CTNNB1,TCF4" id="PB_246" compartment="compartment_100"/>
+<species name="AR_CTNNB1,TCF4" id="PB_247" compartment="compartment_100"/>
+<species name="FOXA1" id="PB_248" compartment="compartment_100"/>
+<species name="AR_FOXA1" id="PB_249" compartment="compartment_100"/>
+<species name="FOXO1" id="PB_250" compartment="compartment_100"/>
+<species name="AR_FOXO1" id="PB_251" compartment="compartment_100"/>
+<species name="HSPB1" id="PB_252" compartment="compartment_100"/>
+<species name="AR_HSPB1" id="PB_253" compartment="compartment_100"/>
+<species name="GSK3B" id="PB_254" compartment="compartment_100"/>
+<species name="AR_GSK3B" id="PB_255" compartment="compartment_100"/>
+<species name="ZMIZ2" id="PB_256" compartment="compartment_100"/>
+<species name="AR_ZMIZ2" id="PB_257" compartment="compartment_100"/>
+<species name="ZMIZ1" id="PB_258" compartment="compartment_100"/>
+<species name="AR_ZMIZ1" id="PB_259" compartment="compartment_100"/>
+<species name="EFCAB6" id="PB_260" compartment="compartment_100"/>
+<species name="AR_EFCAB6" id="PB_261" compartment="compartment_100"/>
+<species name="EFCAB6,SIN3A,HDAC1" id="PB_262" compartment="compartment_100"/>
+<species name="AR_EFCAB6,SIN3A,HDAC1" id="PB_263" compartment="compartment_100"/>
+<species name="EFCAB6,PARK7" id="PB_264" compartment="compartment_100"/>
+<species name="AR_EFCAB6,PARK7" id="PB_265" compartment="compartment_100"/>
+<species name="PARK7" id="PB_266" compartment="compartment_100"/>
+<species name="PARK7_EFCAB6" id="PB_267" compartment="compartment_100"/>
+<species name="GTF2H1,GTF2H4,GTF2H2,GTF2H3,ERCC3,ERCC2" id="PB_268" compartment="compartment_100"/>
+<species name="AR_GTF2H1,GTF2H4,GTF2H2,GTF2H3,ERCC3,ERCC2" id="PB_269" compartment="compartment_100"/>
+<species name="MNAT1,CCNH,CDK7" id="PB_270" compartment="compartment_100"/>
+<species name="AR_MNAT1,CCNH,CDK7" id="PB_271" compartment="compartment_100"/>
+<species name="GTF2H1,GTF2H4,GTF2H2,GTF2H3,ERCC3,ERCC2,MNAT1,CCNH,CDK7" id="PB_272" compartment="compartment_100"/>
+<species name="AR_GTF2H1,GTF2H4,GTF2H2,GTF2H3,ERCC3,ERCC2,MNAT1,CCNH,CDK7" id="PB_273" compartment="compartment_100"/>
+<species name="PRMT2" id="PB_274" compartment="compartment_100"/>
+<species name="PRMT2_AR" id="PB_275" compartment="compartment_100"/>
+<species name="PARK7_AR" id="PB_276" compartment="compartment_100"/>
+<species name="CREBBP" id="PB_277" compartment="compartment_100"/>
+<species name="AR_CREBBP" id="PB_278" compartment="compartment_100"/>
+<species name="SMARCE1" id="PB_279" compartment="compartment_100"/>
+<species name="SMARCE1_AR" id="PB_280" compartment="compartment_100"/>
+<species name="SMARCC1,NCOA1" id="PB_281" compartment="compartment_100"/>
+<species name="AR_SMARCC1,NCOA1" id="PB_282" compartment="compartment_100"/>
+<species name="SIRT1" id="PB_283" compartment="compartment_100"/>
+<species name="AR_SIRT1" id="PB_284" compartment="compartment_100"/>
+<species name="HDAC7" id="PB_285" compartment="compartment_100"/>
+<species name="AR_HDAC7" id="PB_286" compartment="compartment_100"/>
+<species name="KDM1A" id="PB_287" compartment="compartment_100"/>
+<species name="AR_KDM1A" id="PB_288" compartment="compartment_100"/>
+<species name="KDM3A" id="PB_289" compartment="compartment_100"/>
+<species name="KDM3A_AR" id="PB_290" compartment="compartment_100"/>
+<species name="KDM4C" id="PB_291" compartment="compartment_100"/>
+<species name="AR_KDM4C" id="PB_292" compartment="compartment_100"/>
+<species name="UBE3A" id="PB_293" compartment="compartment_100"/>
+<species name="AR_UBE3A" id="PB_294" compartment="compartment_100"/>
+<species name="CREBBP,CREB1" id="PB_295" compartment="compartment_100"/>
+<species name="AR_CREBBP,CREB1" id="PB_296" compartment="compartment_100"/>
+<species name="SNURF" id="PB_297" compartment="compartment_100"/>
+<species name="AR_SNURF" id="PB_298" compartment="compartment_100"/>
+<species name="TZF" id="PB_299" compartment="compartment_100"/>
+<species name="AR_TZF" id="PB_300" compartment="compartment_100"/>
+<species name="HSPA4,BAG1" id="PB_301" compartment="compartment_100"/>
+<species name="AR_HSPA4,BAG1" id="PB_302" compartment="compartment_100"/>
+<species name="FKBP4" id="PB_303" compartment="compartment_100"/>
+<species name="AR_FKBP4" id="PB_304" compartment="compartment_100"/>
+<species name="DBT" id="PB_305" compartment="compartment_100"/>
+<species name="AR_DBT" id="PB_306" compartment="compartment_100"/>
+<species name="HBXIP" id="PB_307" compartment="compartment_100"/>
+<species name="AR_HBXIP" id="PB_308" compartment="compartment_100"/>
+<species name="ATF2" id="PB_309" compartment="compartment_100"/>
+<species name="AR_ATF2" id="PB_310" compartment="compartment_100"/>
+<species name="MDM2,HDAC1" id="PB_311" compartment="compartment_100"/>
+<species name="AR_MDM2,HDAC1" id="PB_312" compartment="compartment_100"/>
+<species name="Acetylated AR" id="PB_313" compartment="compartment_100"/>
+<species name="Deacetylated AR" id="PB_314" compartment="compartment_100"/>
+<species name="AKT1" id="PB_315" compartment="compartment_100"/>
+<species name="Phosphorylated AR" id="PB_316" compartment="compartment_100"/>
+<species name="SENP1" id="PB_317" compartment="compartment_100"/>
+<species name="Desumoylated HDAC1" id="PB_318" compartment="compartment_100"/>
+<species name="KAT2B" id="PB_319" compartment="compartment_100"/>
+<species name="Ubiquitinated AR" id="PB_320" compartment="compartment_100"/>
+<species name="CASP1" id="PB_321" compartment="compartment_100"/>
+<species name="Proteolytically cleaved AR" id="PB_322" compartment="compartment_100"/>
+<species name="CASP3" id="PB_323" compartment="compartment_100"/>
+<species name="CASP7" id="PB_324" compartment="compartment_100"/>
+<species name="CASP8" id="PB_325" compartment="compartment_100"/>
+<species name="Phosphorylated PTK2" id="PB_326" compartment="compartment_100"/>
+<species name="RNF6" id="PB_327" compartment="compartment_100"/>
+<species name="Phosphorylated AKT1" id="PB_328" compartment="compartment_100"/>
+<species name="PPA1" id="PB_329" compartment="compartment_100"/>
+<species name="Dephosphorylated AR" id="PB_330" compartment="compartment_100"/>
+<species name="Sumoylated AR" id="PB_331" compartment="compartment_100"/>
+<species name="Phosphorylated HSPB1" id="PB_332" compartment="compartment_100"/>
+<species name="Phosphorylated PIK3R1,PIK3R2" id="PB_333" compartment="compartment_100"/>
+<species name="PPP1R14A" id="PB_334" compartment="compartment_100"/>
+<species name="Phosphorylated PPP1R14A" id="PB_335" compartment="compartment_100"/>
+<species name="CDK1" id="PB_336" compartment="compartment_100"/>
+<species name="CDK5" id="PB_337" compartment="compartment_100"/>
+<species name="CREB1" id="PB_338" compartment="compartment_100"/>
+<species name="Phosphorylated CREB1" id="PB_339" compartment="compartment_100"/>
+<species name="F_AR" compartment="compartment_1" id="PB_340"/>
+<species name="T_AR" compartment="compartment_8" id="PB_341"/>
+<species name="F_PNRC1" compartment="compartment_1" id="PB_342"/>
+<species name="T_PNRC1" compartment="compartment_8" id="PB_343"/>
+<species name="F_FLNA" compartment="compartment_1" id="PB_344"/>
+<species name="T_FLNA" compartment="compartment_8" id="PB_345"/>
+<species name="F_RCHY1" compartment="compartment_1" id="PB_346"/>
+<species name="T_RCHY1" compartment="compartment_8" id="PB_347"/>
+<species name="F_PPP1CA" compartment="compartment_1" id="PB_348"/>
+<species name="T_PPP1CA" compartment="compartment_8" id="PB_349"/>
+<species name="F_WHSC1" compartment="compartment_1" id="PB_350"/>
+<species name="T_WHSC1" compartment="compartment_8" id="PB_351"/>
+<species name="F_VIP" compartment="compartment_1" id="PB_352"/>
+<species name="T_VIP" compartment="compartment_8" id="PB_353"/>
+<species name="F_GSN" compartment="compartment_1" id="PB_354"/>
+<species name="T_GSN" compartment="compartment_8" id="PB_355"/>
+<species name="F_HSPB1" compartment="compartment_1" id="PB_356"/>
+<species name="T_HSPB1" compartment="compartment_8" id="PB_357"/>
+</listOfSpecies>
+<listOfReactions>
+<reaction name="Interaction of AR with CDC37" id="REAC_1">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_2"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_3"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CDC25B" id="REAC_2">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_4"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_5"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with FHL2" id="REAC_3">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_6"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_7"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CAV1" id="REAC_4">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_8"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_9"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with RANBP9" id="REAC_5">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_10"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_11"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with TMF1" id="REAC_6">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_12"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_13"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SVIL" id="REAC_7">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_14"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_15"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PIAS1" id="REAC_8">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_16"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_17"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SMAD3" id="REAC_9">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_18"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_19"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with AES" id="REAC_10">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_20"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_21"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PCAF with AR" id="REAC_11">
+<listOfReactants>
+<speciesReference species="PB_22"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_23"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PAK6 with AR" id="REAC_12">
+<listOfReactants>
+<speciesReference species="PB_24"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_25"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SRY" id="REAC_13">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_26"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_27"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with BRCA1" id="REAC_14">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_28"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_29"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NCOA2" id="REAC_15">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_30"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_31"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NR2C2" id="REAC_16">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_32"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_33"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CCND1" id="REAC_17">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_34"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_35"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NCOA3" id="REAC_18">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_36"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_37"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with RAC3" id="REAC_19">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_38"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_39"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CCNH" id="REAC_20">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_40"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_41"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CDK7" id="REAC_21">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_42"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_43"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with JUN" id="REAC_22">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_44"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_45"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CALR" id="REAC_23">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_46"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_47"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PIAS4" id="REAC_24">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_48"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_49"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with STAT3" id="REAC_25">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_50"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_51"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PIAS3" id="REAC_26">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_52"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_53"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PIAS3 with STAT3" id="REAC_27">
+<listOfReactants>
+<speciesReference species="PB_52"/>
+<speciesReference species="PB_50"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_54"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CDK9" id="REAC_28">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_55"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_56"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PNRC1" id="REAC_29">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_57"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_58"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PXN" id="REAC_30">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_59"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_60"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SF1" id="REAC_31">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_61"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_62"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with FLNA" id="REAC_32">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_63"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_64"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CCNE1" id="REAC_33">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_65"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_66"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with HIPK3" id="REAC_34">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_67"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_68"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CTNNB1" id="REAC_35">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_69"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_70"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SP1" id="REAC_36">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_71"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_72"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of APPL_AKT1 complex with AR" id="REAC_37">
+<listOfReactants>
+<speciesReference species="PB_73"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_74"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with ESR1" id="REAC_38">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_75"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_76"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NSD1" id="REAC_39">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_77"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_78"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PRMT1" id="REAC_40">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_79"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_80"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with RNF4" id="REAC_41">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_81"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_82"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PSMC3IP" id="REAC_42">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_83"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_84"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PLAGL1" id="REAC_43">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_85"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_86"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with MDM2" id="REAC_44">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_87"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_88"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of TGIF_SIN3A complex with HDAC1" id="REAC_45">
+<listOfReactants>
+<speciesReference species="PB_89"/>
+<speciesReference species="PB_90"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_91"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with BAG1" id="REAC_46">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_92"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_93"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with RAN" id="REAC_47">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_94"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_95"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PTEN" id="REAC_48">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_96"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_97"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with AR" id="REAC_49">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_98"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with STUB1" id="REAC_50">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_99"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_100"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NR0B2" id="REAC_51">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_101"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_102"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with COX5B" id="REAC_52">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_103"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_104"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SPDEF" id="REAC_53">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_105"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_106"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SLC25A4" id="REAC_54">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_107"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_108"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with UXT" id="REAC_55">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_109"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_110"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with GAPDH" id="REAC_56">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_111"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_112"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NR3C1" id="REAC_57">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_113"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_114"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with RUNX1" id="REAC_58">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_115"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_116"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with RUNX2" id="REAC_59">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_117"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_118"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with RNF14" id="REAC_60">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_119"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_120"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with TGFB1I1" id="REAC_61">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_121"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_122"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NCOA4" id="REAC_62">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_123"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_124"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with RCHY1" id="REAC_63">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_125"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_126"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CCNH_GTF2H1 complex" id="REAC_64">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_127"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_128"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PA2G4" id="REAC_65">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_129"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_130"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with ETV5" id="REAC_66">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_131"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_132"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with IL6ST" id="REAC_67">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_133"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_134"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with MYST2" id="REAC_68">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_135"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_136"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PIAS2" id="REAC_69">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_137"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_138"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with POU2F1" id="REAC_70">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_139"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_140"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with GTF2F2" id="REAC_71">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_141"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_142"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with GTF2F1" id="REAC_72">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_143"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_144"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with RB1" id="REAC_73">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_145"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_146"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NRIP1" id="REAC_74">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_147"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_148"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with RAD54L2" id="REAC_75">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_149"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_150"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NCOR2" id="REAC_76">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_151"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_152"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NCOA1" id="REAC_77">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_153"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_154"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with UBE2I" id="REAC_78">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_155"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_156"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR_RNF4 complex with PATZ1" id="REAC_79">
+<listOfReactants>
+<speciesReference species="PB_157"/>
+<speciesReference species="PB_158"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_159"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PTK2 with PIK3R1_PIK3R2 complex" id="REAC_80">
+<listOfReactants>
+<speciesReference species="PB_160"/>
+<speciesReference species="PB_161"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_162"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PATZ1 with RNF4" id="REAC_81">
+<listOfReactants>
+<speciesReference species="PB_158"/>
+<speciesReference species="PB_81"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_163"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PATZ1" id="REAC_82">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_158"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_164"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with GNB2L1" id="REAC_83">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_165"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_166"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NCOR1" id="REAC_84">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_167"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_168"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PARP1_TOP1_HSP90B1_HSP90AA1_HSPA5_HSPA8_XRCC6_ HSPA1A complex" id="REAC_85">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_169"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_170"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with XRCC5" id="REAC_86">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_171"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_172"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with XRCC6" id="REAC_87">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_173"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_174"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of DDX5 with AR" id="REAC_88">
+<listOfReactants>
+<speciesReference species="PB_175"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_176"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PIK3R1" id="REAC_89">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_177"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_178"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SRC" id="REAC_90">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_179"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_180"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PIK3R1_SRC complex" id="REAC_91">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_181"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_182"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PPP1CA" id="REAC_92">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_183"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_184"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with TH1L" id="REAC_93">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_185"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_186"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with WHSC1" id="REAC_94">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_187"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_188"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with FHL2_PELP1 complex" id="REAC_95">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_189"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_190"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with AHR" id="REAC_96">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_191"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_192"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with ARNT" id="REAC_97">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_193"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_194"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with MAGEA11" id="REAC_98">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_195"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_196"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of MAGEA11 with NCOA2" id="REAC_99">
+<listOfReactants>
+<speciesReference species="PB_195"/>
+<speciesReference species="PB_30"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_197"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with PRDX1" id="REAC_100">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_198"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_199"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CDC25A" id="REAC_101">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_200"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_201"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with TRIM68" id="REAC_102">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_202"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_203"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CDK11B" id="REAC_103">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_204"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_205"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CCND3" id="REAC_104">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_206"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_207"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CCND3_CDK11B complex" id="REAC_105">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_208"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_209"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with DBC1" id="REAC_106">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_210"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_211"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SRC_ESR1 complex" id="REAC_107">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_212"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_213"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CEBPA" id="REAC_108">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_214"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_215"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with DAXX" id="REAC_109">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_216"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_217"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SRC_PELP1 complex" id="REAC_110">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_218"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_219"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NCOA1_NCOA2 complex" id="REAC_111">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_220"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_221"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with EGFR" id="REAC_112">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_222"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_223"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of KAT5 with TRIM68" id="REAC_113">
+<listOfReactants>
+<speciesReference species="PB_224"/>
+<speciesReference species="PB_202"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_225"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of EP300 with TRIM68" id="REAC_114">
+<listOfReactants>
+<speciesReference species="PB_226"/>
+<speciesReference species="PB_202"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_227"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with LPXN" id="REAC_115">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_228"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_229"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with DAPK3" id="REAC_116">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_230"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_231"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with RBAK" id="REAC_117">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_232"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_233"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of NCOA6 with RB1" id="REAC_118">
+<listOfReactants>
+<speciesReference species="PB_234"/>
+<speciesReference species="PB_145"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_235"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NR2C1" id="REAC_119">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_236"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_237"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with GSN" id="REAC_120">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_238"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_239"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with DDC" id="REAC_121">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_240"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_241"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with NONO" id="REAC_122">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_242"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_243"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with TCF4" id="REAC_123">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_244"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_245"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CTNNB1_TCF4 complex" id="REAC_124">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_246"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_247"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with FOXA1" id="REAC_125">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_248"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_249"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with FOXO1" id="REAC_126">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_250"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_251"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with HSPB1" id="REAC_127">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_252"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_253"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with GSK3B" id="REAC_128">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_254"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_255"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with ZMIZ2" id="REAC_129">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_256"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_257"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with ZMIZ1" id="REAC_130">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_258"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_259"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with EFCAB6" id="REAC_131">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_260"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_261"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with EFCAB6_SIN3A_HDAC1 complex" id="REAC_132">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_262"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_263"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with EFCAB6_PARK7 complex" id="REAC_133">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_264"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_265"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PARK7 with EFCAB6" id="REAC_134">
+<listOfReactants>
+<speciesReference species="PB_266"/>
+<speciesReference species="PB_260"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_267"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with GTF2H1_GTF2H4_GTF2H2_GTF2H3_ERCC3_ERCC2 complex" id="REAC_135">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_268"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_269"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with MNAT1_CCNH_CDK7 complex" id="REAC_136">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_270"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_271"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with GTF2H1_GTF2H4_GTF2H2_GTF2H3_ERCC3_ERCC2_MNAT1_CCNH_CDK7 complex" id="REAC_137">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_272"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_273"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PRMT2 with AR" id="REAC_138">
+<listOfReactants>
+<speciesReference species="PB_274"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_275"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of PARK7 with AR" id="REAC_139">
+<listOfReactants>
+<speciesReference species="PB_266"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_276"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CREBBP" id="REAC_140">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_277"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_278"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of SMARCE1 with AR" id="REAC_141">
+<listOfReactants>
+<speciesReference species="PB_279"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_280"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SMARCC1_NCOA1 complex" id="REAC_142">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_281"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_282"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SIRT1" id="REAC_143">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_283"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_284"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with HDAC7" id="REAC_144">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_285"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_286"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with KDM1A" id="REAC_145">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_287"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_288"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of KDM3A with AR" id="REAC_146">
+<listOfReactants>
+<speciesReference species="PB_289"/>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_290"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with KDM4C" id="REAC_147">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_291"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_292"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with UBE3A" id="REAC_148">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_293"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_294"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with CREBBP_CREB1 complex" id="REAC_149">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_295"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_296"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with SNURF" id="REAC_150">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_297"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_298"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with TZF" id="REAC_151">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_299"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_300"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with HSPA4_BAG1 complex" id="REAC_152">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_301"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_302"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with FKBP4" id="REAC_153">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_303"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_304"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with DBT" id="REAC_154">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_305"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_306"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with HBXIP" id="REAC_155">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_307"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_308"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with ATF2" id="REAC_156">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_309"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_310"/>
+</listOfProducts>
+</reaction>
+<reaction name="Interaction of AR with MDM2_HDAC1 complex" id="REAC_157">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+<speciesReference species="PB_311"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_312"/>
+</listOfProducts>
+</reaction>
+<reaction name="Acetylation of AR by EP300" id="REAC_158">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_313"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_226"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Deacetylation of AR by HDAC1" id="REAC_159">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_314"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_90"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of AR by AKT1" id="REAC_160">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_316"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_315"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Desumoylation of HDAC1 by SENP1" id="REAC_161">
+<listOfReactants>
+<speciesReference species="PB_90"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_318"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_317"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of AR by PAK6" id="REAC_162">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_316"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_24"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Acetylation of AR by KAT2B" id="REAC_163">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_313"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_319"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Ubiquitination of AR by MDM2" id="REAC_164">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_320"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_87"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Acetylation of AR by KAT5" id="REAC_165">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_313"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_224"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Proteolytic Cleavage of AR by CASP1" id="REAC_166">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_322"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_321"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Proteolytic Cleavage of AR by CASP3" id="REAC_167">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_322"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_323"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Proteolytic Cleavage of AR by CASP7" id="REAC_168">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_322"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_324"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Proteolytic Cleavage of AR by CASP8" id="REAC_169">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_322"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_325"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PTK2" id="REAC_170">
+<listOfReactants>
+<speciesReference species="PB_160"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_326"/>
+</listOfProducts>
+</reaction>
+<reaction name="Ubiquitination of AR by RNF6" id="REAC_171">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_320"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_327"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of AKT1" id="REAC_172">
+<listOfReactants>
+<speciesReference species="PB_315"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_328"/>
+</listOfProducts>
+</reaction>
+<reaction name="Dephosphorylation of AR by PPA1" id="REAC_173">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_330"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_329"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of AR by CCND3_CDK11B complex" id="REAC_174">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_316"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_208"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Sumoylation of AR by UBE2I" id="REAC_175">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_331"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_155"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of HSPB1" id="REAC_176">
+<listOfReactants>
+<speciesReference species="PB_252"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_332"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of PIK3R1_PIK3R2 complex " id="REAC_177">
+<listOfReactants>
+<speciesReference species="PB_161"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_333"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of AR by GSK3B" id="REAC_178">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_316"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_254"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of PPP1R14A" id="REAC_179">
+<listOfReactants>
+<speciesReference species="PB_334"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_335"/>
+</listOfProducts>
+</reaction>
+<reaction name="Phosphorylation of AR by CDK1" id="REAC_180">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_316"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_336"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of AR by CDK9" id="REAC_181">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_316"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_55"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of AR by CDK5" id="REAC_182">
+<listOfReactants>
+<speciesReference species="PB_1"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_316"/>
+</listOfProducts>
+<listOfModifiers>
+<modifierSpeciesReference species="PB_337"/>
+</listOfModifiers>
+</reaction>
+<reaction name="Phosphorylation of CREB1" id="REAC_183">
+<listOfReactants>
+<speciesReference species="PB_338"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_339"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of AR from Cytoplasm to Nucleus" id="REAC_184">
+<listOfReactants>
+<speciesReference species="PB_340"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_341"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of PNRC1 from Cytoplasm to Nucleus" id="REAC_185">
+<listOfReactants>
+<speciesReference species="PB_342"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_343"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of FLNA from Cytoplasm to Nucleus" id="REAC_186">
+<listOfReactants>
+<speciesReference species="PB_344"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_345"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of RCHY1 from Cytoplasm to Nucleus" id="REAC_187">
+<listOfReactants>
+<speciesReference species="PB_346"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_347"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of PPP1CA from Cytoplasm to Nucleus" id="REAC_188">
+<listOfReactants>
+<speciesReference species="PB_348"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_349"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of WHSC1 from Cytoplasm to Nucleus" id="REAC_189">
+<listOfReactants>
+<speciesReference species="PB_350"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_351"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of VIP from Cytoplasm to Nucleus" id="REAC_190">
+<listOfReactants>
+<speciesReference species="PB_352"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_353"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of GSN from Cytoplasm to Nucleus" id="REAC_191">
+<listOfReactants>
+<speciesReference species="PB_354"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_355"/>
+</listOfProducts>
+</reaction>
+<reaction name="Translocation of HSPB1 from Cytoplasm to Nucleus" id="REAC_192">
+<listOfReactants>
+<speciesReference species="PB_356"/>
+</listOfReactants>
+<listOfProducts>
+<speciesReference species="PB_357"/>
+</listOfProducts>
+</reaction>
+</listOfReactions>
+</model>
+</sbml>
